@@ -16,9 +16,9 @@ std_dir <- file.path(fp_dir, "4_standardized_outputs/20260925")
 crit_gpkg <- "/hdd/projects/maui_nui_scp/solution_criteria/PU_vector_w_criteria_simple_20260528.gpkg"
 out_js <- "assets/data/footprints.js"
 
-# Groups withheld from the public map. Terrestrial snails: the project decided not to release
-# snail range or exclosure-site locations publicly. Remove "ts" here to include them.
-withheld_groups <- c("ts")
+# Groups withheld from the public map (codes as in group_codes). Terrestrial snails were withheld in
+# the first draft; the project lead approved showing them at planning-unit level on 2026-10-21.
+withheld_groups <- character(0)
 
 group_codes <- c(pl = "Plants", ta = "Terrestrial arthropods", ts = "Terrestrial snails",
                  ai = "Aquatic invertebrates", fb = "Forest birds", sb = "Seabirds",
@@ -80,12 +80,21 @@ read_mega <- function(kind) {
 recovery <- read_mega("recovery")
 priority <- read_mega("priority")
 
-# Island outlines from the planning-unit grid (offline context layer)
-pu <- st_read(crit_gpkg, quiet = TRUE)
-islands <- st_union(st_make_valid(st_transform(pu, 4326)))
-islands <- st_simplify(st_cast(islands, "POLYGON"), dTolerance = 0.002, preserveTopology = TRUE)
-islands <- polygons_only(st_sf(geometry = islands))
+# Context layers built in UTM (metres) so buffering and simplification behave:
+# island outlines (union of all planning units, slivers closed) and the light planning-unit grid
+pu <- st_make_valid(st_read(crit_gpkg, quiet = TRUE))
+pu_utm <- st_transform(pu, 26904)
+islands <- st_union(st_buffer(st_geometry(pu_utm), 25))
+islands <- st_buffer(islands, -25)
+islands <- st_simplify(islands, dTolerance = 40, preserveTopology = TRUE)
+islands <- st_cast(st_sf(geometry = islands), "POLYGON")
 islands <- islands[as.numeric(st_area(islands)) > 1e6, ]
+islands <- st_transform(islands, 4326)
+grid <- st_simplify(st_geometry(pu_utm), dTolerance = 30, preserveTopology = TRUE)
+grid <- st_transform(st_sf(geometry = grid), 4326)
+
+# Flag recovery units that are also in the priority footprint (for the nested view)
+recovery$in_priority <- recovery$id %in% priority$id
 
 to_geojson <- function(x) {
   tmp <- tempfile(fileext = ".geojson")
@@ -117,7 +126,8 @@ js <- paste0(
   "meta: ", meta, ",\n",
   "recovery: ", to_geojson(recovery), ",\n",
   "priority: ", to_geojson(priority), ",\n",
-  "islands: ", to_geojson(islands), "\n};\n")
+  "islands: ", to_geojson(islands), ",\n",
+  "grid: ", to_geojson(grid), "\n};\n")
 writeLines(js, out_js, useBytes = TRUE)
-cat(sprintf("Wrote %s (%.0f KB): %d recovery PUs, %d priority PUs, %d island polygons\n",
-            out_js, file.size(out_js) / 1024, nrow(recovery), nrow(priority), nrow(islands)))
+cat(sprintf("Wrote %s (%.0f KB): %d recovery PUs, %d priority PUs, %d island polygons, %d grid PUs\n",
+            out_js, file.size(out_js) / 1024, nrow(recovery), nrow(priority), nrow(islands), nrow(grid)))

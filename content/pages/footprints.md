@@ -62,12 +62,28 @@ From a landscape perspective, the combined recovery footprint: <!-- src: plan p.
 
 The combined priority footprint includes 216 planning units covering 457 km². It provides habitat for 267 at-risk species and is about 43 percent of the size of the full recovery footprint. <!-- src: plan p.81, lines 3267-3270 -->
 
+[figure: Map of Maui Nui showing the combined recovery footprint in green with the priority footprint in magenta inside it | src: assets/img/maps/nested_all_taxa.png | alt: Map of Maui Nui showing the combined recovery footprint in green with the priority footprint in magenta inside it | caption: Combined recovery footprint (green) with the priority footprint (magenta) nested inside it. All taxonomic groups combined. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+[figure: Map of the combined recovery footprint shaded by how many taxonomic groups each planning unit serves, with biodiversity reserves outlined | src: assets/img/maps/recovery_all_taxa_group_richness_w_reserves.png | alt: Map of the combined recovery footprint shaded by how many taxonomic groups each planning unit serves, with biodiversity reserves outlined | caption: Combined recovery footprint shaded by the number of taxonomic groups each planning unit serves, with biodiversity reserves outlined in orange. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+[figure: Map of the combined priority footprint in magenta with ungulate-managed (fenced) areas outlined | src: assets/img/maps/priority_all_taxa_w_ungulate.png | alt: Map of the combined priority footprint in magenta with ungulate-managed (fenced) areas outlined | caption: Combined priority footprint (magenta) with ungulate-managed areas outlined: much of it is already fenced. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+[figure: Seven small maps, one per taxonomic group, showing each group's recovery footprint | src: assets/img/maps/recovery_by_group_small_multiples.png | alt: Seven small maps, one per taxonomic group, showing each group's recovery footprint | caption: Recovery footprints by taxonomic group. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 19)
 [figure: Combined recovery footprint (a), priority footprint (b) and narrowed initial implementation footprint (c) for all taxonomic groups | suggested source: plan PDF p.82 Figure 19 | alt: Three maps of Maui, Molokaʻi, Lānaʻi and Kahoʻolawe showing the combined recovery footprint, the smaller priority footprint, and the smaller still initial implementation areas]
+:::
 
 ### Places with many at-risk species
 The Adaptive Conservation Planner can highlight planning units with exceptionally high numbers of at-risk species, or units holding species facing imminent extinction. Managers can use this to work more efficiently. <!-- src: plan p.83, lines 3299-3305 -->
 
+[figure: Map of the combined priority footprint shaded by the number of at-risk species each planning unit supports | src: assets/img/maps/priority_all_taxa_species_richness.png | alt: Map of the combined priority footprint shaded by the number of at-risk species each planning unit supports | caption: Combined priority footprint shaded by the number of at-risk species each planning unit supports. The darkest units are the richest places to act. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+[figure: Map of the combined recovery footprint shaded by the number of at-risk species each planning unit supports | src: assets/img/maps/recovery_all_taxa_species_richness.png | alt: Map of the combined recovery footprint shaded by the number of at-risk species each planning unit supports | caption: The same view for the full recovery footprint. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 20)
 [figure: Heat map of target richness (number of at-risk species) in each planning unit of the priority footprint | suggested source: plan PDF p.83 Figure 20 | alt: Map of Maui Nui with planning units in the priority footprint shaded from light to dark by the number of at-risk species they support]
+:::
 
 ## What footprints are, and what they are not
 - **Footprints are decision support.** The MNLCP is state-led and practitioner-driven. It provides flexible guidance to managers rather than top-down prescriptive mandates. <!-- src: plan p.8, lines 619-620, 640; p.122 lines 4823-4825 -->

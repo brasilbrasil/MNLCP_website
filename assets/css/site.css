@@ -681,3 +681,6 @@ abbr.gloss, span.gloss { text-decoration: underline dotted var(--muted); text-un
 
 .chip-sm { padding: 2px 8px; font-size: .74rem; white-space: nowrap; }
 .explorer-table td { padding: 8px 12px; }
+.hero-credit { z-index: 1; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); }
+.hero-credit a { color: inherit; text-decoration: underline; }
+.page-hero .hero-credit { position: absolute; right: 12px; bottom: 8px; font-size: .7rem; color: rgba(255, 255, 255, .7); }

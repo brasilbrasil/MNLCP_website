@@ -88,6 +88,11 @@ The full list of works cited in the plan, as printed in its Literature Cited sec
 [[widget:references]]
 
 
+## Photo credits
+Photographs and illustrations used on this site, with their sources and licences.
+
+[[widget:photo-credits]]
+
 ## Glossary
 Definitions of terms used in the plan, such as planning unit, recovery footprint, and priority
 footprint, are on the [Glossary](glossary.html) page. <!-- src: plan p.120-123 -->

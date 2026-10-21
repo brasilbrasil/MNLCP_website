@@ -68,7 +68,11 @@ The plan aims to roughly double ʻuaʻu breeding pairs and to raise ʻakēʻakē
 ### Recovery footprint and priority footprint
 Seabirds followed the plan's expert-led pathway. Like the Forest Bird Team, the Seabird Team used published literature, recovery plans and professional expertise to map the recovery footprint needed to sustain seabird populations on all four Maui Nui islands. <!-- src: plan p.39, Ch 6b vi --> Offshore islets are part of the recovery footprint, even where they are too small to show on the map. A subset of planning units (areas of about 2 km² used to organize the plan's maps) was chosen as the priority area for conservation action. <!-- src: plan p.39; planning unit size p.52 --> In the plan's map, the priority area and the initial implementation area are the same. <!-- src: plan p.39, Figure 7 caption -->
 
+[figure: Map of Maui Nui showing the seabird recovery footprint in green with the priority footprint in magenta inside it | src: assets/img/maps/nested_seabirds.png | alt: Map of Maui Nui showing the seabird recovery footprint in green with the priority footprint in magenta inside it | caption: Seabird recovery footprint (green) with the priority footprint (magenta) nested inside it. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 7)
 [figure: Seabird recovery footprint across Maui, Molokaʻi, Lānaʻi and Kahoʻolawe, with priority areas highlighted | suggested source: plan PDF p.48 (printed p.39), Figure 7 | alt: Map of the four Maui Nui islands with the seabird recovery footprint in green and priority areas in red]
+:::
 
 :::details How the seabird footprint was delineated
 - **Pathway.** Seabirds followed the expert-led pathway: specialists delineated priority areas directly through repeated collaborative review rather than algorithmic footprint generation. The plan uses this pathway for groups with few focal species and strong existing expert knowledge. <!-- src: plan App 1 p.A1-5 -->

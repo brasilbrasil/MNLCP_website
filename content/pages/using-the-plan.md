@@ -51,7 +51,11 @@ The MNLCP recovery footprints identify the planning units (PUs, mapping cells of
 
 Combined across all eight taxonomic groups, the recovery footprint covers a significant portion of Maui Nui. It holds the habitat needed to recover, or significantly advance the recovery of, all 442 at-risk species except those still lacking distribution or habitat information. <!-- src: plan p.21, lines 1068-1071 -->
 
+[figure: Map of Maui Nui showing the combined recovery footprint in green with the priority footprint in magenta inside it | src: assets/img/maps/nested_all_taxa.png | alt: Map of Maui Nui showing the combined recovery footprint in green with the priority footprint in magenta inside it | caption: Combined recovery footprint (green) with the priority footprint (magenta) nested inside it. All taxonomic groups combined. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 2)
 [figure: Combined recovery footprint for all taxonomic groups (green) with the priority areas for all groups (yellow) | suggested source: plan PDF p.22 Figure 2 | alt: Map of Maui, Molokaʻi, Lānaʻi and Kahoʻolawe showing the combined recovery footprint in green and priority areas in yellow]
+:::
 
 Terrestrial snails are the exception. The snail team determined that all 49 at-risk snails face imminent extinction. For now, the plan prioritizes preventing those losses with a number of snail exclosures (kīpuka kāhuli) rather than broader habitat recovery, which is not yet possible. Critical recovery work continues, especially research on controlling invasive predators and building supporting infrastructure. <!-- src: plan p.21, lines 1071-1079 -->
 

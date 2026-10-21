@@ -119,7 +119,13 @@ The process produced four nested footprints: <!-- src: plan p.50, Ch 6d v -->
 
 Management is expected to start in the narrowest footprint and quickly move to the next one, which covers species with three or fewer occupied planning units. <!-- src: plan p.50 --> The priority and narrower footprints are priorities for getting started, not for long-term recovery. The full recovery footprint is the desired end result. <!-- src: plan p.28 -->
 
+[figure: Map of Maui Nui showing the plant recovery footprint in green with the priority footprint in magenta inside it | src: assets/img/maps/nested_plants.png | alt: Map of Maui Nui showing the plant recovery footprint in green with the priority footprint in magenta inside it | caption: Plant recovery footprint (green) with the priority footprint (magenta) nested inside it. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+[figure: Map of the plant recovery footprint shaded by the number of at-risk species each planning unit supports | src: assets/img/maps/recovery_plants_species_richness.png | alt: Map of the plant recovery footprint shaded by the number of at-risk species each planning unit supports | caption: Plant recovery footprint shaded by the number of at-risk species each planning unit supports. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 9a-d)
 [figure: Four-panel map of the plant recovery footprint, priority footprint, secondary implementation areas and primary implementation areas | suggested source: plan PDF pp.60-61 (printed pp.51-52), Figure 9a-d | alt: Four maps of Maui Nui: the plant recovery footprint in green, priority areas in yellow, secondary implementation areas in red and primary implementation areas in black]
+:::
 
 :::details How the plant footprint was delineated (TFE-SCP and OptimTFE)
 - **The process.** The plant work follows the complete Transparent, Flexible and Expert-engaged Systematic Conservation Planning (TFE-SCP) process, the plan's comprehensive planning process: from data compilation, through algorithmic outputs and expert fine-tuning, to an implementation-ready recovery footprint. <!-- src: plan p.52; App 1 -->

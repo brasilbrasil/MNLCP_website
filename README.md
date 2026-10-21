@@ -85,9 +85,11 @@ GitHub Enterprise can keep Pages private to organization members.
 
 ## Data and sensitivity
 
-The map shows the release-candidate megafootprint of 2026-09-25 with taxon-group counts and
-planning criteria per planning unit. It deliberately leaves out species names and Terrestrial
-snail units; see `content/EDITORIAL_NOTES.md` §1.2 before changing that.
+The map shows the release-candidate megafootprint of 2026-09-25, with taxon-group counts and
+planning criteria for each planning unit, all seven groups included. It deliberately leaves out
+species names per unit; see `content/EDITORIAL_NOTES.md` §1.2 before changing that. Static
+footprint maps come from `all_taxon_footprints/data/4_standardized_outputs/20260925/`, resized
+into `assets/img/maps/`.
 
 ## Credits
 

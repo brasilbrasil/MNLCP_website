@@ -39,25 +39,27 @@ note that they supersede the plan; (c) issue a plan erratum and align both.
 The plan says the ACP "is not a public web map". The draft therefore holds back these items until
 DOFAW decides:
 
-- **Map, Terrestrial snails.** Snail units are left out of the public map export, following the
-  project decision not to release snail range or exclosure locations. To include them, remove
-  `"ts"` from `withheld_groups` in `tools/export_footprints.R` and re-run it.
+- **Map, Terrestrial snails.** Approved by the project lead on 2026-10-21: snail footprints are
+  shown at planning-unit level on the map and on the snail page. (They were withheld in the first
+  draft; `withheld_groups` in `tools/export_footprints.R` controls this.)
 - **Map, species names.** The map shows how many species of each group each planning unit
   supports, never which species. The ACP holds the species-level detail.
-- **KMZ download.** The existing KMZ (`all_taxon_footprints/data/Maui_Nui_Conservation_Footprints.kmz`)
-  includes snail footprints and per-unit detail, so it is not posted. The Resources page says it
-  is pending approval.
+- **KMZ download.** Still not posted. The existing KMZ (`all_taxon_footprints/data/Maui_Nui_Conservation_Footprints.kmz`)
+  has per-unit detail beyond the planning-unit footprints, so it needs its own review. The
+  Resources page says it is pending approval.
 - **Cyanea mceldowneyi walk-through** (Approach and Footprints pages). This is the deck's
   step-by-step example: one listed plant's habitat suitability and ten recovery units on windward
   East Maui. DOFAW presented it in its own demos, but please confirm it can be public.
-- **ACP screenshots.** None are published. All eight existing screenshots show the retired
-  "Footprint Manager" name, and most also show snail footprints, Haleakalā silversword points,
-  per-unit rare-species targets or internal layer names ("AO benefits", "Flagged Plant PUs"). The
-  Tools page shows placeholders. Recapture them from the current ACP with a demo account and
-  neutral layers. The originals are kept locally in `_source_extracts/withheld_images/`, outside git.
-- **Release-candidate map images** (`all_taxon_footprints` standardized maps) are not in the repo,
-  because they show snail footprints by group or in the all-taxa union. Copies are kept locally in
-  `_source_extracts/withheld_images/maps/`.
+- **ACP screenshots.** Approved by the project lead on 2026-10-21. All eight are used on the Tools
+  page, cropped below the title bar that carried the retired "Footprint Manager" name and a user
+  email. **Still to confirm:** `acp_species_layers` shows Haleakalā silversword known-location
+  points (point locations, not planning units), and `acp_manage_aux_layers` shows internal layer
+  names ("AO benefits", "Flagged Plant PUs"). Recapturing from the current ACP would also show the
+  new name.
+- **Footprint maps.** The site's footprint maps now come from `all_taxon_footprints`
+  (standardized maps, release candidate of 2026-09-25), replacing the plan's figures. Each page keeps
+  the plan figure in a collapsed "Map as printed in the plan" section. Their unit counts follow the
+  release candidate, so they can differ from the plan text (see 1.1).
 - **Plan figures.** Figure 11 (snail exclosure network) and other plan maps are shown because
   they are in the published plan. If the plan PDF itself is not public, revisit these.
 
@@ -85,20 +87,35 @@ Each draft answer stays within what the plan supports. What DOFAW must confirm f
 
 ### 1.5 Images and rights
 
-- **No field photography.** The only high-resolution photo in the sources is the misty ʻōhiʻa
-  forest hero (from the deck); its photographer is not credited. The species photos from the deck
-  are 114–310 px, so the site uses them only as thumbnails. Inner pages use a plain green header
-  until photos are supplied. **Ask DOFAW and partners for 10–20 credited field photos** (one per
-  group, plus landscapes and people at work).
-- `threat_jacksons_chameleon.jpg` carries a "©Warren Photographic" stock watermark. It has been
-  removed from the site.
-- `plant_cyanea_mceldowneyi.jpg` shows "© C. H. Lamoureux" and is used as the Plants thumbnail;
-  credit or replace it.
+Photos now come from DOFAW and partner presentations and from openly licensed sources already on
+disk (media search of 2026-10-21; details in `content/notes/media_search.md`). Every page header
+shows a credit, and **Resources → Photo credits** lists every photo and plate used, generated from
+`content/data/asset_catalog.json` at build time.
+
+- **Forest and Kim Starr photos** (CC BY 3.0): attribution and a licence link are shown, as the
+  licence requires.
+- **Frohawk and Keulemans plates** (*Aves Hawaiienses*, 1890s): public domain. A plate stands in
+  for the seabird photo nobody has supplied.
+- **Maui Forest Bird Recovery Project photos** (2015 Nakula volunteer packet: kiwikiu, nēnē,
+  outplanting crews, helicopter sling load, landscapes): no photographer is named and volunteers
+  are identifiable. **Confirm with MFBRP**, and get originals and credits.
+- **Lilly Thomey** snail and forest photos, and **Melissa Price**'s aeʻo, are credited from the source slides.
+  Confirm permission with each.
+- **ʻĀkohekohe header photo:** the slide carries two conflicting credits ("MFBRP" and "novvictan /
+  Wikimedia Commons, CC BY 4.0"). Verify.
+- **Credit still unknown:** the misty ʻōhiʻa forest on the homepage (from the DOFAW deck), the
+  species-page collage, the USGS Nakula photos and the older small deck photos.
+- **Held back** (kept locally in `_source_extracts/withheld_images/`): an ʻalauahio photo that is
+  probably Jack Jeffrey's, the kīpuka kāhuli aerial (could reveal the site), the HCC 2025 team
+  photo (consent), two Lyon Arboretum photos (permission), and the stock chameleon photo.
+- **Still missing:** photos of the Hawaiian hoary bat, seabirds, ʻalae keʻokeʻo and koloa, aquatic
+  invertebrates and arthropods; threats such as Euglandina, rats and fire; fencing crews,
+  workshops, and Molokaʻi landscapes. The HCC 2025 talk decks (OneDrive) and the DOFAW and partner
+  photo libraries are the next sources to try.
 - **Partner logos** are low-resolution copies from the deck. Each partner should supply an official
-  file and approve its use. One spiral logo is unidentified (possibly SEPP) and is not shown.
-- **Third-party figures.** Plan Figure 29 (Sutter et al. 2015) and Appendix 2 Figure 2 (adapted
-  from Carwardine et al. 2019) are third-party; Figure 17 carries Esri credits.
-- Species in the deck photos were identified by eye; a biologist should confirm them.
+  file and approve its use.
+- **Third-party figures:** plan Figure 29 (Sutter et al. 2015) and Appendix 2 Figure 2 (after
+  Carwardine et al. 2019).
 
 ### 1.6 Wording to confirm
 

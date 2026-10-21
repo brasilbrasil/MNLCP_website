@@ -80,9 +80,15 @@ The recovery footprint includes very important wetlands (and uplands for nēnē)
 ### Recovery footprint and priority footprint
 Waterbirds followed the plan's expert-led pathway. The Waterbird Team and species experts identified the key wetlands needed to provide habitat for all five waterbirds. <!-- src: plan p.44, Ch 6c v --> A subset of wetlands (and uplands for nēnē) in the footprint makes up the priority footprint, where initial conservation actions should focus. <!-- src: plan pp.43-44 --> In the plan's maps, priority areas and implementation areas are the same. <!-- src: plan p.45, Figure 8 caption -->
 
-[figure: Waterbird recovery footprint for wetland species (coot, stilt, duck and moorhen), with priority wetlands highlighted | suggested source: plan PDF p.53 (printed p.44), Figure 8a | alt: Map of Maui Nui wetlands in the waterbird recovery footprint, with priority wetlands in red]
+[figure: Map of Maui Nui showing the waterbird recovery footprint in green with the priority footprint in magenta inside it | src: assets/img/maps/nested_waterbirds.png | alt: Map of Maui Nui showing the waterbird recovery footprint in green with the priority footprint in magenta inside it | caption: Waterbird recovery footprint (green) with the priority footprint (magenta) nested inside it. The map combines all five waterbirds, including nēnē. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
 
+:::details Map as printed in the plan (Figure 8a)
+[figure: Waterbird recovery footprint for wetland species (coot, stilt, duck and moorhen), with priority wetlands highlighted | suggested source: plan PDF p.53 (printed p.44), Figure 8a | alt: Map of Maui Nui wetlands in the waterbird recovery footprint, with priority wetlands in red]
+:::
+
+:::details Map as printed in the plan (Figure 8b)
 [figure: Nēnē recovery footprint in lowland and upland habitat | suggested source: plan PDF p.54 (printed p.45), Figure 8b | alt: Map of Maui Nui showing nēnē recovery habitat]
+:::
 
 :::details How the waterbird footprint was delineated
 - **Pathway.** Waterbirds followed the expert-led pathway: specialists delineated priority areas directly through repeated collaborative review rather than algorithmic footprint generation. The plan uses this pathway for groups with few focal species and strong existing expert knowledge. <!-- src: plan App 1 p.A1-5 -->

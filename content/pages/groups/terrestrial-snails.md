@@ -132,7 +132,13 @@ The network was developed in three steps: <!-- src: plan p.59, lines 2501-2517 -
 
 Many exclosures are close to known snail occurrences. For 39 of the 49 species, the nearest known occurrence is less than 2 km from an exclosure. <!-- src: plan p.61, lines 2551-2553 --> The exclosures may later serve as protected bases for returning snails to their historic locations. <!-- src: plan p.61, lines 2548-2551 -->
 
+[figure: Map of the Terrestrial snail exclosure sites (kīpuka kāhuli) by planning unit: recovery footprint in green, preventing extinction footprint in magenta | src: assets/img/maps/nested_terrestrial_snails.png | alt: Map of the Terrestrial snail exclosure sites (kīpuka kāhuli) by planning unit: recovery footprint in green, preventing extinction footprint in magenta | caption: Terrestrial snail recovery footprint (green) with the preventing extinction footprint (magenta), by planning unit. Each unit holds a planned or future kīpuka kāhuli (predator-proof exclosure). Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+[figure: Map of the Terrestrial snail recovery footprint shaded by the number of at-risk species each planning unit supports | src: assets/img/maps/recovery_terrestrial_snails_species_richness.png | alt: Map of the Terrestrial snail recovery footprint shaded by the number of at-risk species each planning unit supports | caption: Terrestrial snail recovery footprint shaded by the number of at-risk species each planning unit supports. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 11)
 [figure: Map of the full 32-site kīpuka kāhuli network, with yellow priority sites (one population of each species) and green sites (completing three per species); second panel shows red sites for initial implementation | suggested source: plan PDF p.60 Figure 11 (a) and (b) | alt: Map of Maui Nui showing the 32 planned predator-proof snail exclosure sites, colored by priority]
+:::
 
 :::details How the snail network was prioritized (practitioner detail)
 - **Pathway.** Terrestrial snails were prioritized algorithmically with the OptimTFE R package within the Transparent, Flexible, Expert-engaged Systematic Conservation Planning (TFE-SCP) process. The planning units were candidate exclosure sites screened for biological suitability and constructability, not the standard grid of roughly 2 km² planning units used for other groups. Existing and planned exclosures were carried forward. <!-- src: plan App 1 p.A1-7, lines 5204-5206; p.A1-5 lines 5150-5152 -->

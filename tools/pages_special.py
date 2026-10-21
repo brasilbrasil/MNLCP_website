@@ -257,6 +257,7 @@ WIDGETS = {
     "footprint-stepper": w_stepper,
     "references": w_references,
     "group-cards": w_group_cards,
+    "photo-credits": lambda: '<div data-widget="photo-credits"></div>',  # filled after all pages are built
 }
 
 
@@ -281,11 +282,13 @@ def fmt(v):
 
 # Small deck photos (114-310 px) work only as thumbnails; species identifications are by eye (see asset notes).
 GROUP_THUMBS = {
-    "forest-birds": "assets/img/photos/bird_iiwi_on_mamane.jpg",
-    "seabirds": "assets/img/photos/seabird_shearwater_on_rock.jpg",
-    "plants": "assets/img/photos/plant_cyanea_mceldowneyi.jpg",
-    "terrestrial-snails": "assets/img/photos/snail_native_tree_snail_banded.jpg",
-    "aquatic-invertebrates": "assets/img/photos/arthropod_megalagrion_damselflies.jpg",
+    "forest-birds": "assets/img/photos/bird_kiwikiu_banded_adult.jpg",
+    "seabirds": "assets/img/figures/plate_uau_hawaiian_petrel_frohawk.jpg",
+    "waterbirds": "assets/img/photos/bird_nene_portrait.jpg",
+    "plants": "assets/img/photos/plant_clermontia_kakeana_flowers.jpg",
+    "terrestrial-snails": "assets/img/photos/snail_tree_snail_on_leaf_underside.jpg",
+    "terrestrial-arthropods": "assets/img/photos/arthropod_megalagrion_damselflies.jpg",
+    "aquatic-invertebrates": "assets/img/photos/landscape_ohia_rocky_gulch.jpg",
 }
 
 
@@ -294,7 +297,8 @@ def group_cards_html(limit_text=True):
     for g in groups_data():
         slug = g["slug"]
         img = asset(GROUP_THUMBS.get(slug, ""))
-        media = f'<img class="group-thumb" src="{img}" alt="" loading="lazy">' if img else ""
+        cred = re.sub(r"<[^>]+>", "", B["credit_html"](img)) if img else ""
+        media = f'<img class="group-thumb" src="{img}" alt="" title="{esc(cred)}" loading="lazy">' if img else ""
         path = {"expert-led": "Expert-led footprint", "algorithmic": "Algorithmic prioritization", "plan-only": "Plan strategy"}.get(g.get("prioritization_pathway"), "")
         cards.append(f"""<a class="card group-card reveal" data-group="{slug}" href="groups/{slug}.html">{media}
 <span class="card-tag">{esc(path)}</span>
@@ -320,7 +324,7 @@ def build_groups_index():
              '<th>Primary threats</th><th>Highest-priority actions</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table></div>")
     body = (B["page_hero"]("Taxonomic Groups",
                            "Seven expert Taxonomic Teams, plus the Hawaiian hoary bat, shaped a recovery strategy for every group of at-risk species. Choose a group to see its species, threats, recovery footprint and priority actions.",
-                           "Species", "assets/img/photos/hero_page_groups.jpg", [(None, "Taxonomic Groups")])
+                           "Species", "assets/img/photos/landscape_native_forest_ridge_view.jpg", [(None, "Taxonomic Groups")])
             + f'<section class="section"><div class="wrap">{group_cards_html()}</div></section>'
             + f'<section class="section band-soft"><div class="wrap"><div class="section-head"><span class="eyebrow">At a glance</span><h2>All groups compared</h2>'
               f'<p>At-risk species by taxonomic group, the number listed under state and federal endangered species laws, the number facing imminent extinction, and the primary threats and highest-priority actions identified in the plan (Executive Summary, Table 1).</p></div>{table}</div></section>')
@@ -347,7 +351,7 @@ def build_footprints():
     for name, fn in WIDGETS.items():
         body_html = body_html.replace(f'<div data-widget="{name}"></div>', fn())
     B["index_for_search"]("Conservation Footprints", "footprints.html", body_html)
-    colors = [("groups", "Number of taxon groups"), ("species", "Number of species targets"), ("hab_qual", "Habitat quality"),
+    colors = [("nested", "Footprint (recovery and priority)"), ("groups", "Number of taxon groups"), ("species", "Number of species targets"), ("hab_qual", "Habitat quality"),
               ("climate", "Climate resilience"), ("reserve_pct", "Share in biodiversity reserves"), ("ungulate_pct", "Share ungulate-managed"),
               ("access", "Accessibility"), ("fire", "Fire probability")]
     panel = f"""<div class="map-shell">
@@ -368,7 +372,7 @@ def build_footprints():
   <h2>Taxon groups <button class="pill" id="fp-all" style="float:right;padding:3px 10px;font-size:.75rem">All / none</button></h2>
   <ul class="layer-list" id="fp-groups"></ul>
   <h2>Basemap</h2>
-  <div class="seg" id="fp-base" role="group" aria-label="Basemap"><button value="topo">Topographic</button><button value="imagery">Imagery</button><button value="light">Light</button></div>
+  <div class="seg" id="fp-base" role="group" aria-label="Basemap"><button value="none">Clean</button><button value="topo">Topo</button><button value="imagery">Imagery</button><button value="light">Light</button></div>
   <div id="pu-card"><p class="small muted" style="margin-top:18px">Select a planning unit on the map to see which groups it supports and how it scores on the planning criteria.</p></div>
   <p class="small muted" style="margin-top:18px">Data: MNLCP release-candidate footprints, September 25, 2026, as loaded in the Adaptive Conservation Planner. Species names are not shown on this public map. <a href="#about-the-map">About the map</a></p>
 </aside>
@@ -412,7 +416,7 @@ def build_faq():
         cats.append(f'<section class="faq-cat" id="{esc(c["id"])}"><h2>{esc(c["title"])}</h2>'
                     f'<p>{esc(c.get("description", ""))}</p>{"".join(qas)}</section>')
     body = (B["page_hero"](meta.get("title", "Questions & Answers"), B["md_to_html"](lede, DRAFT).replace("<p>", "").replace("</p>", "") if lede else "",
-                           "Q&A", "assets/img/photos/hero_page_faq.jpg", [(None, "Q&A")])
+                           "Q&A", "assets/img/photos/plant_native_seedling_in_mist_nakula.jpg", [(None, "Q&A")])
             + f'<div class="page-body"><div class="wrap wrap-narrow" data-faq>'
               f'<div class="faq-tools"><input class="input" type="search" placeholder="Search {total} questions" aria-label="Search questions"><span class="small muted" data-faq-count></span></div>'
               f'<div class="pill-row" style="margin-bottom:30px">{"".join(pills)}</div>'

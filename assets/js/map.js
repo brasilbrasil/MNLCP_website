@@ -24,7 +24,7 @@
     });
     return fc;
   }
-  ["recovery", "priority", "islands"].forEach(function (k) { polygonsOnly(D[k]); });
+  ["recovery", "priority", "islands", "grid"].forEach(function (k) { if (D[k]) polygonsOnly(D[k]); });
 
   var GROUPS = [
     { k: "fb", name: "Forest birds", color: "#e34948", page: "groups/forest-birds.html" },
@@ -38,9 +38,11 @@
   var GREENS = ["#c6e3ae", "#a3d183", "#7cbc5e", "#55a03f", "#35842f", "#1f6a2c", "#0f4a1d"];
   var BLUES = ["#cde2fb", "#9ec5f4", "#5598e7", "#256abf", "#0d366b"];
   var FIRE = ["#fff1c1", "#fdc66b", "#f58a3c", "#d9481f", "#8f1d0c"];
+  var RECOVERY_GREEN = "#199e19", PRIORITY_MAGENTA = "#9e195e";  // same as the standardized footprint maps
   var COLOR_MODES = {
-    groups: { label: "Number of taxon groups", field: "n_groups", type: "classes", breaks: [1, 2, 3, 4, 5], ramp: ["#b5d99a", "#7fbf5c", "#4a9a37", "#256f26", "#0f4a1d"], fmt: function (v) { return v + (v === 5 ? "+" : ""); } },
-    species: { label: "Number of at-risk species (targets)", field: "n_species", type: "quantile", ramp: GREENS },
+    nested: { label: "Footprint", type: "nested" },
+    groups: { label: "Number of taxon groups", field: "n_groups", type: "classes", breaks: [1, 2, 3, 4, 5], ramp: ["#9ec5f4", "#5598e7", "#2a78d6", "#1c5cab", "#0d366b"], fmt: function (v) { return v + (v === 5 ? "+" : ""); } },
+    species: { label: "Number of at-risk species (targets)", field: "n_species", type: "quantile", ramp: ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"] },
     hab_qual: { label: "Habitat quality (0–5, native cover)", field: "hab_qual", type: "linear", min: 0, max: 5, ramp: GREENS, lo: "Mostly non-native", hi: "Nearly all native" },
     climate: { label: "Climate resilience (0–3)", field: "climate", type: "linear", min: 0, max: 3, ramp: BLUES, lo: "Less resilient", hi: "More resilient" },
     reserve_pct: { label: "Share in biodiversity reserves", field: "reserve_pct", type: "linear", min: 0, max: 100, ramp: GREENS, lo: "0%", hi: "100%" },
@@ -50,7 +52,7 @@
   };
 
   GROUPS = GROUPS.filter(function (g) { return !D.meta.groups || D.meta.groups[g.k]; });
-  var state = { view: "recovery", color: "groups", groups: GROUPS.map(function (g) { return g.k; }), base: "topo" };
+  var state = { view: "recovery", color: "nested", groups: GROUPS.map(function (g) { return g.k; }), base: "none" };
   readHash();
 
   var map = L.map(el, { zoomControl: true, attributionControl: true, minZoom: 8, maxZoom: 15, zoomSnap: 0.25 });
@@ -59,8 +61,16 @@
     imagery: L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", { attribution: "Imagery © Esri, Maxar, Earthstar Geographics", maxZoom: 16 }),
     light: L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", { attribution: "© OpenStreetMap contributors © CARTO", subdomains: "abcd", maxZoom: 16 })
   };
-  var islands = L.geoJSON(D.islands, { style: { color: "#6b7d70", weight: 1, fillColor: "#f4f2ec", fillOpacity: 0.7 }, interactive: false }).addTo(map);
-  bases[state.base].addTo(map);
+  var islands = L.geoJSON(D.islands, { style: { color: "#3d3d3d", weight: 1, fillColor: "#faf9f4", fillOpacity: 0.85 }, interactive: false }).addTo(map);
+  if (D.grid) L.geoJSON(D.grid, { style: { color: "#c9cec4", weight: 0.5, opacity: 0.9, fill: false }, interactive: false }).addTo(map);
+  bases.none = L.layerGroup();  // "Clean": no tiles, matches the static maps and works offline
+  function applyBase() {
+    Object.keys(bases).forEach(function (k) { map.removeLayer(bases[k]); });
+    bases[state.base].addTo(map);
+    if (bases[state.base].bringToBack) bases[state.base].bringToBack();
+    islands.setStyle({ fillOpacity: state.base === "none" ? 0.85 : 0.12 });
+  }
+  applyBase();
   map.fitBounds(islands.getBounds(), { padding: [10, 10] });
 
   var layer = null, selected = null;
@@ -116,8 +126,10 @@
     layer = L.geoJSON(fc, {
       filter: function (f) { var ok = visibleFeature(f.properties); if (ok) shown++; return ok; },
       style: function (f) {
-        var v = valueFor(f.properties, mode);
-        return { color: "#ffffff", weight: 0.6, opacity: 0.9, fillColor: colorFor(v, mode), fillOpacity: 0.82 };
+        var fill = mode.type === "nested"
+          ? (state.view === "priority" || f.properties.in_priority ? PRIORITY_MAGENTA : RECOVERY_GREEN)
+          : colorFor(valueFor(f.properties, mode), mode);
+        return { color: "#ffffff", weight: 0.5, opacity: 0.8, fillColor: fill, fillOpacity: 0.9 };
       },
       onEachFeature: function (f, lyr) {
         var p = f.properties;
@@ -164,7 +176,10 @@
   function legend(mode) {
     var box = document.getElementById("fp-legend");
     var h = "<div><b>" + esc(mode.label) + "</b></div>";
-    if (mode.type === "linear") {
+    if (mode.type === "nested") {
+      if (state.view === "recovery") h += '<div class="legend-row"><i style="background:' + RECOVERY_GREEN + '"></i>Recovery footprint</div>';
+      h += '<div class="legend-row"><i style="background:' + PRIORITY_MAGENTA + '"></i>Priority footprint' + (state.view === "recovery" ? " (nested inside recovery)" : "") + "</div>";
+    } else if (mode.type === "linear") {
       h += '<div class="legend-ramp" style="background:linear-gradient(90deg,' + mode.ramp.join(",") + ')"></div>' +
         '<div class="legend-ends"><span>' + esc(mode.lo) + "</span><span>" + esc(mode.hi) + "</span></div>";
     } else {
@@ -175,7 +190,7 @@
         h += '<div class="legend-row"><i style="background:' + colorFor(b, mode) + '"></i>' + esc(lab) + "</div>";
       });
     }
-    h += '<div class="legend-row"><i style="background:#f4f2ec;border:1px solid #6b7d70"></i>Outside the footprint</div>';
+    h += '<div class="legend-row"><i style="background:#faf9f4;border:1px solid #9aa196"></i>Outside the footprint (light grid: planning units)</div>';
     box.innerHTML = h;
   }
 
@@ -200,7 +215,7 @@
       b.addEventListener("click", function () {
         state[key] = b.value;
         Array.prototype.forEach.call(seg.querySelectorAll("button"), function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-        if (key === "base") { Object.keys(bases).forEach(function (k) { map.removeLayer(bases[k]); }); bases[state.base].addTo(map); bases[state.base].bringToBack(); writeHash(); }
+        if (key === "base") { applyBase(); writeHash(); }
         else draw();
       });
     });
@@ -215,8 +230,9 @@
   list.innerHTML = GROUPS.map(function (g) {
     return '<li><label style="--gc:' + g.color + '"><input type="checkbox" value="' + g.k + '"' + (state.groups.indexOf(g.k) > -1 ? " checked" : "") + '><span class="swatch"></span>' + esc(g.name) + '<span class="count" data-count-for="' + g.k + '"></span></label></li>';
   }).join("");
-  if (D.meta.withheld_groups && D.meta.withheld_groups.length) {
-    list.insertAdjacentHTML("afterend", '<p class="small muted" style="margin:8px 0 0">' + esc(D.meta.withheld_groups.join(", ")) + " are not shown on this public map to protect sensitive locations.</p>");
+  var withheld = (D.meta.withheld_groups || []).filter(Boolean);
+  if (withheld.length) {
+    list.insertAdjacentHTML("afterend", '<p class="small muted" style="margin:8px 0 0">' + esc(withheld.join(", ")) + " are not shown on this public map to protect sensitive locations.</p>");
   }
   list.addEventListener("change", function () {
     state.groups = Array.prototype.map.call(list.querySelectorAll("input:checked"), function (i) { return i.value; });
@@ -240,7 +256,7 @@
       var p = kv.split("=");
       if (p[0] === "view" && (p[1] === "recovery" || p[1] === "priority")) state.view = p[1];
       if (p[0] === "color" && COLOR_MODES[p[1]]) state.color = p[1];
-      if (p[0] === "base" && /^(topo|imagery|light)$/.test(p[1])) state.base = p[1];
+      if (p[0] === "base" && /^(none|topo|imagery|light)$/.test(p[1])) state.base = p[1];
       if (p[0] === "groups" && p[1] !== undefined) state.groups = p[1].split(",").filter(function (k) { return GROUPS.some(function (g) { return g.k === k; }); });
     });
   }

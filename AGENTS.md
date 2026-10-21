@@ -32,9 +32,9 @@ The site documents the final plan (version 2026-09-29) and adds no new findings.
    `../maui_nui_products/project_context_docs/IMPORTANT/MNLCP_cross_product_discrepancies.md` and
    `content/EDITORIAL_NOTES.md` §1.1 before changing a figure. The text uses plan figures; the
    map uses the 2026-09-25 release-candidate footprints.
-5. **Location sensitivity.** Do not add species names per planning unit, Terrestrial snail
-   locations, the footprint KMZ or ACP screenshots showing species points to the public site
-   without DOFAW approval (`content/EDITORIAL_NOTES.md` §1.2).
+5. **Location sensitivity.** Planning-unit footprints, including Terrestrial snails, are approved
+   for the public site. Do not add species names per planning unit, point locations, or the
+   footprint KMZ without DOFAW approval (`content/EDITORIAL_NOTES.md` §1.2).
 6. **Hawaiian orthography:** use ʻokina U+02BB and kahakō exactly as the plan does.
 7. **Portability:** plain HTML, CSS and vanilla JS. No framework, no CDN dependency, no fetch()
    of local files (data ship as `.js` so the site works from `file://`).

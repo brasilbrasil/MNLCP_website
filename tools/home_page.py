@@ -90,12 +90,12 @@ def build(B, DATA, draft, group_cards_html):
     # Where to act
     where_md = body_of("where to act")
     where_md = re.sub(r"^\[figure:.*$", "", where_md, flags=re.M)
-    fig = "assets/img/figures/plan_fig_02_combined_recovery_footprint.jpg"
+    fig = "assets/img/maps/nested_all_taxa.png"
     where = f"""<section class="section band-soft"><div class="wrap split">
   <div class="reveal"><span class="eyebrow">Where to act</span><h2 class="mt-0">Conservation footprints</h2><div class="prose" data-glossary>{md(strip_links(where_md), draft)}</div>
   <a class="btn btn-solid" href="footprints.html">Open the interactive map {B['ICON']['arrow']}</a></div>
-  <figure class="zoomable reveal" style="margin:0"><img src="{fig}" alt="Map of Maui, Molokaʻi, Lānaʻi and Kahoʻolawe showing the combined recovery footprint in green and the priority footprint in yellow" loading="lazy">
-  <figcaption>Combined recovery footprint for all taxonomic groups (green) and priority areas (yellow). Plan Executive Summary, Figure 1.</figcaption></figure>
+  <figure class="zoomable reveal" style="margin:0"><img src="{fig}" alt="Map of Maui, Molokaʻi, Lānaʻi and Kahoʻolawe showing the combined recovery footprint in green with the priority footprint in magenta inside it" loading="lazy">
+  <figcaption>Combined recovery footprint for all taxonomic groups (green) with the priority footprint (magenta) nested inside it. Release-candidate footprints of September 25, 2026; unit counts can differ from the plan text.</figcaption></figure>
 </div></section>"""
 
     # What to do
@@ -131,6 +131,7 @@ def build(B, DATA, draft, group_cards_html):
     islands = "".join(f"<span>{i}</span>" for i in ["Maui", "Molokaʻi", "Lānaʻi", "Kahoʻolawe"])
     hero = f"""<section class="hero">
   <div class="hero-media"><img src="{hero_img}" alt="Misty native ʻōhiʻa forest on Maui" fetchpriority="high"></div>
+  <span class="hero-credit">{B["credit_html"](hero_img, draft)}</span>
   <div class="wrap">
     <span class="hero-kicker">Hawaiʻi Division of Forestry and Wildlife</span>
     <h1>{esc(meta.get('hero_title', 'Maui Nui Landscape Conservation Plan'))}</h1>

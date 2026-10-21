@@ -116,7 +116,13 @@ Terrestrial arthropods followed the plan's algorithmic pathway. The recovery foo
 
 The plan does not state the number of planning units in the arthropod recovery or priority footprints. <!-- src: plan Ch 6 f and App 1 (no figure given); see notes/groups2.md -->
 
+[figure: Map of Maui Nui showing the Terrestrial arthropod recovery footprint in green with the priority footprint in magenta inside it | src: assets/img/maps/nested_terrestrial_arthropods.png | alt: Map of Maui Nui showing the Terrestrial arthropod recovery footprint in green with the priority footprint in magenta inside it | caption: Terrestrial arthropod recovery footprint (green) with the priority footprint (magenta) nested inside it. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+[figure: Map of the Terrestrial arthropod recovery footprint shaded by the number of at-risk species each planning unit supports | src: assets/img/maps/recovery_terrestrial_arthropods_species_richness.png | alt: Map of the Terrestrial arthropod recovery footprint shaded by the number of at-risk species each planning unit supports | caption: Terrestrial arthropod recovery footprint shaded by the number of at-risk species each planning unit supports. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 12)
 [figure: Recovery footprint for terrestrial arthropods (green) with priority implementation areas (red), and a second panel showing areas selected for initial implementation | suggested source: plan PDF p.66 Figure 12 (a) and (b) | alt: Map of Maui Nui showing the terrestrial arthropod recovery footprint in green with priority areas in red]
+:::
 
 :::details How the arthropod footprint was prioritized (practitioner detail)
 - **Two tiers of evidence.** Many species lack modern occurrence records, so two tiers of distribution information were used. *Occurrence-driven* taxa have modern records good enough for place-based expert review. *Host-plant and climate-envelope* taxa rely on where their host plants occur or where conditions are broadly suitable. <!-- src: plan App 1 p.A1-8, lines 5236-5241 -->

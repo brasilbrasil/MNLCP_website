@@ -74,23 +74,67 @@ GROUPS = [
 
 # Page registry: out file -> settings. "md" is relative to content/pages.
 PAGES = {
-    "plan.html": {"md": "plan.md", "section": "The Plan", "hero": "assets/img/photos/hero_page_plan.jpg"},
-    "approach.html": {"md": "approach.md", "section": "The Plan", "hero": "assets/img/photos/hero_page_approach.jpg"},
-    "partners.html": {"md": "partners.md", "section": "The Plan", "hero": "assets/img/photos/hero_page_partners.jpg"},
-    "species.html": {"md": "species.md", "section": "Species", "hero": "assets/img/photos/hero_page_species.jpg"},
-    "using-the-plan.html": {"md": "using-the-plan.md", "section": "Putting It to Work", "hero": "assets/img/photos/hero_page_using.jpg"},
-    "actions.html": {"md": "actions.md", "section": "Where & What", "hero": "assets/img/photos/hero_page_actions.jpg"},
-    "ecosystems.html": {"md": "ecosystems.md", "section": "Where & What", "hero": "assets/img/photos/hero_page_ecosystems.jpg"},
-    "monitoring.html": {"md": "monitoring.md", "section": "Putting It to Work", "hero": "assets/img/photos/hero_page_monitoring.jpg"},
-    "tools.html": {"md": "tools.md", "section": "Putting It to Work", "hero": "assets/img/photos/hero_page_tools.jpg"},
+    "plan.html": {"md": "plan.md", "section": "The Plan", "hero": "assets/img/photos/landscape_nakula_leeward_haleakala.jpg"},
+    "approach.html": {"md": "approach.md", "section": "The Plan", "hero": "assets/img/photos/landscape_upland_grassland_above_clouds.jpg"},
+    "partners.html": {"md": "partners.md", "section": "The Plan", "hero": "assets/img/photos/work_volunteers_carrying_seedlings_nakula.jpg"},
+    "species.html": {"md": "species.md", "section": "Species", "hero": "assets/img/photos/collage_maui_nui_taxa.jpg"},
+    "using-the-plan.html": {"md": "using-the-plan.md", "section": "Putting It to Work", "hero": "assets/img/photos/work_helicopter_sling_load_nakula.jpg"},
+    "actions.html": {"md": "actions.md", "section": "Where & What", "hero": "assets/img/photos/work_outplanting_crew_panorama_nakula.jpg"},
+    "ecosystems.html": {"md": "ecosystems.md", "section": "Where & What", "hero": "assets/img/photos/landscape_koa_forest_in_mist.jpg"},
+    "monitoring.html": {"md": "monitoring.md", "section": "Putting It to Work", "hero": "assets/img/photos/landscape_nakula_ridge_above_clouds.jpg"},
+    "tools.html": {"md": "tools.md", "section": "Putting It to Work", "hero": None},
     "resources.html": {"md": "resources.md", "section": None, "hero": None},
+}
+GROUP_HEROES = {
+    "forest-birds": "photos/bird_akohekohe_in_foliage.jpg",
+    "seabirds": "figures/plate_uau_hawaiian_petrel_frohawk.jpg",
+    "waterbirds": "photos/bird_aeo_hawaiian_stilt_head.jpg",
+    "plants": "photos/plant_cyanea_hamatiflora_east_maui.jpg",
+    "terrestrial-snails": "photos/snail_tree_snail_in_forest_canopy.jpg",
+    "aquatic-invertebrates": "photos/landscape_wet_forest_ridge_hanaula.jpg",
+    "hawaiian-hoary-bat": "photos/landscape_ohia_in_fog.jpg",
 }
 for slug, name in GROUPS:
     PAGES[f"groups/{slug}.html"] = {
         "md": f"groups/{slug}.md", "section": "Species", "group": slug,
-        "hero": f"assets/img/photos/hero_group_{slug}.jpg",
+        "hero": f"assets/img/{GROUP_HEROES[slug]}" if slug in GROUP_HEROES else None,
         "parent": ("groups.html", "Taxonomic Groups"),
     }
+
+
+# ---------------------------------------------------------------- image credits
+CC_BY_30_US = "https://creativecommons.org/licenses/by/3.0/us/"
+CC_BY_30 = "https://creativecommons.org/licenses/by/3.0/"
+_CATALOG = None
+
+
+def catalog():
+    global _CATALOG
+    if _CATALOG is None:
+        try:
+            data = json.loads((CONTENT / "data" / "asset_catalog.json").read_text(encoding="utf-8"))
+            _CATALOG = {a["path"]: a for a in data.get("assets", [])}
+        except (OSError, json.JSONDecodeError):
+            _CATALOG = {}
+    return _CATALOG
+
+
+def credit_html(path, draft=True):
+    """Short public credit for an image, with a licence link for openly licensed photos."""
+    a = catalog().get(path)
+    raw = (a or {}).get("credit")
+    if not raw:
+        return "Photo credit to be confirmed" if draft else ""
+    if "Starr" in raw and "CC BY" in raw:
+        url = CC_BY_30_US if "3.0 us" in raw.lower() else CC_BY_30
+        return f'Photo: Forest and Kim Starr, <a href="{url}">CC BY 3.0</a>'
+    if "Frohawk" in raw:
+        return "Plate: F. W. Frohawk, <i>Aves Hawaiienses</i> (1890–1899), public domain"
+    if "Keulemans" in raw:
+        return "Plate: J. G. Keulemans, <i>Aves Hawaiienses</i> (1890–1899), public domain"
+    short = raw.split(" (")[0].split(";")[0].strip()
+    short = re.sub(r"^(Photo:\s*)", "", short)
+    return "Photo: " + esc(short)
 
 
 # ---------------------------------------------------------------- helpers
@@ -156,8 +200,8 @@ def strip_src(text):
 FIG_RE = re.compile(r"^\[figure:\s*(.+?)\]\s*(?:<!--.*?-->)?\s*$", re.M)
 
 
-# ACP screenshots cleared for the public site (current app name; no internal layers, species points or snail locations).
-SCREENSHOTS_OK = set()  # none until clean screenshots are recaptured from the current ACP
+# ACP screenshots approved for the site (2026-10-21); the build uses copies cropped below the retired title bar.
+SCREENSHOTS_OK = {"app-layout", "home", "select-footprints", "map-layers", "species-layers", "unit-targets", "manage-aux-layers", "layer-style-modal"}
 EXEC_SUMMARY_FIGS = {"1": "02", "2": "03"}  # Executive Summary figures reuse Ch 5/6 images
 
 
@@ -431,7 +475,9 @@ def page_hero(title, lede, kicker=None, hero=None, crumbs=None):
     media = ""
     cls = "page-hero"
     if hero and (SITE / hero).exists():
-        media = f'<div class="page-hero-media"><img src="{esc(hero)}" alt=""></div>'
+        cred = credit_html(hero)
+        media = (f'<div class="page-hero-media"><img src="{esc(hero)}" alt=""></div>'
+                 + (f'<span class="hero-credit">{cred}</span>' if cred else ""))
         cls += " has-image"
     crumb = ""
     if crumbs:
@@ -528,6 +574,24 @@ def compile_data():
     return data
 
 
+def write_photo_credits(draft):
+    """Replace the credits marker on resources.html with every photo or plate used on the site."""
+    target = SITE / "resources.html"
+    if not target.exists():
+        return
+    used = set()
+    for f in list(SITE.glob("*.html")) + list(SITE.glob("groups/*.html")):
+        for m in re.finditer(r'(?:src|data-full)="(?:\.\./)?(assets/img/(?:photos|figures/plate)[^"]+)"', f.read_text(encoding="utf-8")):
+            used.add(m.group(1))
+    rows = []
+    for path in sorted(used):
+        a = catalog().get(path, {})
+        rows.append(f'<li><a href="{esc(path)}">{esc(a.get("alt") or Path(path).name)}</a>: {credit_html(path, draft)}</li>')
+    html_out = target.read_text(encoding="utf-8")
+    block = ('<ul class="small">' + "".join(rows) + "</ul>") if rows else ""
+    target.write_text(html_out.replace('<div data-widget="photo-credits"></div>', block), encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--release", action="store_true", help="public build: no draft banner or review aids")
@@ -552,6 +616,8 @@ def main():
     for out, html_out in special.build_special():
         (SITE / out).write_text(html_out, encoding="utf-8")
         built.append(out)
+
+    write_photo_credits(draft)
 
     search_js = ("/* Generated by tools/build.py. */\nwindow.MNLCP_DATA = window.MNLCP_DATA || {};\n"
                  f"window.MNLCP_DATA.search = {json.dumps(SEARCH, ensure_ascii=False)};\n")

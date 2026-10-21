@@ -101,7 +101,11 @@ Forest birds followed the plan's expert-led pathway. Instead of using a computer
 
 In the plan's map, the priority area and the initial implementation area are the same. The plan describes it as the habitat needing management action, specifically mosquito control downslope from current populations. <!-- src: plan p.35, Figure 6 caption --> The plan says mosquito control should be focused in and around this priority footprint, which it describes as the same area identified for preventing the extinction of kiwikiu and ʻākohekohe. <!-- src: plan p.36 -->
 
+[figure: Map of Maui Nui showing the forest bird recovery footprint in green with the priority footprint in magenta inside it | src: assets/img/maps/nested_forest_birds.png | alt: Map of Maui Nui showing the forest bird recovery footprint in green with the priority footprint in magenta inside it | caption: Forest bird recovery footprint (green) with the priority footprint (magenta) nested inside it. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 6)
 [figure: Forest bird recovery footprint across East Maui, West Maui and Molokaʻi, with the priority footprint highlighted | suggested source: plan PDF p.44 (printed p.35), Figure 6 | alt: Map of Maui and Molokaʻi with the forest bird recovery footprint in green and the priority area in red on East Maui]
+:::
 
 :::details How the forest bird footprint was delineated
 - **Pathway.** Forest birds, Seabirds, Waterbirds and Aquatic invertebrates followed the expert-led pathway. Specialists delineated priority areas directly through repeated collaborative review rather than algorithmic footprint generation. The plan uses this pathway for groups with few focal species and strong existing expert knowledge. <!-- src: plan App 1 p.A1-5 -->

@@ -71,7 +71,13 @@ The footprint covers the interim recovery habitat needs of 5 species and the ful
 
 The plan's map also shows priority implementation areas (yellow) and initial implementation areas (red) within the footprint. <!-- src: plan p.73, Figure 15 caption, lines 2962-2964 --> The plan does not state how many planning units are in the aquatic recovery footprint or its priority areas. <!-- src: plan Ch 6 g (no figure given); see notes/groups2.md -->
 
+[figure: Map of the Aquatic invertebrate recovery footprint in green across Maui Nui streams, wetlands and anchialine pools | src: assets/img/maps/nested_aquatic_inverts.png | alt: Map of the Aquatic invertebrate recovery footprint in green across Maui Nui streams, wetlands and anchialine pools | caption: Aquatic invertebrate recovery footprint (green). The release-candidate set has no separate priority layer for this group. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+[figure: Map of the Aquatic invertebrate recovery footprint shaded by the number of at-risk species each planning unit supports | src: assets/img/maps/recovery_aquatic_inverts_species_richness.png | alt: Map of the Aquatic invertebrate recovery footprint shaded by the number of at-risk species each planning unit supports | caption: Aquatic invertebrate recovery footprint shaded by the number of at-risk species each planning unit supports. Release-candidate footprints of September 25, 2026, as loaded in the Adaptive Conservation Planner; unit counts can differ from the plan text.]
+
+:::details Map as printed in the plan (Figure 15)
 [figure: Recovery footprint for 10 at-risk aquatic invertebrates (green), with priority implementation areas in yellow and initial implementation areas in red; panel (a) without and panel (b) with associated streams | suggested source: plan PDF pp.72-73 Figure 15 (a) and (b) | alt: Map of Maui Nui showing the aquatic invertebrate recovery footprint with streams overlaid]
+:::
 
 ### Restoring habitat
 Restoring and managing habitat for all 11 species means managing the recovery footprint to: <!-- src: plan p.70, lines 2856-2864 -->
