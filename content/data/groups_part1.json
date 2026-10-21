@@ -1,0 +1,137 @@
+{
+  "_source": "MNLCP 9-30-2026 FINAL (DOFAW, version 2026-09-29): Ch 4 Table 1 (p.19, lines 980-1000); Ch 5b Table 2 (pp.20-21); Ch 5e Table 4 (p.27); Ch 6a Forest Birds (pp.31-36, lines 1395-1628); Ch 6b Seabirds (pp.37-40, lines 1629-1789); Ch 6c Waterbirds (pp.41-46, lines 1790-2019); Ch 6d Terrestrial Plants (pp.47-56, lines 2020-2393); Ch 6j Tables 26-27 (pp.84-87); App 1 (pp.A1-5 to A1-6, lines 5100-5185); App 2 Tables 1-2 (pp.A2-15, A2-28 to A2-37); App 3-4. Footprint PU counts for the three bird groups are not stated in the plan and are null; plant priority footprint uses the plan body figure (155 PUs) although App 1 gives 181 (see content/notes/groups1.md).",
+  "groups": [
+    {
+      "slug": "forest-birds",
+      "name": "Forest birds",
+      "hawaiian_name": null,
+      "at_risk": 4,
+      "listed": 3,
+      "imminent_extinction": 2,
+      "recovery_footprint_pus": null,
+      "priority_footprint_pus": null,
+      "prioritization_pathway": "expert-led",
+      "primary_threats": [
+        "Introduced avian malaria transmitted by introduced Culex mosquitoes",
+        "Warming climate that lets mosquitoes and disease spread upslope",
+        "Invasive vertebrate predators (rats, cats and others)",
+        "Habitat degradation"
+      ],
+      "top_actions": [
+        "S15 Future tools to address avian malaria",
+        "S14 Avian disease prevention (captive bird facilities, Wolbachia releases, broadcast BTI)",
+        "S7 Invasive vertebrate predator control",
+        "S11 Landscape-scale rat suppression",
+        "S5 Terrestrial habitat management for at-risk species",
+        "Emergency: reduce mosquitoes and disease in three areas in and next to occupied East Maui habitat",
+        "Emergency: establish a second ʻākohekohe population by translocation to suitable habitat not on Maui"
+      ],
+      "one_line_summary": "Four at-risk forest birds survive only on East Maui, two facing imminent extinction; controlling mosquito-borne avian malaria is the top priority, followed by returning birds to West Maui and Molokaʻi.",
+      "species_highlights": [
+        {"name": "Maui parrotbill", "hawaiian_name": "Kiwikiu", "scientific_name": "Pseudonestor xanthophrys", "note": "Endangered; fewer than 150 left in about 30 km² of East Maui rainforest; faces imminent extinction. Recovery target 2,500 birds across East Maui, West Maui and Molokaʻi."},
+        {"name": "Crested honeycreeper", "hawaiian_name": "ʻĀkohekohe", "scientific_name": "Palmeria dolei", "note": "Endangered; 1,200-2,000 birds on Haleakalā, none in captivity; faces imminent extinction. Recovery target 7,500 birds."},
+        {"name": "ʻIʻiwi", "hawaiian_name": "ʻIʻiwi", "scientific_name": "Drepanis coccinea", "note": "Federally threatened; about 50,000 in Maui Nui, all on East Maui."},
+        {"name": "Maui creeper", "hawaiian_name": "Maui ʻalauahio", "scientific_name": "Paroreomyza montana", "note": "Not listed but declining; about 99,000, all on East Maui."}
+      ]
+    },
+    {
+      "slug": "seabirds",
+      "name": "Seabirds",
+      "hawaiian_name": null,
+      "at_risk": 3,
+      "listed": 3,
+      "imminent_extinction": 0,
+      "recovery_footprint_pus": null,
+      "priority_footprint_pus": null,
+      "prioritization_pathway": "expert-led",
+      "primary_threats": [
+        "Introduced mammalian predators, especially rats, mongoose and cats",
+        "Habitat loss",
+        "Artificial lights at night, power lines, wind turbines and roadways"
+      ],
+      "top_actions": [
+        "S10 New predator-proof fencing",
+        "S7 Invasive vertebrate predator control",
+        "S17 Vertebrate health and rehabilitation",
+        "S11 Landscape-scale rat suppression",
+        "S16 Minimization and modification of infrastructure"
+      ],
+      "one_line_summary": "Three listed seabirds nest across all four Maui Nui islands; none faces imminent extinction, and predator-proof fencing, predator control and safer infrastructure can bring them above 50 percent persistence with existing tools.",
+      "species_highlights": [
+        {"name": "Hawaiian petrel", "hawaiian_name": "ʻUaʻu", "scientific_name": "Pterodroma sandwichensis", "note": "Endangered; endemic; about 6,100-6,750 breeding pairs, mostly East Maui and Lānaʻi. Target 18,000 pairs."},
+        {"name": "Newell's shearwater", "hawaiian_name": "ʻAʻo", "scientific_name": "Puffinus newelli", "note": "Threatened; endemic; 102-300 breeding pairs on steep wet-to-mesic forest slopes. Target 3,600 pairs."},
+        {"name": "Band-rumped storm petrel", "hawaiian_name": "ʻAkēʻakē", "scientific_name": "Oceanodroma castro", "note": "Hawaiʻi distinct population segment endangered; indigenous; 151-350 breeding pairs, known breeding sites extremely rare. Target 1,800 pairs."}
+      ]
+    },
+    {
+      "slug": "waterbirds",
+      "name": "Waterbirds",
+      "hawaiian_name": null,
+      "at_risk": 5,
+      "listed": 5,
+      "imminent_extinction": 0,
+      "recovery_footprint_pus": null,
+      "priority_footprint_pus": null,
+      "prioritization_pathway": "expert-led",
+      "primary_threats": [
+        "Habitat loss from human modification of wetlands",
+        "Introduced mammalian predators (mongoose, cats, rats, domestic dogs)",
+        "Hybridization of kōloa maoli with feral mallards",
+        "Localized botulism poisoning"
+      ],
+      "top_actions": [
+        "S10 New predator-proof fencing",
+        "S7 Invasive vertebrate predator control",
+        "S6 Wetland habitat management",
+        "S17 Vertebrate health and rehabilitation",
+        "S14 Avian disease prevention",
+        "S16 Minimization and modification of infrastructure",
+        "Reintroduce ʻalae ʻula on Molokaʻi; control kōloa-mallard hybridization, then reintroduce kōloa maoli"
+      ],
+      "one_line_summary": "All five native waterbirds are listed and two are gone from Maui Nui; the plan builds on past success with wetland protection, predator fencing and control, and later reintroductions.",
+      "species_highlights": [
+        {"name": "Hawaiian coot", "hawaiian_name": "ʻAlae keʻokeʻo", "scientific_name": "Fulica alai", "note": "Endangered; 364 birds in Maui Nui. Target 750."},
+        {"name": "Hawaiian stilt", "hawaiian_name": "ʻAeʻo", "scientific_name": "Himantopus mexicanus knudseni", "note": "Endangered; 684 birds. Target 750."},
+        {"name": "Hawaiian goose", "hawaiian_name": "Nēnē", "scientific_name": "Branta sandvicensis", "note": "Federally threatened, State endangered; 610 birds on Maui and Molokaʻi. Target 1,000, including 200 on Molokaʻi."},
+        {"name": "Hawaiian moorhen", "hawaiian_name": "ʻAlae ʻula", "scientific_name": "Gallinula galeata sandvicensis", "note": "Endangered; no longer in Maui Nui. To be reintroduced on Molokaʻi (target 250)."},
+        {"name": "Hawaiian duck", "hawaiian_name": "Kōloa maoli", "scientific_name": "Anas wyvilliana", "note": "Endangered; kōloa-like ducks in Maui Nui appear to be hybrids with feral mallards. Reintroduction (target 250) awaits hybridization control."}
+      ]
+    },
+    {
+      "slug": "plants",
+      "name": "Plants",
+      "hawaiian_name": null,
+      "at_risk": 197,
+      "listed": 175,
+      "imminent_extinction": 102,
+      "recovery_footprint_pus": 317,
+      "priority_footprint_pus": 155,
+      "prioritization_pathway": "algorithmic",
+      "primary_threats": [
+        "Habitat loss",
+        "Invasive species (weeds, ungulates, rats)",
+        "Invertebrate pests: slugs (101 species), black twig borer (21), ants (7), coconut rhinoceros beetle, naio thrips",
+        "Landslides and erosion, drought, flooding",
+        "Loss of pollinators (44 species)",
+        "Wildfire and climate change"
+      ],
+      "top_actions": [
+        "Emergency PEPP actions for 102 species: survey, monitor, collect seeds and propagules, control local threats, propagate and outplant",
+        "S13 Future tools for rare plants and invertebrates",
+        "S3 Future ungulate fencing",
+        "S5 Terrestrial habitat management for at-risk species",
+        "S7 Invasive vertebrate predator control",
+        "S8 Invasive invertebrate predator control",
+        "S11 Landscape-scale rat suppression"
+      ],
+      "one_line_summary": "The largest group, with 197 at-risk plants and 102 facing imminent extinction; emergency PEPP work, a 317-planning-unit recovery footprint prioritized with OptimTFE and refined by experts, and new tools against pests that cannot be controlled today.",
+      "species_highlights": [
+        {"name": "Pua ʻala", "hawaiian_name": "Pua ʻala", "scientific_name": "Brighamia rockii", "note": "Endangered PEPP species; 7 known occupied planning units."},
+        {"name": "Kokiʻo", "hawaiian_name": "Kokiʻo", "scientific_name": "Kokia cookei", "note": "Endangered PEPP species with no known occupied planning units; 3 recovery planning units in the footprint."},
+        {"name": "ʻOha wai", "hawaiian_name": "ʻOha wai", "scientific_name": "Clermontia oblongifolia subsp. mauiensis", "note": "Endangered PEPP species; 28 known occupied planning units."},
+        {"name": "Haha", "hawaiian_name": "Haha", "scientific_name": "Cyanea mceldowneyi", "note": "Endangered; few-populations (POP) tier; 14 known occupied planning units."},
+        {"name": "ʻAhinahina", "hawaiian_name": "ʻAhinahina", "scientific_name": "Argyroxiphium sandwicense subsp. macrocephalum", "note": "Threatened; 27 known occupied planning units."}
+      ]
+    }
+  ]
+}

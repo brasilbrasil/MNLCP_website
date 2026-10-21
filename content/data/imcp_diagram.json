@@ -1,0 +1,238 @@
+{
+  "_source": "MNLCP plan (DOFAW, version 2026-09-29): Executive Summary p.v (lines 149-157); Ch 2b p.7-8 (lines 561-603); Ch 2d-e p.8-10 (lines 614-673) and Figure 1 p.10; Ch 3 c-g p.12-15 (lines 730-851); Ch 5e-f p.29-30 (lines 1332-1380); App 1 p.A1-1 to A1-8 (lines 4923-5277); Terms and Definitions p.120-123. Text version on content/pages/approach.md ('The components at a glance'); keep in sync.",
+  "nodes": [
+    {
+      "id": "imcp",
+      "label": "Integrated Multi-Scale Conservation Planning (IMCP)",
+      "question": "How do all the parts fit into one plan?",
+      "lead": "DOFAW",
+      "description": "The overarching planning approach. It links species recovery planning, spatial prioritization, threat-based action prioritization, ecosystem restoration planning, and adaptive implementation into one decision-support system across biological, spatial, and time scales. State-led, practitioner-driven, and expert-engaged.",
+      "outputs": [
+        "The Maui Nui Landscape Conservation Plan",
+        "One decision-support system linking where, what, and when"
+      ],
+      "page": "approach.html#integrated-multi-scale-conservation-planning"
+    },
+    {
+      "id": "core_team",
+      "label": "Core Team",
+      "question": "How is the planning effort steered and coordinated?",
+      "lead": "DOFAW",
+      "description": "Land managers, key leaders from the other teams, and a facilitator. Provides recommendations and organizational support to DOFAW and coordinates the other MNLCP teams.",
+      "outputs": [
+        "Recommendations to DOFAW",
+        "Scheduling and coordination of teams"
+      ],
+      "page": "partners.html#core-team-dofaw-led"
+    },
+    {
+      "id": "taxon_teams",
+      "label": "Taxonomic Teams",
+      "question": "Who needs help?",
+      "lead": "DOFAW (coordinates seven taxon expert teams)",
+      "description": "Species specialists who are the backbone of the plan. Experts participated in collaborative review sessions on which species are at risk, where they occur, their habitat needs, and which actions are most important and feasible. Seven teams cover seven groups; the Hawaiian hoary bat is an eighth group without its own team.",
+      "outputs": [
+        "At-risk species list (442 species)",
+        "Recovery targets",
+        "Known population locations",
+        "Habitat selections for each species",
+        "Most important conservation actions",
+        "Species facing imminent extinction (163)",
+        "Implementation sequence for each group"
+      ],
+      "page": "partners.html#taxonomic-teams-dofaw-led"
+    },
+    {
+      "id": "spatial",
+      "label": "Spatial prioritization (TFE-SCP)",
+      "question": "Where to manage?",
+      "lead": "Spatial Prioritization Team, led by USGS",
+      "description": "Uses the Transparent, Flexible, Expert-engaged Systematic Conservation Planning (TFE-SCP) process, a comprehensive planning process with distinct stages and custom-built tools. Two pathways: algorithmic (Plants, Terrestrial arthropods, Terrestrial snails) and expert-led (Forest birds, Seabirds, Waterbirds, Aquatic invertebrates).",
+      "outputs": [
+        "Recovery footprints",
+        "Priority footprints",
+        "Species, habitat, and threat information for each planning unit"
+      ],
+      "page": "approach.html#spatial-prioritization-where-to-manage"
+    },
+    {
+      "id": "optimtfe",
+      "label": "OptimTFE",
+      "question": "Which sets of planning units meet every species' targets?",
+      "lead": "Spatial Prioritization Team, led by USGS",
+      "description": "The site-selection prioritization tool used within TFE-SCP for the algorithmic pathway. It builds many candidate footprints that each meet all species-specific targets, for experts and managers to compare across criteria.",
+      "outputs": [
+        "Candidate conservation footprints for Plants, Terrestrial arthropods, and Terrestrial snails"
+      ],
+      "page": "approach.html#two-process-pathways"
+    },
+    {
+      "id": "action",
+      "label": "Action prioritization (Priority Threat Management)",
+      "question": "What to do?",
+      "lead": "Action Prioritization Team, led by UH Mānoa",
+      "description": "A modified Priority Threat Management process. In collaborative workshops convened by DOFAW and UH Mānoa, about 100 land managers and scientists weighed the expected benefit, feasibility, and cost of conservation strategies.",
+      "outputs": [
+        "27 strategies compared (17 single-focus, 10 combinations)",
+        "Persistence estimates for 17 species groups",
+        "Cost estimates",
+        "Best-performing combination: S25 with S27"
+      ],
+      "page": "approach.html#action-prioritization-what-to-do"
+    },
+    {
+      "id": "ecosystem",
+      "label": "Ecosystem prioritization",
+      "question": "Where can protecting and restoring native ecosystems benefit all species?",
+      "lead": "Led by UH Hilo",
+      "description": "Identifies remaining good-quality native ecosystems and unique community types, strategies to reach ecosystem goals, and opportunities based on habitat quality, the conservation status of lands, and importance to at-risk species.",
+      "outputs": [
+        "Maps of ten ecosystems and special features",
+        "Habitat quality and management landscape",
+        "Four ecosystem priorities"
+      ],
+      "page": "ecosystems.html"
+    },
+    {
+      "id": "implementation",
+      "label": "Implementation",
+      "question": "When to do it?",
+      "lead": "Implementation Team, led by DOFAW",
+      "description": "DOFAW land managers, planners, decision-makers, and partner organizations turn the results into a cohesive plan for action: emergency actions first, then a sequence of recovery actions over the 20-year implementation period.",
+      "outputs": [
+        "Emergency actions for species facing imminent extinction",
+        "Sequenced recovery actions",
+        "Managers' Handbook"
+      ],
+      "page": "approach.html#implementation-when-to-do-it"
+    },
+    {
+      "id": "acp",
+      "label": "Adaptive Conservation Planner",
+      "question": "What should this year's work plan be, and how do priorities change?",
+      "lead": "Not stated in the plan; the spatial prioritization effort delivers its final products through it (Ch 3c)",
+      "description": "A spatial, adaptive tool that holds the plan's final spatial products. Managers use it to view and update footprints, build annual work plans, and explore management scenarios.",
+      "outputs": [
+        "Viewable, updatable footprints",
+        "Annual work plans",
+        "Management scenarios"
+      ],
+      "page": "tools.html"
+    },
+    {
+      "id": "monitoring",
+      "label": "Monitoring and adaptive management",
+      "question": "Is it working?",
+      "lead": "Not stated in the plan (see Ch 8)",
+      "description": "The feedback mechanism that lets the plan evolve over time, with metrics for species recovery, threat reduction, and ecosystem condition.",
+      "outputs": [
+        "Progress metrics",
+        "Updates to priorities and work plans"
+      ],
+      "page": "monitoring.html"
+    },
+    {
+      "id": "communications",
+      "label": "Communications Team",
+      "question": "How do the public and partners learn about the plan?",
+      "lead": "Not stated in the plan",
+      "description": "Develops and carries out strategies to inform the public and others about the MNLCP and its accomplishments.",
+      "outputs": [
+        "Public communication about the MNLCP"
+      ],
+      "page": "partners.html#communications-team"
+    }
+  ],
+  "edges": [
+    {
+      "from": "imcp",
+      "to": "spatial",
+      "label": "includes"
+    },
+    {
+      "from": "imcp",
+      "to": "action",
+      "label": "includes"
+    },
+    {
+      "from": "imcp",
+      "to": "ecosystem",
+      "label": "includes"
+    },
+    {
+      "from": "imcp",
+      "to": "implementation",
+      "label": "includes"
+    },
+    {
+      "from": "core_team",
+      "to": "imcp",
+      "label": "steers and coordinates teams"
+    },
+    {
+      "from": "taxon_teams",
+      "to": "spatial",
+      "label": "species, targets, locations, habitat review"
+    },
+    {
+      "from": "taxon_teams",
+      "to": "action",
+      "label": "at-risk species; most important actions"
+    },
+    {
+      "from": "taxon_teams",
+      "to": "implementation",
+      "label": "imminent-extinction species; action sequence"
+    },
+    {
+      "from": "optimtfe",
+      "to": "spatial",
+      "label": "candidate footprints (algorithmic pathway)"
+    },
+    {
+      "from": "spatial",
+      "to": "acp",
+      "label": "recovery and priority footprints"
+    },
+    {
+      "from": "spatial",
+      "to": "implementation",
+      "label": "where to manage"
+    },
+    {
+      "from": "action",
+      "to": "implementation",
+      "label": "what to do"
+    },
+    {
+      "from": "ecosystem",
+      "to": "spatial",
+      "label": "complements species-level recovery"
+    },
+    {
+      "from": "ecosystem",
+      "to": "implementation",
+      "label": "ecosystem priorities"
+    },
+    {
+      "from": "acp",
+      "to": "implementation",
+      "label": "annual work plans"
+    },
+    {
+      "from": "implementation",
+      "to": "monitoring",
+      "label": "actions tracked"
+    },
+    {
+      "from": "monitoring",
+      "to": "acp",
+      "label": "updates priorities"
+    },
+    {
+      "from": "communications",
+      "to": "imcp",
+      "label": "shares the plan"
+    }
+  ]
+}

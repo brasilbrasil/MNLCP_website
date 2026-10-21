@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" class="no-js" data-root="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conservation Footprints | MNLCP</title>
+<meta name="description" content="Conservation footprints show where on Maui Nui&#x27;s landscape conservation work can recover at-risk species. Explore the recovery and priority footprints for each species group, and for all groups combined, on an interactive map.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Conservation Footprints | MNLCP">
+<meta property="og:description" content="Conservation footprints show where on Maui Nui&#x27;s landscape conservation work can recover at-risk species. Explore the recovery and priority footprints for each species group, and for all groups combined, on an interactive map.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1a4126">
+<link rel="icon" href="assets/img/brand/dofaw_seal_nene.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+</head>
+<body class="">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="draft-bar">DRAFT for partner review. Content is distilled from the MNLCP (Version September 29, 2026) and is not yet approved for public release.</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Maui Nui Landscape Conservation Plan home">
+      <img src="assets/img/brand/dofaw_seal_nene.png" alt="" width="44" height="44">
+      <span class="brand-text"><span class="brand-title">Maui Nui Landscape Conservation Plan</span><span class="brand-sub">Division of Forestry and Wildlife</span></span>
+    </a>
+    <nav class="nav" aria-label="Main"><ul><li class=""><button class="nav-top" aria-expanded="false">The Plan <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m2 3.5 3 3 3-3"/></svg></button><ul class="dropdown"><li><a href="plan.html">About the Plan<span class="dd-desc">Purpose, need and the three goals</span></a></li><li><a href="approach.html">The Approach<span class="dd-desc">How where, what and when fit together</span></a></li><li><a href="partners.html">Partners &amp; Teams<span class="dd-desc">The people and organizations behind the plan</span></a></li></ul></li><li class=""><button class="nav-top" aria-expanded="false">Species <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m2 3.5 3 3 3-3"/></svg></button><ul class="dropdown"><li><a href="species.html">At-Risk Species<span class="dd-desc">442 species and how they were identified</span></a></li><li><a href="groups.html">Taxonomic Groups<span class="dd-desc">Recovery strategies for eight groups</span></a></li></ul></li><li class="has-current"><button class="nav-top" aria-expanded="false">Where &amp; What <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m2 3.5 3 3 3-3"/></svg></button><ul class="dropdown"><li><a href="footprints.html" aria-current="page">Conservation Footprints<span class="dd-desc">Interactive map of where to act</span></a></li><li><a href="actions.html">Priority Actions<span class="dd-desc">What to do, and what it costs</span></a></li><li><a href="ecosystems.html">Native Ecosystems<span class="dd-desc">Landscape-scale ecosystem priorities</span></a></li></ul></li><li class=""><button class="nav-top" aria-expanded="false">Putting It to Work <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m2 3.5 3 3 3-3"/></svg></button><ul class="dropdown"><li><a href="using-the-plan.html">Using the Plan<span class="dd-desc">A practical guide for managers and partners</span></a></li><li><a href="tools.html">Adaptive Conservation Planner<span class="dd-desc">The living-plan tool and other resources</span></a></li><li><a href="monitoring.html">Monitoring &amp; Adaptive Management<span class="dd-desc">Learning from what we do</span></a></li></ul></li><li><a href="faq.html">Q&amp;A</a></li><li><a href="resources.html">Resources</a></li></ul></nav>
+    <div class="header-tools">
+      <button class="icon-btn" data-search-open aria-label="Search the site (Ctrl+K)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <button class="icon-btn menu-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="search-panel" role="dialog" aria-label="Search">
+  <div class="search-box">
+    <label class="sr-only" for="site-search">Search</label>
+    <input id="site-search" type="search" placeholder="Search the plan: species, actions, places, questions…" autocomplete="off">
+    <ul class="search-results"></ul>
+    <div class="search-hint">Enter to open · ↑ ↓ to move · Esc to close</div>
+  </div>
+</div>
+<main id="main">
+<div class="map-shell">
+<aside class="map-panel" aria-label="Map controls">
+  <span class="eyebrow">Where to act</span>
+  <h1>Conservation Footprints</h1>
+  <p>Conservation footprints answer the question "where should we focus?" Each footprint is a set of planning units, about 2 km² each, that together hold the existing or restorable habitat at-risk species need to recover. The map on this page shows the footprints for each species group and for all groups combined, so partners can see where their land and their work fit in.</p>
+  <h2>Footprint</h2>
+  <div class="seg" id="fp-view" role="group" aria-label="Footprint type">
+    <button value="recovery">Recovery</button><button value="priority">Priority</button>
+  </div>
+  <p class="small muted" style="margin-top:8px">Showing <b id="fp-shown">0</b> of <span id="fp-total">0</span> planning units.</p>
+  <h2>Colour units by</h2>
+  <select class="select" id="fp-color" aria-label="Colour planning units by" style="width:100%">
+    <option value="groups">Number of taxon groups</option><option value="species">Number of species targets</option><option value="hab_qual">Habitat quality</option><option value="climate">Climate resilience</option><option value="reserve_pct">Share in biodiversity reserves</option><option value="ungulate_pct">Share ungulate-managed</option><option value="access">Accessibility</option><option value="fire">Fire probability</option>
+  </select>
+  <div class="legend" id="fp-legend" style="margin-top:12px"></div>
+  <h2>Taxon groups <button class="pill" id="fp-all" style="float:right;padding:3px 10px;font-size:.75rem">All / none</button></h2>
+  <ul class="layer-list" id="fp-groups"></ul>
+  <h2>Basemap</h2>
+  <div class="seg" id="fp-base" role="group" aria-label="Basemap"><button value="topo">Topographic</button><button value="imagery">Imagery</button><button value="light">Light</button></div>
+  <div id="pu-card"><p class="small muted" style="margin-top:18px">Select a planning unit on the map to see which groups it supports and how it scores on the planning criteria.</p></div>
+  <p class="small muted" style="margin-top:18px">Data: MNLCP release-candidate footprints, September 25, 2026, as loaded in the Adaptive Conservation Planner. Species names are not shown on this public map. <a href="#about-the-map">About the map</a></p>
+</aside>
+<div id="map" role="region" aria-label="Interactive map of conservation footprints"></div>
+</div><section class="section-tight band-soft"><div class="wrap"><div class="stats"><div class="stat reveal"><div class="stat-num" data-count="492" data-suffix="">492</div><div class="stat-label">planning units in the combined recovery footprint, covering 1,050 km²<span class="src-note" title="plan p.81, lines 3244-3245; p.vi line 237">plan p.81, lines 3244-3245; p.vi line 237</span></div></div><div class="stat reveal"><div class="stat-num" data-count="299" data-suffix="">299</div><div class="stat-label">at-risk species with recovery habitat or exclosure sites in the combined recovery footprint<span class="src-note" title="plan p.vi lines 237-238; p.81 lines 3245-3249 (250 species with recovery habitat + 49 snail species with exclosure sites)">plan p.vi lines 237-238; p.81 lines 3245-3249 (250 species with recovery habitat + 49 snail species with exclosure sites)</span></div></div><div class="stat reveal"><div class="stat-num" data-count="216" data-suffix="">216</div><div class="stat-label">planning units in the combined priority footprint, covering 457 km² and supporting 267 at-risk species<span class="src-note" title="plan p.81, lines 3267-3270; p.vi lines 239-240">plan p.81, lines 3267-3270; p.vi lines 239-240</span></div></div><div class="stat reveal"><div class="stat-num" data-count="43" data-suffix="%">43%</div><div class="stat-label">size of the priority footprint compared with the full recovery footprint<span class="src-note" title="plan p.81, lines 3269-3270; p.vi line 239">plan p.81, lines 3269-3270; p.vi line 239</span></div></div><div class="stat reveal"><div class="stat-num" data-count="65.7" data-suffix="%">65.7%</div><div class="stat-label">of the recovery footprint is on lands already oriented toward conservation<span class="src-note" title="plan p.81, lines 3253-3255">plan p.81, lines 3253-3255</span></div></div><div class="stat reveal"><div class="stat-num" data-count="143" data-suffix="">143</div><div class="stat-label">at-risk species that cannot yet be mapped and will be added after surveys<span class="src-note" title="plan p.81, lines 3246-3248; p.vii lines 247-249; Table 1 p.19 lines 982-999">plan p.81, lines 3246-3248; p.vii lines 247-249; Table 1 p.19 lines 982-999</span></div></div></div></div></section><div class="page-body" id="about-the-map"><div class="wrap with-toc"><aside class="toc" aria-label="On this page"><h2>On this page</h2><ol></ol></aside><article class="prose" data-toc data-glossary><h2 id="planning-units-the-building-blocks">Planning units: the building blocks</h2>
+<p>To map where species can recover, the plan divided the Maui Nui landscape into a network of about 1,400 medium-sized planning units (PUs).<span class="src-note" title="plan p.12, lines 762-765; p.122 lines 4847-4850">plan p.12, lines 762-765; p.122 lines 4847-4850</span> Each planning unit is roughly 2 km². Its boundaries follow watersheds, natural barriers, and elevation bands.<span class="src-note" title="plan p.122, lines 4848-4850">plan p.122, lines 4848-4850</span></p>
+<p>A planning unit is sized to support a single population of an at-risk species.<span class="src-note" title="plan p.122, lines 4851-4852">plan p.122, lines 4851-4852</span> Footprints are built up as collections of planning units. Each unit records which species it was selected for, how suitable its habitat is for each species, and whether the selection rests on occurrence records or on model predictions.<span class="src-note" title="plan p.A1-4, lines 5098-5100">plan p.A1-4, lines 5098-5100</span></p>
+<h2 id="recovery-footprints-and-priority-footprints">Recovery footprints and priority footprints</h2>
+<p>The plan produces two main kinds of conservation footprint.<span class="src-note" title="plan p.A1-4, lines 5085-5097">plan p.A1-4, lines 5085-5097</span></p>
+<h3 id="recovery-footprints">Recovery footprints</h3>
+<p>A <strong>recovery footprint</strong> is the set of planning units that contain the existing or restorable habitat needed for an at-risk species, or a whole species group, to reach its recovery goals.<span class="src-note" title="plan p.122, lines 4870-4873; p.21 lines 1063-1065">plan p.122, lines 4870-4873; p.21 lines 1063-1065</span> It shows where active management can support populations as they grow toward recovery.<span class="src-note" title="plan p.A1-4, lines 5091-5093">plan p.A1-4, lines 5091-5093</span></p>
+<h3 id="priority-footprints">Priority footprints</h3>
+<p>A <strong>priority footprint</strong> is a smaller subset nested inside a recovery footprint. It identifies priority areas where both preventing extinction and recovery goals can be advanced.<span class="src-note" title="plan p.A1-4, lines 5094-5095">plan p.A1-4, lines 5094-5095</span> Priority footprints advance recovery but are not expected to meet recovery goals on their own. They are generally the most important places to focus MNLCP recovery actions in the near term.<span class="src-note" title="plan p.81, lines 3264-3267; p.21 lines 1066-1069">plan p.81, lines 3264-3267; p.21 lines 1066-1069</span></p>
+<h3 id="initial-implementation-areas">Initial implementation areas</h3>
+<p>Some groups have large recovery and priority footprints. For these, the plan narrows the footprint further into suggested starting points for implementation.<span class="src-note" title="plan p.81, lines 3272-3274; p.27 lines 1249-1255; p.A1-4 lines 5096-5097">plan p.81, lines 3272-3274; p.27 lines 1249-1255; p.A1-4 lines 5096-5097</span></p>
+<div class="callout"><p>Recovery footprints show everything species need to recover. Priority footprints show where to start.</p></div>
+<h2 id="how-footprints-were-made">How footprints were made</h2>
+<p>The footprints come from the plan's spatial prioritization, led by USGS and carried out through the TFE-SCP comprehensive planning process.<span class="src-note" title="plan p.122 lines 4875-4880; messaging guidelines">plan p.122 lines 4875-4880; messaging guidelines</span> DOFAW coordinated taxon expert teams, and experts validated and refined draft footprints in collaborative review sessions.</p>
+<div class="stepper" data-stepper tabindex="0" aria-label="How a recovery footprint is built, step by step">
+<div class="stepper-stage"><img src="assets/img/screenshots/cyanea_step_01.png" alt="Plain basemap of Maui and Kahoʻolawe before any habitat is mapped" loading="lazy"><img src="assets/img/screenshots/cyanea_step_02.png" alt="Windward East Maui planning units shaded light to dark green by modelled habitat suitability for Cyanea mceldowneyi" loading="lazy"><img src="assets/img/screenshots/cyanea_step_03.png" alt="The same suitability map with the selected recovery planning units hatched" loading="lazy"><img src="assets/img/screenshots/cyanea_step_04.png" alt="Only the ten selected recovery units remain, outlined in black across windward East Maui" loading="lazy"><img src="assets/img/screenshots/cyanea_step_05.png" alt="Recovery footprint for all at-risk plant species shown in green across Molokaʻi, Lānaʻi, Maui and Kahoʻolawe" loading="lazy"></div>
+<div class="stepper-body"><div><h3></h3><p></p></div>
+<div class="stepper-nav"><button class="round-btn" data-prev aria-label="Previous step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button><button class="round-btn" data-next aria-label="Next step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div></div>
+<div class="stepper-dots"></div>
+<script type="application/json">[{"title": "Set an explicit recovery target", "text": "Planning starts with one species and its populations. For the plant Cyanea mceldowneyi, the recovery target is 10 populations of 400 individuals each: 4,000 plants in all."}, {"title": "Map suitable habitat", "text": "Species distribution models, checked on the ground, show where suitable habitat exists. Darker green planning units have higher modelled suitability."}, {"title": "Select recovery units", "text": "The best habitat is prioritized, and planning units are selected where management for each population would happen."}, {"title": "A recovery design tied to place", "text": "Ten selected units, one for each population, together meet the recovery target. Recovery is now linked to specific places on the map."}, {"title": "Repeat for every species and integrate", "text": "The same steps are repeated for every at-risk species and integrated across all of them. The result is one recovery footprint where multi-species management can be planned efficiently."}]</script></div>
+
+<p>There were two pathways:</p>
+<ul>
+<li><strong>Algorithmic pathway (Plants, Terrestrial arthropods, Terrestrial snails).</strong> These groups have many species. The OptimTFE prioritization algorithm built many candidate footprints that each meet every species' targets. Experts and land managers then compared candidates on footprint area, habitat quality, overlap with biodiversity reserves, ungulate management, accessibility, fire risk, and climate resilience.<span class="src-note" title="plan p.12-13, lines 758-769; p.A1-5 lines 5136-5146">plan p.12-13, lines 758-769; p.A1-5 lines 5136-5146</span></li>
+<li><strong>Expert-led pathway (Forest birds, Seabirds, Waterbirds, Aquatic invertebrates).</strong> These groups have few species and strong existing expert knowledge, so specialists delineated priority areas directly through iterative collaborative review.<span class="src-note" title="plan p.A1-5, lines 5106-5112">plan p.A1-5, lines 5106-5112</span></li>
+</ul>
+<p>The Hawaiian hoary bat (ʻōpeʻapeʻa) has no footprint of its own. Its recovery habitat is the combined recovery footprints of Forest birds, Seabirds, Waterbirds, Plants, Aquatic invertebrates, and Terrestrial arthropods. There is no priority footprint for the bat.<span class="src-note" title="plan p.78-79, lines 3163-3175">plan p.78-79, lines 3163-3175</span></p>
+<h2 id="combined-results-across-all-groups">Combined results across all groups</h2>
+<p>When the footprints of all eight taxonomic groups are combined, the recovery footprint includes 492 planning units covering 1,050 km².<span class="src-note" title="plan p.81, lines 3244-3245">plan p.81, lines 3244-3245</span> It provides recovery habitat for 250 at-risk species.<span class="src-note" title="plan p.81, line 3246">plan p.81, line 3246</span> It also holds candidate exclosure sites for all 49 at-risk Terrestrial snails, which have exclosure locations but not recovery habitat, for 299 species in all.<span class="src-note" title="plan p.81, lines 3248-3249; p.vi lines 237-238">plan p.81, lines 3248-3249; p.vi lines 237-238</span></p>
+<p>From a landscape perspective, the combined recovery footprint:<span class="src-note" title="plan p.81, lines 3252-3262">plan p.81, lines 3252-3262</span></p>
+<ul>
+<li>lies mainly on lands already oriented toward conservation (65.7 percent);</li>
+<li>spans all four Maui Nui islands, with the upland areas of Haleakalā, West Maui, East Molokaʻi, and Lānaʻihale being the most significant;</li>
+<li>already has at least some ungulate fencing on about half of its area (50 percent);</li>
+<li>is, on average, native habitat or a mix of native and non-native species; and</li>
+<li>generally has above-average climate resilience.</li>
+</ul>
+<p>The combined priority footprint includes 216 planning units covering 457 km². It provides habitat for 267 at-risk species and is about 43 percent of the size of the full recovery footprint.<span class="src-note" title="plan p.81, lines 3267-3270">plan p.81, lines 3267-3270</span></p>
+<figure class="zoomable"><img src="assets/img/figures/plan_fig_19_combined_and_priority_footprints_panels.jpg" alt="Three maps of Maui, Molokaʻi, Lānaʻi and Kahoʻolawe showing the combined recovery footprint, the smaller priority footprint, and the smaller still initial implementation areas" loading="lazy"><figcaption>Combined recovery footprint (a), priority footprint (b) and narrowed initial implementation footprint (c) for all taxonomic groups. <span class="muted">Plan Figure 19.</span></figcaption></figure>
+
+<h3 id="places-with-many-at-risk-species">Places with many at-risk species</h3>
+<p>The Adaptive Conservation Planner can highlight planning units with exceptionally high numbers of at-risk species, or units holding species facing imminent extinction. Managers can use this to work more efficiently.<span class="src-note" title="plan p.83, lines 3299-3305">plan p.83, lines 3299-3305</span></p>
+<figure class="zoomable"><img src="assets/img/figures/plan_fig_20_target_richness_heat_map.jpg" alt="Map of Maui Nui with planning units in the priority footprint shaded from light to dark by the number of at-risk species they support" loading="lazy"><figcaption>Heat map of target richness (number of at-risk species) in each planning unit of the priority footprint. <span class="muted">Plan Figure 20.</span></figcaption></figure>
+
+<h2 id="what-footprints-are-and-what-they-are-not">What footprints are, and what they are not</h2>
+<ul>
+<li><strong>Footprints are decision support.</strong> The MNLCP is state-led and practitioner-driven. It provides flexible guidance to managers rather than top-down prescriptive mandates.<span class="src-note" title="plan p.8, lines 619-620, 640; p.122 lines 4823-4825">plan p.8, lines 619-620, 640; p.122 lines 4823-4825</span></li>
+<li><strong>Footprints are landscape-scale.</strong> They answer "where should we focus?" A planning unit may be hundreds of hectares. Exactly where to outplant, fence, or survey within a planning unit is worked out by field teams using finer-scale tools such as Find My Microhabitat.<span class="src-note" title="plan p.122, lines 4852-4854; App 5 lines 7431-7460">plan p.122, lines 4852-4854; App 5 lines 7431-7460</span></li>
+<li><strong>Footprints are living products.</strong> They can be updated as conditions, knowledge, and available resources change, and the Conservation Planner is where they are inspected, refined, and maintained.<span class="src-note" title="plan p.8, lines 641-643; App 5 line 7365">plan p.8, lines 641-643; App 5 line 7365</span></li>
+<li><strong>Priority footprints are not the whole job.</strong> They are where to start, not everything needed for recovery.<span class="src-note" title="plan p.81, lines 3264-3267">plan p.81, lines 3264-3267</span></li>
+</ul>
+<h2 id="species-not-yet-on-the-map">Species not yet on the map</h2>
+<p>There are 143 at-risk species that lack enough information to reliably identify habitat and planning units for their recovery.<span class="src-note" title="plan p.81, lines 3246-3248">plan p.81, lines 3246-3248</span> Most are Terrestrial arthropods.<span class="src-note" title="plan p.vii, lines 247-248">plan p.vii, lines 247-248</span> Of the 143, 82 are targeted for multi-species area surveys and 61 for species-specific surveys.<span class="src-note" title="plan Table 1 p.19, lines 989-999">plan Table 1 p.19, lines 989-999</span></p>
+<p>The plan sets out targeted surveys to learn these species' habitat needs, so they can be added to the recovery footprints over time.<span class="src-note" title="plan p.81, lines 3249-3251; p.vii lines 247-249; p.20 lines 1012-1016">plan p.81, lines 3249-3251; p.vii lines 247-249; p.20 lines 1012-1016</span> The intent is to identify habitat needs and conservation strategies for all 442 at-risk species.<span class="src-note" title="plan p.20, lines 1016-1017">plan p.20, lines 1016-1017</span></p>
+<h2 id="how-to-read-the-map">How to read the map</h2>
+<ol>
+<li><strong>Pick a view.</strong> Start with all groups combined, or choose a single species group from the layer menu.</li>
+<li><strong>Switch between recovery and priority.</strong> Recovery footprints show the full area needed for recovery. Priority footprints show where to start. Each priority footprint sits inside its recovery footprint.</li>
+<li><strong>Click a planning unit</strong> to see which groups and how many at-risk species it was selected for.</li>
+<li><strong>Use the richness view</strong> to see how many at-risk species each planning unit supports. Darker colors mean more species.</li>
+<li><strong>Remember the scale.</strong> Each shape is a planning unit of about 2 km², not a specific site for fencing or planting.</li>
+</ol>
+<div class="callout"><p>The map shows the footprint release used in the Adaptive Conservation Planner (September 2026). Some counts differ slightly from the figures in the plan text, because footprints are living products that continue to be refined.</p></div>
+<h2 id="map-legend">Map legend</h2>
+<ul>
+<li><strong>Recovery footprint (green):</strong> Planning units with existing or restorable habitat needed for the group's at-risk species to reach recovery goals.</li>
+<li><strong>Priority footprint (yellow):</strong> The subset of the recovery footprint where both preventing extinction and recovery goals can be advanced; the most important places to start.</li>
+<li><strong>Combined footprint (all groups):</strong> All species groups' footprints merged into one layer. Overlapping units are counted once.</li>
+<li><strong>Species richness:</strong> Number of at-risk species with targets in each planning unit. Darker shading means more species.</li>
+<li><strong>Terrestrial snail sites:</strong> Candidate kīpuka kāhuli exclosure sites (managed predator-free refuges enclosed by a predator-proof fence). Unlike other groups, the snail network is built from candidate exclosure sites rather than standard planning units. The recovery layer is the 32-site exclosure network with three exclosures per species; the priority layer is the 14-site network that gives each of the 49 at-risk snail species one protected population.<span class="src-note" title="plan p.A1-7, lines 5203-5216; messaging guidelines">plan p.A1-7, lines 5203-5216; messaging guidelines</span></li>
+<li><strong>Aquatic invertebrates:</strong> Planning units containing streams, wetlands, or anchialine pools selected at the watershed scale.<span class="src-note" title="plan p.A1-5, lines 5126-5129">plan p.A1-5, lines 5126-5129</span></li>
+<li><strong>Hawaiian hoary bat:</strong> No separate layer. The bat's recovery habitat is the combined footprints of six other groups.<span class="src-note" title="plan p.79, lines 3173-3175">plan p.79, lines 3173-3175</span></li>
+<li><strong>Island outlines and basemap:</strong> For orientation only.</li>
+</ul>
+<details class="more"><summary>For practitioners: footprint types and terminology<span class="summary-tag">Details</span></summary><div class="details-body"><p>The plan names three nested levels of spatially explicit habitat delineation for each taxonomic group: the full recovery footprint (adequate habitat for recovery), the priority recovery footprint (the most important recovery areas), and the initial implementation footprint (suggested starting points).<span class="src-note" title="plan p.27, lines 1249-1255">plan p.27, lines 1249-1255</span> Appendix 1 calls the third level "implementation subsets" that further prioritize within the recovery footprint to guide near-term action staging.<span class="src-note" title="plan p.A1-4, lines 5096-5097">plan p.A1-4, lines 5096-5097</span></p>
+<p>All group footprints, algorithmic and expert-led, can be viewed together or one at a time in the Conservation Planner, which also shows the species-level information for each planning unit. Where footprints overlap, actions for one group can benefit others in the same landscape.<span class="src-note" title="plan p.A1-5, lines 5102-5104, 5130-5133">plan p.A1-5, lines 5102-5104, 5130-5133</span></p>
+<p>For Terrestrial snails, the footprint places predator-free kīpuka kāhuli exclosures so each species can persist despite ongoing threats. It is designed to prevent extinction and enable future recovery. It does not address landscape-scale threats to snails.<span class="src-note" title="plan p.A1-7 to A1-8, lines 5203-5221; p.21 lines 1071-1080">plan p.A1-7 to A1-8, lines 5203-5221; p.21 lines 1071-1080</span></p></div></details></article></div></div>
+</main>
+<footer class="site-footer">
+  <div class="footer-main"><div class="wrap footer-grid">
+    <div class="footer-about">
+      <h2>Maui Nui Landscape Conservation Plan</h2>
+      <p>A landscape-scale roadmap to prevent extinctions, recover at-risk species and restore native ecosystems across Maui, Molokaʻi, Lānaʻi and Kahoʻolawe. Led by the Hawaiʻi Division of Forestry and Wildlife.</p>
+      <p class="small">Plan Version September 29, 2026. Subject to periodic review and revision.</p>
+    </div>
+    <div><h2>The plan</h2><ul><li><a href="plan.html">About the Plan</a></li><li><a href="approach.html">The Approach</a></li><li><a href="partners.html">Partners &amp; Teams</a></li><li><a href="species.html">At-Risk Species</a></li><li><a href="groups.html">Taxonomic Groups</a></li></ul></div>
+    <div><h2>Taking action</h2><ul><li><a href="footprints.html">Conservation Footprints</a></li><li><a href="actions.html">Priority Actions</a></li><li><a href="ecosystems.html">Native Ecosystems</a></li><li><a href="using-the-plan.html">Using the Plan</a></li><li><a href="tools.html">Adaptive Conservation Planner</a></li><li><a href="monitoring.html">Monitoring &amp; Adaptive Management</a></li></ul></div>
+    <div><h2>More</h2><ul><li><a href="faq.html">Questions &amp; Answers</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="resources.html">Resources &amp; Downloads</a></li><li><a href="groups.html">Taxonomic Groups</a></li></ul></div>
+  </div></div>
+  <div class="footer-partners"><div class="wrap"><p>Developed with our partners</p><div class="logo-wall"><img src="assets/img/logos/nps_national_park_service.png" alt="National Park Service" title="National Park Service" loading="lazy"><img src="assets/img/logos/hcsu_hawaii_cooperative_studies_unit_uh_hilo.png" alt="Hawaiʻi Cooperative Studies Unit" title="Hawaiʻi Cooperative Studies Unit" loading="lazy"><img src="assets/img/logos/usgs_pierc_pacific_island_ecosystems_research_center.png" alt="USGS Pacific Island Ecosystems Research Center" title="USGS Pacific Island Ecosystems Research Center" loading="lazy"><img src="assets/img/logos/usgs.png" alt="U.S. Geological Survey" title="U.S. Geological Survey" loading="lazy"><img src="assets/img/logos/enduring_conservation_outcomes.png" alt="Enduring Conservation Outcomes" title="Enduring Conservation Outcomes" loading="lazy"><img src="assets/img/logos/usfws_us_fish_and_wildlife_service.png" alt="U.S. Fish and Wildlife Service" title="U.S. Fish and Wildlife Service" loading="lazy"><img src="assets/img/logos/university_of_hawaii_seal.png" alt="University of Hawaiʻi seal" title="University of Hawaiʻi seal" loading="lazy"><img src="assets/img/logos/tnc_the_nature_conservancy_hawaii_palmyra.png" alt="The Nature Conservancy Hawaiʻi and Palmyra" title="The Nature Conservancy Hawaiʻi and Palmyra" loading="lazy"><img src="assets/img/logos/pcsu_pacific_cooperative_studies_unit_uh_manoa.png" alt="Pacific Cooperative Studies Unit" title="Pacific Cooperative Studies Unit" loading="lazy"><img src="assets/img/logos/bishop_museum.png" alt="Bishop Museum" title="Bishop Museum" loading="lazy"><img src="assets/img/logos/dlnr_dar_division_of_aquatic_resources.png" alt="Hawaiʻi Division of Aquatic Resources" title="Hawaiʻi Division of Aquatic Resources" loading="lazy"><img src="assets/img/logos/pulama_lanai.png" alt="Pūlama Lānaʻi" title="Pūlama Lānaʻi" loading="lazy"><img src="assets/img/logos/pi_casc_pacific_islands_climate_adaptation_science_center_mark.png" alt="Pacific Islands Climate Adaptation Science Center" title="Pacific Islands Climate Adaptation Science Center" loading="lazy"><img src="assets/img/logos/mauna_kahalawai_watershed_partnership.png" alt="Mauna Kahālāwai Watershed Partnership" title="Mauna Kahālāwai Watershed Partnership" loading="lazy"><img src="assets/img/logos/east_maui_watershed_partnership.png" alt="East Maui Watershed Partnership" title="East Maui Watershed Partnership" loading="lazy"><img src="assets/img/logos/emowp_east_molokai_watershed_partnership.png" alt="East Molokaʻi Watershed Partnership" title="East Molokaʻi Watershed Partnership" loading="lazy"></div></div></div>
+  <div class="footer-band">
+    <div class="wrap">
+      <div class="footer-seals">
+        <img src="assets/img/brand/dlnr_seal.png" alt="Department of Land and Natural Resources, State of Hawaiʻi seal">
+        <img src="assets/img/brand/dofaw_seal_nene.png" alt="Division of Forestry and Wildlife seal">
+        <span class="agency">Forestry &amp; Wildlife</span>
+      </div>
+      <div class="footer-motto"><span class="motto">E mālama kākou i ka ʻāina</span><a href="https://dlnr.hawaii.gov/dofaw/">dlnr.hawaii.gov/dofaw</a></div>
+    </div>
+  </div>
+  <div class="footer-legal"><div class="wrap">
+    <span>© State of Hawaiʻi, Department of Land and Natural Resources, Division of Forestry and Wildlife</span>
+    <button class="pill" data-sources-toggle aria-pressed="false" style="font-size:.75rem;padding:4px 10px">Show plan sources</button>
+  </div></div>
+</footer>
+<div class="back-top"><button class="round-btn" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg></button></div>
+<script src="assets/js/site.js"></script>
+<script src="assets/vendor/leaflet/leaflet.js"></script><script src="assets/data/footprints.js"></script><script src="assets/js/map.js"></script><script defer src="assets/js/widgets.js"></script>
+</body>
+</html>

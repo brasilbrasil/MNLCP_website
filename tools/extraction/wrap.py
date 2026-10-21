@@ -1,0 +1,33 @@
+import json, sys, collections
+S = json.load(open(sys.argv[1], encoding="utf-8"))
+out = {
+ "_source": "Maui Nui Landscape Conservation Plan (DOFAW, version 2026-09-29), 'MNLCP 9-30-2026 FINAL.txt'. Species list and group/common names: Appendix 3 (lines 6588-7078, pp. A3-1 to A3-11). Plants: Appendix 4 (lines 7079-7348). Terrestrial snails: Appendix 6 (lines 7482-7553). Terrestrial arthropods: Appendix 7 (lines 7554-7774). Aquatic invertebrates: Ch 6g Table 21 (lines 2875-2899). Forest birds, Seabirds, Waterbirds, Hawaiian hoary bat: Ch 6 Tables 5, 9, 13, 23 and species accounts (lines 1420-1484, 1655-1692, 1828-1866, 3122-3151). Group totals checked against Ch 4 Table 1 (lines 982-999). Parsed 2026-10-21 from the plan's text layer; column assignment verified against the rendered PDF. Line numbers refer to the .txt.",
+ "fields": {
+  "group": "Taxonomic group, using the MNLCP group names (Plants, Terrestrial arthropods, Terrestrial snails, Aquatic invertebrates, Forest birds, Seabirds, Waterbirds, Hawaiian hoary bat). App 3 labels 'Bats' mapped to 'Hawaiian hoary bat'.",
+  "scientific_name": "Scientific name exactly as printed in Appendix 3 (including the plan's own spellings such as 'Lymnaeidea ssp' and 'Rynchogonus'; see notes). App 4 sometimes abbreviates 'subsp.' as 'ssp.'; the App 4 spelling is in other.app4_name.",
+  "common_name": "English-language common name. From the App 3 'Common Name' column when that entry is an English name; for vertebrates, from the Ch 6 species accounts. null when App 3 gives 'No common name', gives only a Hawaiian name, or is blank.",
+  "hawaiian_name": "Hawaiian-language name. For Plants, Terrestrial arthropods, Terrestrial snails and Aquatic invertebrates this is the App 3 'Common Name' entry when that entry is a Hawaiian name (App 3 mixes Hawaiian and English names in one column; the raw entry is kept in other.app3_common_name_raw). For vertebrates it is the name used in the Ch 6 species accounts and tables. ʻokina restored from the backticks in the text layer; kahakō are kept only where the plan prints them (plant names in App 3 carry none). null when the plan gives none.",
+  "listing_status": "Federal and State listing as given in the plan: Plants from App 4 'Federal and State Status' (E/T, blank = 'Not listed'); Terrestrial snails from App 6 'ESA Listing'; Terrestrial arthropods from App 7 'ESA Listing'; Aquatic invertebrates from Table 21; vertebrates from Ch 6 Tables 5, 9, 13, 23 and the species accounts (which describe split federal/State status, e.g. nēnē). null where the plan gives no row for the species (Amastra goniops).",
+  "imminent_extinction": "true if the plan counts the species among the 163 facing imminent extinction (may be lost within five years without emergency action). Plants: true for App 4 'PEPP' species (the plan equates PEPP species with plants facing imminent extinction, lines 1264-1266; 102 PEPP = 102 imminent in Table 1). Terrestrial snails: true for all 49 (Table 1 line 995; line 1072). Arthropods: App 7 'Facing Imminent Extinction' X. Aquatic invertebrates: Table 21. Vertebrates: Tables 5, 9, 13, 23.",
+  "islands": "Islands where the species is stated to occur. The plan's species appendices have no island column, so this is null for all species except the four Forest birds (currently East Maui only, per Ch 6a accounts) and the Hawaiian hoary bat (Ch 6h, lines 3122-3123).",
+  "other.recovery_category": "Ch 4c category: 'Full recovery', 'Interim recovery', 'Insufficient data (area survey)' or 'Insufficient data (species-specific survey)'. Arthropods: App 7 columns. Aquatic invertebrates: Table 21. Snails: all interim (Table 1, App 6). Plants: App 4 has no category column; plants with recovery PUs are 'Full recovery' (Table 1: 195 full, 0 interim) and the two with 0 recovery PUs are 'Insufficient data (species-specific survey)' (App 4 footnote; Table 1: 2 species surveys). Vertebrates: Tables 5, 9, 13, 23.",
+  "other.recovery_goal_populations": "Number of populations in the recovery goal, where the table gives a number in the Interim/Full Recovery column (Terrestrial arthropods App 7; Forest birds Table 5).",
+  "other.interim_recovery_goal_populations": "Terrestrial snails: number in App 6 'Interim Recovery' column (3 for every species).",
+  "other.table21_recovery_value": "Aquatic invertebrates: number printed in the Table 21 Interim/Full Recovery column. The plan does not define it in the table; the cross-product discrepancy tracker (XP-10) reads these as planning-unit counts rather than population goals.",
+  "other.current_populations": "Number of current populations as printed (App 6 for snails, kept as text because values include '5-10' and '15+'; Tables 5, 9, 13, 23 for vertebrates).",
+  "other.known_occupied_pus": "Known occupied planning units (PUs, about 2 km2 each). Plants: App 4 'Known Occupied PUs for Species'. Arthropods: App 7 'All Known Occupied PUs' (null where the cell is blank). Aquatic invertebrates: Table 21 'All Known Occupied PUs'.",
+  "other.pepp_category": "Plants, App 4 'PEPP Species' column: 'PEPP' = Plant Extinction Prevention Program species; 'POP' = species with few populations; 'ROI' = species that are rare on an island (definitions from the App 4 legend, lines 7340-7342); 'NO' is printed for 17 species and is not defined in the legend; null = blank cell (29 species).",
+  "other.desired_recovery_populations": "Plants, App 4 'Desired Recovery Populations'.",
+  "other.recovery_pus_in_mnlcp": "Plants, App 4 'Recovery PUs in MNLCP' (planning units assigned to the species in the plant recovery footprint).",
+  "other.known_occupied_pus_in_recovery_footprint": "Plants, App 4 'Known Occupied PUs in Recovery Footprint'.",
+  "other.anchialine_pool": "Aquatic invertebrates: true if Table 21 marks the species with an asterisk (occurs in anchialine pools).",
+  "other.app6_imminent_flag": "Terrestrial snails: whether the App 6 row carries the 'Facing Imminent Extinction' X (all 48 rows do, although the App 6 total reads 47).",
+  "other.app3_common_name_raw": "The App 3 'Common Name' cell as printed (ʻokina restored), before splitting into common_name and hawaiian_name.",
+  "other.app3_line / app4_line / app6_line / app7_line / table21_line / ch6_source": "Source line(s) in the plan .txt for verification.",
+  "other.app4_name": "Plant name as spelled in App 4 when matching the App 3 row.",
+  "other.name_note / distribution_note / app6_note": "Short plan-sourced notes on synonyms, distribution or missing rows."
+ },
+ "species": S,
+}
+json.dump(out, open(sys.argv[2], "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+print("wrote", len(S))

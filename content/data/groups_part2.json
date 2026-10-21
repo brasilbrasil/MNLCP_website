@@ -1,0 +1,131 @@
+{
+  "_source": "Maui Nui Landscape Conservation Plan (DOFAW, version 2026-09-29; MNLCP 9-30-2026 FINAL.txt): Executive Summary Table 1 (lines 196-216, pp.v-vi); Ch 4 Table 1 (lines 982-1000, p.19); Ch 6 e Terrestrial Snails (lines 2394-2614, pp.57-62); Ch 6 f Terrestrial Arthropods (lines 2615-2843, pp.63-69); Ch 6 g Aquatic Invertebrates (lines 2844-3090, pp.70-76); Ch 6 h Hawaiian Hoary Bat (lines 3091-3241, pp.77-80); Ch 6 j Tables 26-27 (pp.85-87); App 1 (lines 5105-5271, pp.A1-5 to A1-8); App 2 Table 1 (p.A2-15); App 3; App 6 (pp.A6-1 to A6-2); App 7 (pp.A7-1 to A7-6). Footprint PU counts are null where the plan does not state them; see content/notes/groups2.md.",
+  "groups": [
+    {
+      "slug": "terrestrial-snails",
+      "name": "Terrestrial snails",
+      "hawaiian_name": "kāhuli",
+      "at_risk": 49,
+      "listed": 3,
+      "imminent_extinction": 49,
+      "recovery_footprint_pus": null,
+      "priority_footprint_pus": null,
+      "exclosure_sites": 32,
+      "priority_exclosure_sites": 14,
+      "footprint_note": "Snails have a preventing extinction footprint, not a recovery footprint: a network of 32 kīpuka kāhuli (predator-proof exclosure) sites that protects three populations of each of the 49 species. A priority network of 14 sites gives each species one protected population. Sites are candidate exclosure sites, not standard planning units. The plan says 4-6 exclosures are already planned and 26 are to be built. Recovery habitat is deferred. (plan pp.58-59, lines 2469-2514; App 1 p.A1-7, lines 5204-5216)",
+      "prioritization_pathway": "algorithmic",
+      "primary_threats": [
+        "Rosy wolfsnail (Euglandina rosea) predation",
+        "Other introduced predators: rats, Jackson's chameleon, Oxychilus alliarius",
+        "No landscape-level control methods for these predators"
+      ],
+      "top_actions": [
+        "Build the kīpuka kāhuli network of predator-proof exclosures (S10, new predator fencing)",
+        "Establish an ex situ laboratory and captive rearing facility on Maui for all 49 species",
+        "Develop new tools, especially landscape-level control of Euglandina, chameleons and rats, and captive-rearing methods (S13)",
+        "Continue existing tools for rare plants and invertebrates (S12)",
+        "Rescue at-risk wild populations and control predators at them until snails are secured",
+        "Survey for remaining populations and for areas without Euglandina"
+      ],
+      "one_line_summary": "All 49 at-risk snails could be lost within five years, so the plan's first goal is to prevent their extinction by keeping three populations of each species safe in 32 predator-proof kīpuka kāhuli and a Maui laboratory.",
+      "species_highlights": [
+        {"name": "Lānaʻi tree snail", "hawaiian_name": null, "scientific_name": "Partulina semicarinata", "note": "One of three listed snails; 3 known wild populations (App 6)."},
+        {"name": "Lānaʻi tree snail", "hawaiian_name": null, "scientific_name": "Partulina variabilis", "note": "Listed as endangered; 1 known wild population (App 6)."},
+        {"name": "Newcomb's tree snail", "hawaiian_name": null, "scientific_name": "Newcombia cumingi", "note": "Listed as endangered; 1 known wild population (App 6)."},
+        {"name": null, "hawaiian_name": null, "scientific_name": "Partulina crocea", "note": "No known wild population (App 6); facing imminent extinction."}
+      ]
+    },
+    {
+      "slug": "terrestrial-arthropods",
+      "name": "Terrestrial arthropods",
+      "hawaiian_name": null,
+      "at_risk": 172,
+      "listed": 8,
+      "imminent_extinction": 9,
+      "recovery_footprint_pus": null,
+      "priority_footprint_pus": null,
+      "footprint_note": "The recovery footprint covers 32 species with enough data (31 interim goals, 1 full goal, Manduca blackburni); the priority footprint is defined as areas with populations of the nine Hylaeus facing imminent extinction. The plan does not state PU counts for either. The other 140 species are assigned to surveys: 82 Focal Area Surveys, 58 Basic Species-specific Surveys. (plan pp.64-65, lines 2693-2715; Ch 4 Table 1 line 996)",
+      "prioritization_pathway": "algorithmic",
+      "primary_threats": [
+        "Habitat loss and ecosystem degradation",
+        "Predation by and competition with non-native ants and wasps",
+        "Decline of host plants"
+      ],
+      "top_actions": [
+        "Emergency fencing and native habitat restoration at known sites of the nine imminent-extinction yellow-faced bees",
+        "Future tools for rare plants and invertebrates, including invertebrate propagation facilities (S13)",
+        "Control invasive ants and yellow jackets (S8)",
+        "Continue existing tools for rare plants and invertebrates (S12) and terrestrial habitat management (S5)",
+        "Remove ungulates and control key weeds, rats and invertebrate pests in the recovery footprint (yellow-faced bees: start with ungulate fencing, S3)",
+        "Field surveys to fill data gaps for 140 species"
+      ],
+      "one_line_summary": "Of 172 at-risk native arthropods, only 32 have enough data to map recovery habitat, so the plan pairs emergency protection for nine yellow-faced bees and habitat restoration with targeted surveys for the other 140.",
+      "species_highlights": [
+        {"name": "Hawaiian yellow-faced bee", "hawaiian_name": null, "scientific_name": "Hylaeus longiceps", "note": "Endangered; facing imminent extinction; fencing at Ilio Point and habitat restoration (Table 19)."},
+        {"name": "Anthricinan yellow-faced bee", "hawaiian_name": null, "scientific_name": "Hylaeus anthracinus", "note": "Endangered; facing imminent extinction; 5 known populations (Table 19). Common name as printed in App 3."},
+        {"name": "Blackburn's sphinx moth", "hawaiian_name": null, "scientific_name": "Manduca blackburni", "note": "Endangered; the one arthropod with a full recovery goal (Ch 6 f). Plan spells it 'blackburnii' in Ch 6 f."},
+        {"name": "Hawaiian picture-wing fly", "hawaiian_name": null, "scientific_name": "Drosophila neoclavisetae", "note": "Endangered; assigned to Focal Area Surveys (App 7)."}
+      ]
+    },
+    {
+      "slug": "aquatic-invertebrates",
+      "name": "Aquatic invertebrates",
+      "hawaiian_name": null,
+      "at_risk": 11,
+      "listed": 4,
+      "imminent_extinction": 1,
+      "recovery_footprint_pus": null,
+      "priority_footprint_pus": null,
+      "footprint_note": "Expert-delineated recovery footprint at the watershed scale for 10 of 11 species (5 full, 5 interim recovery goals); Lymnaeidae lack data. Figure 15 maps priority (yellow) and initial implementation (red) areas, but the plan states no PU counts. (plan p.72, lines 2936-2945; p.73 Figure 15; App 1 p.A1-5 lines 5128-5130)",
+      "prioritization_pathway": "expert-led",
+      "primary_threats": [
+        "Habitat loss, including reduced stream flows",
+        "Predation by aquatic invasive species (fish, frogs and shrimp)",
+        "Feral pigs, ants and other non-native insects (Megalagrion nesiotes)"
+      ],
+      "top_actions": [
+        "Protect the only known Maui Nui site of Megalagrion nesiotes from ungulates and invasive predators, and monitor it at least annually",
+        "Stream and wetland habitat management (S6): modify stream barriers and diversions in East Maui, and remove or keep out invasive species in lowland streams below 366 m (1,200 ft)",
+        "Establish and maintain minimum instream flows without spreading invasive aquatic species",
+        "Invasive invertebrate and vertebrate pest control (S8, S7)",
+        "Future tools for rare plants and invertebrates (S13)",
+        "Ungulate fencing and terrestrial habitat management (S3, S5)"
+      ],
+      "one_line_summary": "Eleven at-risk damselflies, anchialine pool shrimp and freshwater snails depend on streams, wetlands and anchialine pools; the plan protects the last Maui Nui site of one damselfly and restores stream flows while keeping invasive species out.",
+      "species_highlights": [
+        {"name": "Flying earwig Hawaiian damselfly", "hawaiian_name": null, "scientific_name": "Megalagrion nesiotes", "note": "Endangered; the group's only species facing imminent extinction; one known Maui Nui population (Ch 6 g)."},
+        {"name": "Anchialine pool shrimp", "hawaiian_name": null, "scientific_name": "Procaris hawaiana", "note": "Endangered; known from one planning unit (Table 21)."},
+        {"name": "Orangeblack Hawaiian damselfly", "hawaiian_name": null, "scientific_name": "Megalagrion xanthomelas", "note": "Endangered; full recovery goal (Table 21)."},
+        {"name": "Freshwater pond snails", "hawaiian_name": null, "scientific_name": "Lymnaeidae spp.", "note": "No identified recovery area; assigned to species-specific surveys (Table 21)."}
+      ]
+    },
+    {
+      "slug": "hawaiian-hoary-bat",
+      "name": "Hawaiian hoary bat",
+      "hawaiian_name": "ʻōpeʻapeʻa",
+      "at_risk": 1,
+      "listed": 1,
+      "imminent_extinction": 0,
+      "recovery_footprint_pus": null,
+      "priority_footprint_pus": null,
+      "footprint_note": "No footprint of its own: the bat's recovery footprint is the combination of the recovery footprints for Forest birds, Seabirds, Waterbirds, Plants, Aquatic invertebrates and Terrestrial arthropods. There are no priority footprints for the bat. The plan states no PU count. (plan pp.78-79, lines 3164-3175)",
+      "prioritization_pathway": "plan-only",
+      "primary_threats": [
+        "Collisions with wind turbines",
+        "Habitat loss",
+        "Possibly pesticide exposure and predation by invasive vertebrates (cats, rats)"
+      ],
+      "top_actions": [
+        "Minimize and modify infrastructure, especially to reduce bat deaths at wind energy farms (S16)",
+        "Stream and wetland habitat management (S6)",
+        "Terrestrial habitat management (S5)",
+        "Landscape-scale rat suppression (S11) and invasive vertebrate predator control (S7)",
+        "Develop methods to measure population trends and to increase productivity"
+      ],
+      "one_line_summary": "Maui Nui's only native land mammal is endangered but not at imminent risk; the plan focuses on cutting wind-turbine deaths, protecting forests and wetlands in other groups' footprints, and learning how to measure bat trends.",
+      "species_highlights": [
+        {"name": "Hawaiian hoary bat", "hawaiian_name": "ʻōpeʻapeʻa", "scientific_name": "Lasiurus semotus", "note": "Endangered; occurs on Maui, Molokaʻi and Lānaʻi and has been seen on Kahoʻolawe; no reliable population estimate (Ch 6 h). Plan literature cites it as Lasiurus cinereus semotus."}
+      ]
+    }
+  ]
+}

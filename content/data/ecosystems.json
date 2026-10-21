@@ -1,0 +1,452 @@
+{
+  "_source": "MNLCP (DOFAW, 2026-09-29) Ch 7 a-j, pp. 88-100, plan text lines 3529-3999; Table 28 (lines 3592-3614, verified PDF p.99), Table 30 (lines 3825-3843, verified PDF p.105), Tables 29/31 (lines 3736-3768, 3862-3893); Figures 27-28 (PDF pp.108-109). Appendix 8 is 'Reserved for the final version' (line 7777).",
+  "ecosystems": [
+    {
+      "name": "Lowland Arid",
+      "description": "The most reduced and degraded ecosystem, with poor mapping and very little habitat left. Restoration, prioritized within the recovery footprint, is the main opportunity.",
+      "notes": "Elevation band 0–1,000 m. Plan text lines 3620-3622.",
+      "original_extent_kac": 185.1,
+      "pct_original_remaining": 0.5,
+      "goal_pct_managed": 40,
+      "islands": [
+        "Molokaʻi",
+        "Lānaʻi",
+        "Maui",
+        "Kahoʻolawe"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 0,
+          "pct_original": 0
+        },
+        "initiate": {
+          "kac": 0.4,
+          "pct_original": 0.2
+        },
+        "engage": {
+          "kac": 0.4,
+          "pct_original": 0.2
+        },
+        "restore": {
+          "kac": 27.4,
+          "pct_original": 14.8
+        }
+      }
+    },
+    {
+      "name": "Lowland Dry",
+      "description": "Once the most extensive ecosystem, now down to about two percent remaining. A hotspot for rare species; restoration is the key opportunity. Better high-resolution mapping is needed to find remaining pockets of native vegetation.",
+      "notes": "Elevation band 0–1,000 m. Plan text lines 3624-3627.",
+      "original_extent_kac": 222.9,
+      "pct_original_remaining": 2.1,
+      "goal_pct_managed": 40,
+      "islands": [
+        "Molokaʻi",
+        "Lānaʻi",
+        "Maui",
+        "Kahoʻolawe"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 1.1,
+          "pct_original": 0.5
+        },
+        "initiate": {
+          "kac": 1.3,
+          "pct_original": 0.6
+        },
+        "engage": {
+          "kac": 2.3,
+          "pct_original": 1
+        },
+        "restore": {
+          "kac": 35.1,
+          "pct_original": 15.7
+        }
+      }
+    },
+    {
+      "name": "Lowland Mesic",
+      "description": "Fragmented; areas mapped as native dominated often have heavy invasive plant understories, so 'Restore' fits much of it better than 'Initiate'. Highest original plant diversity (and likely invertebrate diversity), making targeted restoration especially valuable.",
+      "notes": "Elevation band 0–1,000 m. Plan text lines 3629-3633.",
+      "original_extent_kac": 120.2,
+      "pct_original_remaining": 21.3,
+      "goal_pct_managed": 40,
+      "islands": [
+        "Molokaʻi",
+        "Lānaʻi",
+        "Maui"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 11.8,
+          "pct_original": 9.8
+        },
+        "initiate": {
+          "kac": 7.5,
+          "pct_original": 6.3
+        },
+        "engage": {
+          "kac": 6.2,
+          "pct_original": 5.2
+        },
+        "restore": {
+          "kac": 27.5,
+          "pct_original": 22.9
+        }
+      }
+    },
+    {
+      "name": "Lowland Wet",
+      "description": "Greatest share remaining and least invaded of the lowland ecosystems. Much good-quality habitat on partner lands is not yet ungulate-free, so 'Initiate' is the biggest opportunity.",
+      "notes": "Elevation band 0–1,000 m. Plan text lines 3634-3637.",
+      "original_extent_kac": 95.2,
+      "pct_original_remaining": 59.1,
+      "goal_pct_managed": 59,
+      "islands": [
+        "Molokaʻi",
+        "Maui"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 20.4,
+          "pct_original": 21.4
+        },
+        "initiate": {
+          "kac": 30.2,
+          "pct_original": 31.7
+        },
+        "engage": {
+          "kac": 5.7,
+          "pct_original": 6
+        },
+        "restore": {
+          "kac": 10.7,
+          "pct_original": 11.2
+        }
+      }
+    },
+    {
+      "name": "Montane Dry",
+      "description": "Well represented on Hawaiʻi Island but confined to a narrow zone on East Maui, with little native-dominated vegetation left.",
+      "notes": "Elevation band 1,000–2,000 m. Plan text lines 3639-3640. Note: Table 28 gives 56.4% remaining but Table 30 shows no Maintain/Initiate/Engage acres; flagged for DOFAW.",
+      "original_extent_kac": 1.4,
+      "pct_original_remaining": 56.4,
+      "goal_pct_managed": 56,
+      "islands": [
+        "Maui"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 0,
+          "pct_original": 0
+        },
+        "initiate": {
+          "kac": 0,
+          "pct_original": 0
+        },
+        "engage": {
+          "kac": 0,
+          "pct_original": 0
+        },
+        "restore": {
+          "kac": 0.6,
+          "pct_original": 41.6
+        }
+      }
+    },
+    {
+      "name": "Montane Mesic",
+      "description": "Largely converted to cattle pasture, so little remains, but declining ranching creates a strong restoration opportunity: many old pastures still have native trees and little invasive woody growth, making grass control plus native planting cost-effective.",
+      "notes": "Elevation band 1,000–2,000 m; includes the small Mesic area extending into the Subalpine band. Plan text lines 3642-3645.",
+      "original_extent_kac": 46.5,
+      "pct_original_remaining": 29.4,
+      "goal_pct_managed": 29,
+      "islands": [
+        "Molokaʻi",
+        "Maui"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 10.4,
+          "pct_original": 22.4
+        },
+        "initiate": {
+          "kac": 3.2,
+          "pct_original": 6.8
+        },
+        "engage": {
+          "kac": 0.1,
+          "pct_original": 0.1
+        },
+        "restore": {
+          "kac": 13.5,
+          "pct_original": 29.1
+        }
+      }
+    },
+    {
+      "name": "Montane Wet",
+      "description": "High share of original habitat and strong plant diversity; core habitat for most remaining forest birds. 'Maintain' is the priority, though climate change may bring new threats (such as lowland-type invasive plant pressure) needing more active management.",
+      "notes": "Elevation band 1,000–2,000 m; includes the small Wet area extending into the Subalpine band. Plan text lines 3651-3654.",
+      "original_extent_kac": 41.1,
+      "pct_original_remaining": 91.6,
+      "goal_pct_managed": 91,
+      "islands": [
+        "Molokaʻi",
+        "Lānaʻi",
+        "Maui"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 30.8,
+          "pct_original": 75
+        },
+        "initiate": {
+          "kac": 6.5,
+          "pct_original": 15.8
+        },
+        "engage": {
+          "kac": 0.3,
+          "pct_original": 0.8
+        },
+        "restore": {
+          "kac": 3,
+          "pct_original": 7.4
+        }
+      }
+    },
+    {
+      "name": "Subalpine (Dry)",
+      "description": "High quality and largely intact, mostly within Haleakalā National Park and largely ungulate-free, so 'Maintain' is the priority. Climate change is a looming risk to its narrow climatic niches.",
+      "notes": "Elevation band 2,000–3,000 m. Plan text lines 3655-3657.",
+      "original_extent_kac": 26,
+      "pct_original_remaining": 83.9,
+      "goal_pct_managed": 83,
+      "islands": [
+        "Maui"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 16.9,
+          "pct_original": 65
+        },
+        "initiate": {
+          "kac": 4.8,
+          "pct_original": 18.3
+        },
+        "engage": {
+          "kac": 0,
+          "pct_original": 0
+        },
+        "restore": {
+          "kac": 4,
+          "pct_original": 15.5
+        }
+      }
+    },
+    {
+      "name": "Alpine (Arid)",
+      "description": "A tiny area at the Haleakalā summit, with less original habitat remaining than expected because of roads, parking lots and telescope facilities. Climate change is the dominant concern given its small area and species' inability to move elsewhere.",
+      "notes": "Elevation above 3,000 m. Plan text lines 3659-3662.",
+      "original_extent_kac": 0.1,
+      "pct_original_remaining": 81.2,
+      "goal_pct_managed": 81,
+      "islands": [
+        "Maui"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 0.1,
+          "pct_original": 81.2
+        },
+        "initiate": {
+          "kac": 0,
+          "pct_original": 0
+        },
+        "engage": {
+          "kac": 0,
+          "pct_original": 0
+        },
+        "restore": {
+          "kac": 0,
+          "pct_original": 0
+        }
+      }
+    },
+    {
+      "name": "Lava Pioneer",
+      "description": "Occurs at low elevations but is more native-dominated than the other lowland ecosystems.",
+      "notes": "Kept as a distinct ecosystem because of unique edaphic (substrate) conditions (plan lines 3566-3567). Plan text lines 3664-3665.",
+      "original_extent_kac": 12.4,
+      "pct_original_remaining": 75.2,
+      "goal_pct_managed": 75,
+      "islands": [
+        "Maui"
+      ],
+      "mapped": true,
+      "opportunities": {
+        "maintain": {
+          "kac": 5.5,
+          "pct_original": 44.9
+        },
+        "initiate": {
+          "kac": 2.7,
+          "pct_original": 21.5
+        },
+        "engage": {
+          "kac": 1.1,
+          "pct_original": 8.8
+        },
+        "restore": {
+          "kac": 0.6,
+          "pct_original": 4.7
+        }
+      }
+    }
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "title": "Maintain",
+      "category": "Managed (ungulate exclusion) + high-quality habitat",
+      "description": "Maintain managed high-quality habitat that has ungulate fences. Existing management should continue.",
+      "key_areas": [],
+      "figure": null,
+      "src": "plan p.98, lines 3920-3921; Table 31"
+    },
+    {
+      "rank": 2,
+      "title": "Initiate",
+      "category": "Unmanaged partner lands in conservation status + high-quality habitat",
+      "description": "Initiate management on lands in conservation status: identify existing native ecosystems that are in conservation status but not yet fenced. Maui Nui has extensive areas in conservation status that are not protected from ungulate damage, and some are important for both ecosystems and at-risk species recovery.",
+      "key_areas": [
+        {
+          "map_number": 1,
+          "name": "Windward Haleakalā (East Maui)"
+        },
+        {
+          "map_number": 2,
+          "name": "Molokaʻi (first of two areas)"
+        },
+        {
+          "map_number": 3,
+          "name": "Molokaʻi (second of two areas)"
+        },
+        {
+          "map_number": 4,
+          "name": "Lānaʻihale (Lānaʻi)"
+        },
+        {
+          "map_number": 5,
+          "name": "Not named in plan text; southern/leeward flank of Haleakalā on Figure 27 (DOFAW to confirm)"
+        }
+      ],
+      "figure": "Figure 27, plan PDF p.108 (printed p.99)",
+      "src": "plan pp.98-99, lines 3922-3958"
+    },
+    {
+      "rank": 3,
+      "title": "Engage",
+      "category": "Unmanaged other ownership + high-quality habitat",
+      "description": "Engage with potential partners to implement management or include areas in conservation status.",
+      "key_areas": [
+        {
+          "map_number": 6,
+          "name": "Above Makawao, windward Haleakalā"
+        },
+        {
+          "map_number": 7,
+          "name": "Kahikinui area"
+        },
+        {
+          "map_number": 8,
+          "name": "Eastern Molokaʻi"
+        }
+      ],
+      "figure": "Figure 28, plan PDF p.109 (printed p.100)",
+      "src": "plan pp.99-100, lines 3959-3990; map numbers matched to names from the figure"
+    },
+    {
+      "rank": 4,
+      "title": "Restore",
+      "category": "Medium-quality habitat within ungulate-excluded areas or the recovery footprint",
+      "description": "Undertake restoration of medium-quality habitats to help meet ecosystem targets for area, as well as other values, especially to support the recovery of at-risk species. Restoring areas important for species recovery, connectivity, high species diversity or climate resilience comes before areas that only add acres.",
+      "key_areas": [],
+      "figure": "Figure 25, plan PDF p.105 (printed p.96)",
+      "src": "plan p.100, lines 3993-3995; p.97 lines 3857-3859; Table 29"
+    }
+  ],
+  "special_features": [
+    {
+      "name": "Coastal areas",
+      "description": "A varied mix of cliffs, sand dunes and wetlands.",
+      "islands": [
+        "Molokaʻi",
+        "Lānaʻi",
+        "Maui",
+        "Kahoʻolawe"
+      ],
+      "mapped": false,
+      "notes": "Plan lines 3574-3575; Table 28."
+    },
+    {
+      "name": "Anchialine pools",
+      "description": "Landlocked pools with an underground connection to the ocean through porous volcanic rock; found in only a few parts of the world and home to unique animals. Depend on groundwater-driven salinity and are vulnerable to pollution.",
+      "islands": [
+        "Molokaʻi",
+        "Maui"
+      ],
+      "mapped": false,
+      "notes": "Text (line 3579) says restricted to East Maui; Table 28 also marks Molokaʻi. Flagged for DOFAW."
+    },
+    {
+      "name": "Lava tubes",
+      "description": "Cave ecosystems formed by recent volcanic activity, supporting unique fauna. Damaged by ungulates, disturbance above ground and groundwater changes.",
+      "islands": [
+        "Molokaʻi",
+        "Maui"
+      ],
+      "mapped": false,
+      "notes": "Text (lines 3580-3582) says restricted to East Maui; Table 28 also marks Molokaʻi. Flagged for DOFAW."
+    },
+    {
+      "name": "Cliffs",
+      "description": "Long a refuge for unique Hawaiian flora; recent exploration with drones has found previously undocumented species.",
+      "islands": [
+        "Molokaʻi",
+        "Lānaʻi",
+        "Maui"
+      ],
+      "mapped": false,
+      "notes": "Plan lines 3582-3585; Table 28."
+    },
+    {
+      "name": "Bogs",
+      "description": "Localized, patchy habitats in poorly drained upland wet areas, supporting unique biota. Ungulate rooting can alter drainage and destroy rare plants.",
+      "islands": [
+        "Molokaʻi",
+        "Lānaʻi",
+        "Maui"
+      ],
+      "mapped": false,
+      "notes": "Plan lines 3585-3587, 3669-3670; Table 28."
+    }
+  ],
+  "_units": "kac = thousands of acres; pct values are percent of the ecosystem's original extent (plan Tables 28 and 30).",
+  "guidelines": [
+    "Protect and manage existing high-quality habitat before restoring degraded areas, especially in ecosystems with less than 40 percent of their original area remaining in high-quality habitat.",
+    "Managing high-quality areas already in conservation-oriented status can usually be done more quickly than in other areas.",
+    "Restoring areas important to species recovery, connectivity, high species diversity or climate resilience is more important than restoring areas that only add to an acreage target."
+  ],
+  "_guidelines_source": "plan p.97, lines 3851-3859"
+}
