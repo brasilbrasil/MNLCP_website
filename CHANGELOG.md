@@ -11,6 +11,7 @@
 - Media from past DOFAW and partner presentations and from openly licensed sources: page header
   photos, group thumbnails and a generated Photo credits list on the Resources page. Images with
   unclear rights are held back locally.
+- Repository made public; GitHub Pages test site live at https://brasilbrasil.github.io/MNLCP_website/.
 
 ## 0.1.0 (2026-10-21): first draft for partner review
 

@@ -59,7 +59,7 @@ Draft builds show a "DRAFT" banner, a `noindex` tag and review badges. For the p
 
 No server-side code and no build step on the host. Any static web host works.
 
-**Repository:** `github.com/brasilbrasil/MNLCP_website`, created **private**.
+**Repository:** `github.com/brasilbrasil/MNLCP_website`, public since 2026-10-21. The **test site is live** at https://brasilbrasil.github.io/MNLCP_website/; every push to `main` updates it within a minute or two.
 
 **Test site with GitHub Pages:**
 
