@@ -67,13 +67,13 @@ Only 202 of the 442 species are listed under state or federal endangered species
 
 ### What does "facing imminent extinction" mean, and what are PEPP species?
 
-In all, 163 of the 442 species could be lost within five years without immediate emergency action. <!-- src: plan p.iv, p.16 --> These include 102 plants, all 49 at-risk Terrestrial snails, 9 Terrestrial arthropods, 2 Forest birds, and 1 Aquatic invertebrate. <!-- src: plan p.19, Table 1 --> Emergency actions put speed and effectiveness first. Examples are seed banking, captive propagation, very small predator-proof exclosures, and close protection of the last wild populations. <!-- src: plan p.viii, p.16 -->
+In all, 163 of the 442 species could be lost within five years without immediate emergency action. <!-- src: plan p.iv, p.16 --> These include 102 plants, all 49 at-risk Terrestrial snails, 9 Terrestrial arthropods, 1 Aquatic invertebrate, and 2 Forest birds. <!-- src: plan p.19, Table 1 --> Emergency actions put speed and effectiveness first. Examples are seed banking, captive propagation, very small predator-proof exclosures, and close protection of the last wild populations. <!-- src: plan p.viii, p.16 -->
 
 "PEPP species" are plants covered by Hawaiʻi's Plant Extinction Prevention Program, which works with native plants that have fewer than 50 individuals left in the wild. All 102 plants facing imminent extinction are already part of PEPP. <!-- src: plan p.48 -->
 
 ### Which groups of species does the plan cover?
 
-The plan covers eight taxonomic groups: Plants (197 species), Terrestrial arthropods (172), Terrestrial snails (49), Aquatic invertebrates (11), Waterbirds (5), Forest birds (4), Seabirds (3), and the Hawaiian hoary bat, or ʻōpeʻapeʻa (1). <!-- src: plan p.19, Table 1 --> Seven groups had their own taxon expert team. The bat, Hawaiʻi's only native land mammal, is the eighth group and did not have a dedicated team. <!-- src: plan p.11 --> For the bat, the top actions are reducing deaths at wind-energy facilities, protecting forests and wetlands, and developing population monitoring. <!-- src: plan p.vi, Table 1 --> See [Taxonomic Groups](groups.html).
+The plan covers eight taxonomic groups: Plants (197 species), Terrestrial snails (49), Waterbirds (5), Seabirds (3), Terrestrial arthropods (172), Aquatic invertebrates (11), Forest birds (4), and the Hawaiian hoary bat, or ʻōpeʻapeʻa (1). <!-- src: plan p.19, Table 1 --> Seven groups had their own taxon expert team. The bat, Hawaiʻi's only native land mammal, is the eighth group and did not have a dedicated team. <!-- src: plan p.11 --> For the bat, the top actions are reducing deaths at wind-energy facilities, protecting forests and wetlands, and developing population monitoring. <!-- src: plan p.vi, Table 1 --> See [Taxonomic Groups](groups.html).
 
 ### Why don't some species have a recovery footprint?
 
@@ -119,7 +119,7 @@ Planning units are units of analysis, not property or management boundaries. The
 
 Each species was given a recovery target: how many populations it needs and how they should be spread across islands and mountains. Targets came from existing recovery plans with added expert input. <!-- src: plan p.7 -->
 
-For Plants, Terrestrial arthropods, and Terrestrial snails, a computer program (OptimTFE) generated many possible footprints that each met every species' targets. Experts and managers compared them on footprint area, habitat quality, habitat suitability, biodiversity reserves, ungulate management, accessibility, fire risk, climate resilience, and overlap with other groups. <!-- src: plan A1-3 to A1-4 --> Experts then fine-tuned the chosen footprint species by species. <!-- src: plan A1-2 --> For Forest birds, Seabirds, Waterbirds, and Aquatic invertebrates, specialists drew the areas directly through repeated map reviews. <!-- src: plan p.12, A1-2 -->
+For Plants, Terrestrial snails, and Terrestrial arthropods, a computer program (OptimTFE) generated many possible footprints that each met every species' targets. Experts and managers compared them on footprint area, habitat quality, habitat suitability, biodiversity reserves, ungulate management, accessibility, fire risk, climate resilience, and overlap with other groups. <!-- src: plan A1-3 to A1-4 --> Experts then fine-tuned the chosen footprint species by species. <!-- src: plan A1-2 --> For Waterbirds, Seabirds, Aquatic invertebrates, and Forest birds, specialists drew the areas directly through repeated map reviews. <!-- src: plan p.12, A1-2 -->
 
 ### Why isn't all suitable habitat included in the footprint?
 

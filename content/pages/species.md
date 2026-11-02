@@ -37,13 +37,13 @@ State and federal endangered species lists already included 202 of these species
 [table: At-risk species by taxonomic group, with listing status, species facing imminent extinction, and recovery or survey category (plan Table 1, p.19)]
 | Taxonomic group | At-risk species | Listed (State/ESA) | Facing imminent extinction | Interim recovery goals | Full recovery goals | Area surveys | Species-specific surveys |
 |---|---|---|---|---|---|---|---|
-| Forest birds | 4 | 3 | 2 | 0 | 4 | 0 | 0 |
-| Waterbirds | 5 | 5 | 0 | 2 | 3 | 0 | 0 |
-| Seabirds | 3 | 3 | 0 | 0 | 3 | 0 | 0 |
 | Plants | 197 | 175 | 102 | 0 | 195 | 0 | 2 |
 | Terrestrial snails | 49 | 3 | 49 | 49 | 0 | 0 | 0 |
+| Waterbirds | 5 | 5 | 0 | 2 | 3 | 0 | 0 |
+| Seabirds | 3 | 3 | 0 | 0 | 3 | 0 | 0 |
 | Terrestrial arthropods | 172 | 8 | 9 | 31 | 1 | 82 | 58 |
 | Aquatic invertebrates | 11 | 4 | 1 | 5 | 5 | 0 | 1 |
+| Forest birds | 4 | 3 | 2 | 0 | 4 | 0 | 0 |
 | Hawaiian hoary bat | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
 | **Total** | **442** | **202** | **163** | **88** | **211** | **82** | **61** |
 <!-- src: plan p.19, Table 1 lines 982-999. "Listed" = protected under HRS Chapter 195D and the federal Endangered Species Act (lines 983-984). -->
@@ -57,7 +57,7 @@ Of the 442 at-risk species, 163 are so close to extinction that they may be lost
 - 2 Forest birds, the kiwikiu and the ʻākohekohe <!-- src: plan p.19, Table 1 line 991; p.33 Table 5 lines 1478-1481 -->
 - 1 Aquatic invertebrate, the flying earwig Hawaiian damselfly (*Megalagrion nesiotes*) <!-- src: plan p.19, Table 1 line 997; p.71 Table 21 line 2892; App 3 line 6591 -->
 
-No Seabirds, Waterbirds, or Hawaiian hoary bats are expected to be lost within five years. <!-- src: plan p.19, Table 1 lines 992-993, 998 -->
+No Waterbirds, Seabirds, or Hawaiian hoary bats are expected to be lost within five years. <!-- src: plan p.19, Table 1 lines 992-993, 998 -->
 
 ### What emergency action means
 Emergency actions are chosen for how well and how quickly they work. They often happen outside the wild (ex situ), such as captive rearing and seed storage. Others are close to the wild, such as very small predator-proof exclosures. <!-- src: plan p.16, lines 888-890 --> Alongside these, the plan protects and manages key wild populations so that each species survives through the life of the plan. <!-- src: plan p.17, lines 896-899 -->

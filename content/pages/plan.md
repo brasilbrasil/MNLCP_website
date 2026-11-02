@@ -41,7 +41,7 @@ Global biodiversity is being lost at rates unprecedented in human history. Islan
 ### How Hawaiʻi got here
 The Hawaiian Islands lie roughly 2,100 miles <!-- src: plan p.2, line 381 --> from the nearest continent. Long isolation produced remarkable endemism: about 90 percent <!-- src: plan p.2, line 386 --> of terrestrial species are found nowhere else. <!-- src: plan p.2, lines 380-387 -->
 
-- **Polynesian settlement**, around a thousand years ago, brought agriculture, non-native species, and fire, and began the decline of native lowland ecosystems, including the loss of almost all of Hawaiʻi's flightless birds. <!-- src: plan p.2, lines 387-391 -->
+- **Polynesian settlement**, around a thousand years ago, brought agriculture and non-native species and began the human use of fire to modify habitat. Together these started the decline of native lowland ecosystems, including the loss of almost all of Hawaiʻi's flightless birds. <!-- src: plan p.2, lines 387-391 -->
 - **After Western contact** in the late eighteenth century, ranching, plantation agriculture, commercial forestry, and urban development destroyed native forests, drained wetlands, diverted streams, and introduced aggressive invasive species and predators. Fire increased, erosion increased, and native habitats became fragmented. <!-- src: plan p.2, lines 392-397 -->
 
 Threats now act at every scale: whole ecosystems (ungulates degrading wet forests, sea level rise flooding coastal habitats), whole taxonomic groups (predatory snails on native snails, avian malaria on forest birds), and single populations (wind turbines killing bats, housing built on rare plant habitat). <!-- src: plan p.2, lines 398-404 -->

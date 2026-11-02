@@ -4,12 +4,12 @@ slug: index
 nav_label: Home
 summary: The Maui Nui Landscape Conservation Plan is DOFAW's first islands-wide, landscape-scale roadmap showing where conservation actions can most effectively prevent extinctions, recover at-risk species, and restore native ecosystems across Maui, Molokaʻi, Lānaʻi, and Kahoʻolawe.
 plan_sources: [Executive Summary pp. iv-ix, Ch 5e p. 29]
-hero_title: A roadmap to prevent extinctions and recover Maui Nui's native species
+hero_title: A roadmap to prevent extinctions and recover Maui Nui's native plants and animals
 hero_subtitle: The first islands-wide, landscape-scale plan showing where conservation actions can most effectively prevent extinctions, recover at-risk species, and restore native ecosystems across Maui, Molokaʻi, Lānaʻi, and Kahoʻolawe.
 ---
 
 <!-- Hero headline options for DOFAW to choose from (all drawn from Executive Summary wording, plan p.iv and p.ix):
-  A. "A roadmap to prevent extinctions and recover Maui Nui's native species"  (current; plan p.iv lines 106-111)
+  A. "A roadmap to prevent extinctions and recover Maui Nui's native plants and animals"  (current; plan p.iv lines 106-111)
   B. "A finite, solvable challenge: one plan for Maui Nui's 442 at-risk species"  (plan p.ix lines 318-319; p.iv line 113)
   C. "Where to act, what to do, and when: conservation for all of Maui Nui"  (plan p.iv lines 131-133; p.v lines 148-154)
   Hero subhead is adapted from the Executive Summary opening, plan p.iv lines 106-111. -->
@@ -61,12 +61,12 @@ Experts identified 442 <!-- src: plan p.v line 162 --> native species at risk of
 | Taxonomic group | At risk | Listed | Facing imminent extinction | Primary threats |
 |---|---|---|---|---|
 | Plants | 197 | 175 | 102 | Habitat loss; ungulates; invasive weeds, rats, and invertebrates; fire |
-| Terrestrial arthropods | 172 | 8 | 9 | Habitat loss; invasive ants and wasps; host-plant decline |
 | Terrestrial snails | 49 | 3 | 49 | Rosy wolfsnail (*Euglandina*), rats, Jackson's chameleon |
-| Aquatic invertebrates | 11 | 4 | 1 | Habitat loss; invasive fish, frogs, and shrimp |
 | Waterbirds | 5 | 5 | 0 | Wetland loss; introduced predators; hybridization with mallards (kōloa maoli) |
-| Forest birds | 4 | 3 | 2 | Mosquito-borne avian malaria; habitat loss |
 | Seabirds | 3 | 3 | 0 | Rats, mongoose, and cats; habitat loss; lights, power lines, and turbines |
+| Terrestrial arthropods | 172 | 8 | 9 | Habitat loss; invasive ants and wasps; host-plant decline |
+| Aquatic invertebrates | 11 | 4 | 1 | Habitat loss; invasive fish, frogs, and shrimp |
+| Forest birds | 4 | 3 | 2 | Mosquito-borne avian malaria; habitat loss |
 | Hawaiian hoary bat (ʻōpeʻapeʻa) | 1 | 1 | 0 | Wind turbine collisions; habitat loss |
 | **Total** | **442** | **202** | **163** | |
 <!-- src: plan Table 1, p.v-vi, lines 167-222; rows reordered by size. Same counts in Ch 4 Table 1, p.19 lines 982-999. -->
@@ -93,7 +93,7 @@ Working with about 100 <!-- src: plan p.vii, line 251 --> managers and scientist
 - **Doing nothing, or only what is done now, is not enough.** Current efforts help, especially for Seabirds and Waterbirds, but feasible new actions improve outcomes for every group. <!-- src: plan p.vii, lines 259-261 -->
 - **Foundational habitat work pays off.** Ungulate fencing and removal, weed control, predator control, and wetland management benefit many species at once. <!-- src: plan p.vii, lines 262-265 -->
 - **New tools are the most important investment.** Future tools for rare plant and invertebrate conservation (S13) ranked in the top three actions for 13 of the 17 <!-- src: plan p.vii, lines 266-268 --> species groups.
-- **Some groups are within reach with proven methods.** Seabirds, Waterbirds, and the Hawaiian hoary bat can reach the 50 percent goal without unproven technologies. Plants remain the hardest group to secure. <!-- src: plan p.vii, lines 271-274 -->
+- **Some groups are within reach with proven methods.** Waterbirds, Seabirds, and the Hawaiian hoary bat can reach the 50 percent goal without unproven technologies. Plants remain the hardest group to secure. <!-- src: plan p.vii, lines 271-274 -->
 
 [Explore priority actions](actions.html)
 

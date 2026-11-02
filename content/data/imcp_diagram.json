@@ -47,7 +47,7 @@
       "label": "Spatial prioritization (TFE-SCP)",
       "question": "Where to manage?",
       "lead": "Spatial Prioritization Team, led by USGS",
-      "description": "Uses the Transparent, Flexible, Expert-engaged Systematic Conservation Planning (TFE-SCP) process, a comprehensive planning process with distinct stages and custom-built tools. Two pathways: algorithmic (Plants, Terrestrial arthropods, Terrestrial snails) and expert-led (Forest birds, Seabirds, Waterbirds, Aquatic invertebrates).",
+      "description": "Uses the Transparent, Flexible, Expert-engaged Systematic Conservation Planning (TFE-SCP) process, a comprehensive planning process with distinct stages and custom-built tools. Two pathways: algorithmic (Plants, Terrestrial snails, Terrestrial arthropods) and expert-led (Waterbirds, Seabirds, Aquatic invertebrates, Forest birds).",
       "outputs": [
         "Recovery footprints",
         "Priority footprints",
@@ -62,7 +62,7 @@
       "lead": "Spatial Prioritization Team, led by USGS",
       "description": "The site-selection prioritization tool used within TFE-SCP for the algorithmic pathway. It builds many candidate footprints that each meet all species-specific targets, for experts and managers to compare across criteria.",
       "outputs": [
-        "Candidate conservation footprints for Plants, Terrestrial arthropods, and Terrestrial snails"
+        "Candidate conservation footprints for Plants, Terrestrial snails, and Terrestrial arthropods"
       ],
       "page": "approach.html#two-process-pathways"
     },

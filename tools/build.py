@@ -61,14 +61,15 @@ NAV = [
     ("resources.html", "Resources", None),
 ]
 
+# Canonical group order for every list on the site (DOFAW preference, 2026-11-02).
 GROUPS = [
-    ("forest-birds", "Forest birds"),
-    ("seabirds", "Seabirds"),
-    ("waterbirds", "Waterbirds"),
     ("plants", "Plants"),
     ("terrestrial-snails", "Terrestrial snails"),
+    ("waterbirds", "Waterbirds"),
+    ("seabirds", "Seabirds"),
     ("terrestrial-arthropods", "Terrestrial arthropods"),
     ("aquatic-invertebrates", "Aquatic invertebrates"),
+    ("forest-birds", "Forest birds"),
     ("hawaiian-hoary-bat", "Hawaiian hoary bat"),
 ]
 
@@ -265,10 +266,18 @@ MD_EXT = ["tables", "attr_list", "md_in_html", "sane_lists", "toc"]
 MD_CFG = {"toc": {"permalink": False, "slugify": lambda v, sep: re.sub(r"[^\w]+", sep, v.lower(), flags=re.U).strip(sep)}}
 
 
+def table_caption(m):
+    cap, src = m.group(1), m.group(2) or ""
+    inner = re.search(r"\s*(<!--.*?-->)\s*$", cap)  # src comment written inside the brackets
+    if inner:
+        cap, src = cap[:inner.start()], inner.group(1) + src
+    return f'\n<p class="table-caption">{esc(cap)} {src}</p>\n\n'
+
+
 def md_to_html(text, draft=True):
     text = fix_text(text)
     text = FIG_RE.sub(lambda m: figure_html(m.group(1), draft), text)
-    text = TABLECAP_RE.sub(lambda m: f'\n<p class="table-caption">{esc(m.group(1))} {m.group(2) or ""}</p>\n\n', text)
+    text = TABLECAP_RE.sub(table_caption, text)
 
     def details(m):
         inner = md_to_html(m.group(2), draft)

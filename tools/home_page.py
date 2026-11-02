@@ -156,7 +156,8 @@ def bar_chart(B, groups):
     rows = [g for g in groups if g.get("at_risk")]
     if not rows:
         return ""
-    rows.sort(key=lambda g: -g["at_risk"])
+    order = [s for s, _ in B["GROUPS"]]
+    rows.sort(key=lambda g: order.index(g["slug"]) if g.get("slug") in order else 99)
     W, rowh, left, right = 560, 40, 178, 44
     H = len(rows) * rowh + 54
     mx = max(g["at_risk"] for g in rows)

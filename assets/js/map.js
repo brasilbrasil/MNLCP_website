@@ -27,13 +27,13 @@
   ["recovery", "priority", "islands", "grid"].forEach(function (k) { if (D[k]) polygonsOnly(D[k]); });
 
   var GROUPS = [
-    { k: "fb", name: "Forest birds", color: "#e34948", page: "groups/forest-birds.html" },
-    { k: "sb", name: "Seabirds", color: "#1baf7a", page: "groups/seabirds.html" },
-    { k: "wb", name: "Waterbirds", color: "#eda100", page: "groups/waterbirds.html" },
     { k: "pl", name: "Plants", color: "#008300", page: "groups/plants.html" },
     { k: "ts", name: "Terrestrial snails", color: "#6250d6", page: "groups/terrestrial-snails.html" },
+    { k: "wb", name: "Waterbirds", color: "#eda100", page: "groups/waterbirds.html" },
+    { k: "sb", name: "Seabirds", color: "#1baf7a", page: "groups/seabirds.html" },
     { k: "ta", name: "Terrestrial arthropods", color: "#eb6834", page: "groups/terrestrial-arthropods.html" },
-    { k: "ai", name: "Aquatic invertebrates", color: "#2a78d6", page: "groups/aquatic-invertebrates.html" }
+    { k: "ai", name: "Aquatic invertebrates", color: "#2a78d6", page: "groups/aquatic-invertebrates.html" },
+    { k: "fb", name: "Forest birds", color: "#e34948", page: "groups/forest-birds.html" }
   ];
   var GREENS = ["#c6e3ae", "#a3d183", "#7cbc5e", "#55a03f", "#35842f", "#1f6a2c", "#0f4a1d"];
   var BLUES = ["#cde2fb", "#9ec5f4", "#5598e7", "#256abf", "#0d366b"];
@@ -62,19 +62,32 @@
     light: L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", { attribution: "© OpenStreetMap contributors © CARTO", subdomains: "abcd", maxZoom: 16 })
   };
   var islands = L.geoJSON(D.islands, { style: { color: "#3d3d3d", weight: 1, fillColor: "#faf9f4", fillOpacity: 0.85 }, interactive: false }).addTo(map);
-  if (D.grid) L.geoJSON(D.grid, { style: { color: "#c9cec4", weight: 0.5, opacity: 0.9, fill: false }, interactive: false }).addTo(map);
+  var grid = D.grid ? L.geoJSON(D.grid, { style: { color: "#c9cec4", weight: 0.5, opacity: 0.9, fill: false }, interactive: false }) : null;
   bases.none = L.layerGroup();  // "Clean": no tiles, matches the static maps and works offline
   function applyBase() {
     Object.keys(bases).forEach(function (k) { map.removeLayer(bases[k]); });
     bases[state.base].addTo(map);
     if (bases[state.base].bringToBack) bases[state.base].bringToBack();
-    islands.setStyle({ fillOpacity: state.base === "none" ? 0.85 : 0.12 });
+    var imagery = state.base === "imagery";
+    // On imagery, drop the planning-unit grid and the island tint so the photo shows through
+    if (grid) { if (imagery) map.removeLayer(grid); else if (!map.hasLayer(grid)) { grid.addTo(map); if (layer) layer.bringToFront(); } }
+    islands.setStyle({ fillOpacity: state.base === "none" ? 0.85 : (imagery ? 0 : 0.12) });
   }
   applyBase();
   map.fitBounds(islands.getBounds(), { padding: [10, 10] });
 
   var layer = null, selected = null;
   var scaleCache = {};
+  // Per-group priority membership, so the recovery view marks a unit as priority only
+  // when it is in the priority footprint of one of the groups currently shown
+  var priorityById = {};
+  D.priority.features.forEach(function (f) { priorityById[f.properties.id] = f.properties; });
+  function inShownPriority(p) {
+    var q = priorityById[p.id];
+    if (!q) return false;
+    for (var i = 0; i < state.groups.length; i++) if (q[state.groups[i]] > 0) return true;
+    return false;
+  }
 
   function visibleFeature(p) {
     for (var i = 0; i < state.groups.length; i++) if (p[state.groups[i]] > 0) return true;
@@ -127,7 +140,7 @@
       filter: function (f) { var ok = visibleFeature(f.properties); if (ok) shown++; return ok; },
       style: function (f) {
         var fill = mode.type === "nested"
-          ? (state.view === "priority" || f.properties.in_priority ? PRIORITY_MAGENTA : RECOVERY_GREEN)
+          ? (state.view === "priority" || inShownPriority(f.properties) ? PRIORITY_MAGENTA : RECOVERY_GREEN)
           : colorFor(valueFor(f.properties, mode), mode);
         return { color: "#ffffff", weight: 0.5, opacity: 0.8, fillColor: fill, fillOpacity: 0.9 };
       },

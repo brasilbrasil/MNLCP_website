@@ -46,7 +46,7 @@ There is no reliable population estimate for bats in Maui Nui. <!-- src: plan p.
 ## Recovery strategy
 The plan's strategy for the bat involves: <!-- src: plan p.77, lines 3103-3116 -->
 - Preventing incidental take (accidental killing or harm) of bats from human activities, especially wind energy turbines.
-- Protecting forested areas and wetlands in the plan's recovery footprints for Forest birds, Seabirds, Waterbirds, Plants, Aquatic invertebrates and Terrestrial arthropods.
+- Protecting forested areas and wetlands in the plan's recovery footprints for Plants, Waterbirds, Seabirds, Terrestrial arthropods, Aquatic invertebrates and Forest birds.
 - Reducing populations of invasive vertebrate predators, especially feral cats and rats, across Maui Nui.
 - Developing methods to measure population trends.
 - Identifying actions that can increase the number of young bats raised (productivity).
@@ -59,12 +59,12 @@ Setting numeric recovery goals for the bat is hard. The interim recovery goal is
 None are needed. The bat is not at imminent risk of extinction in the next five years. <!-- src: plan p.78, lines 3155-3156 -->
 
 ### Recovery footprint
-The bat is a plan-only group: it was not part of the spatial prioritization, and it has no footprint of its own. Instead, the plan provides forest and wetland habitat for the bat through the native habitats in the recovery footprints for Forest birds, Seabirds, Waterbirds, Plants, Aquatic invertebrates and Terrestrial arthropods. <!-- src: plan p.78, lines 3164-3167 --> There are no priority footprints for the bat. <!-- src: plan p.79, lines 3173-3175 --> The plan does not give a planning-unit count for the combined bat footprint. <!-- src: plan Ch 6 h (no figure given); see notes/groups2.md -->
+The bat is a plan-only group: it was not part of the spatial prioritization, and it has no footprint of its own. Instead, the plan provides forest and wetland habitat for the bat through the native habitats in the recovery footprints for Plants, Waterbirds, Seabirds, Terrestrial arthropods, Aquatic invertebrates and Forest birds. <!-- src: plan p.78, lines 3164-3167 --> There are no priority footprints for the bat. <!-- src: plan p.79, lines 3173-3175 --> The plan does not give a planning-unit count for the combined bat footprint. <!-- src: plan Ch 6 h (no figure given); see notes/groups2.md -->
 
-[figure: Recovery footprint for the Hawaiian hoary bat, made up of the recovery footprints for Forest birds, Seabirds, Waterbirds, Plants, Aquatic invertebrates and Terrestrial arthropods | suggested source: plan PDF p.79 Figure 18 | alt: Map of Maui Nui showing the combined forest and wetland recovery footprints that provide habitat for the Hawaiian hoary bat]
+[figure: Recovery footprint for the Hawaiian hoary bat, made up of the recovery footprints for Plants, Waterbirds, Seabirds, Terrestrial arthropods, Aquatic invertebrates and Forest birds | suggested source: plan PDF p.79 Figure 18 | alt: Map of Maui Nui showing the combined forest and wetland recovery footprints that provide habitat for the Hawaiian hoary bat]
 
 ## Priority conservation actions
-The plan's action prioritization (a modified Priority Threat Management, or PTM, analysis, led by UH Mānoa) estimated how each action might affect the bat's chance of persisting on Maui Nui. <!-- src: plan p.79, lines 3178-3180; Exec Summary p.v line 151 --> Strategy 27, the most bird-focused combination, appears to give the bat the highest chance of persistence: 63 percent if fully implemented. <!-- src: plan p.79, lines 3184-3187 --> The bat is one of three groups (with Seabirds and Waterbirds) that can reach the plan's 50 percent persistence goal without relying on research or unproven new methods. <!-- src: plan p.86, lines 3436-3439; Exec Summary p.vii lines 271-273 -->
+The plan's action prioritization (a modified Priority Threat Management, or PTM, analysis, led by UH Mānoa) estimated how each action might affect the bat's chance of persisting on Maui Nui. <!-- src: plan p.79, lines 3178-3180; Exec Summary p.v line 151 --> Strategy 27, the most bird-focused combination, appears to give the bat the highest chance of persistence: 63 percent if fully implemented. <!-- src: plan p.79, lines 3184-3187 --> The bat is one of three groups (with Waterbirds and Seabirds) that can reach the plan's 50 percent persistence goal without relying on research or unproven new methods. <!-- src: plan p.86, lines 3436-3439; Exec Summary p.vii lines 271-273 -->
 
 ### 1. Minimize harm from infrastructure (S16)
 The most beneficial single strategy is S16, minimizing and modifying infrastructure, which targets bat deaths at wind energy farms. <!-- src: plan p.79, lines 3188-3190 --> The plan calls it the most strategic action for two reasons: <!-- src: plan pp.79-80, lines 3190-3202 -->

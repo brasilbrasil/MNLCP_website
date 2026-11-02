@@ -20,7 +20,7 @@
   function norm(s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯʻ‘’'`]/g, ""); }
 
   /* ---------------- Species explorer ---------------- */
-  var GROUP_ORDER = ["Forest birds", "Seabirds", "Waterbirds", "Plants", "Terrestrial snails", "Terrestrial arthropods", "Aquatic invertebrates", "Hawaiian hoary bat"];
+  var GROUP_ORDER = ["Plants", "Terrestrial snails", "Waterbirds", "Seabirds", "Terrestrial arthropods", "Aquatic invertebrates", "Forest birds", "Hawaiian hoary bat"];
   function statusClass(s) {
     if (!s) return "Unknown";
     if (/^endangered/i.test(s)) return "Endangered";

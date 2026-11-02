@@ -38,13 +38,13 @@ Teams of species specialists were the irreplaceable backbone of the planning eff
 
 Seven <!-- src: plan p.11, line 704 --> Taxonomic Teams focused on seven key taxonomic groups: <!-- src: plan p.11, lines 704-714 -->
 
-- Forest birds
-- Seabirds
-- Waterbirds
 - Plants
 - Terrestrial snails
+- Waterbirds
+- Seabirds
 - Terrestrial arthropods
 - Aquatic invertebrates
+- Forest birds
 
 The Hawaiian hoary bat (ʻōpeʻapeʻa), the only native terrestrial mammal in the Hawaiian Islands, is the eighth taxonomic group but did not have its own team. <!-- src: plan p.11, lines 705-707 -->
 

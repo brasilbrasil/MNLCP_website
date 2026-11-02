@@ -30,7 +30,7 @@
     },
     {
       "term": "Algorithmic Pathway",
-      "definition": "One of the two process pathways used in spatial conservation planning, alongside the Expert-Led Pathway. Applied to taxonomic groups with numerous species and complex habitat or management considerations (Plants, Terrestrial arthropods, Terrestrial snails), it used the OptimTFE algorithm to generate candidate footprints across Maui Nui’s 1,400 planning units, which experts and managers then compared against criteria such as habitat quality, accessibility, and climate resilience.",
+      "definition": "One of the two process pathways used in spatial conservation planning, alongside the Expert-Led Pathway. Applied to taxonomic groups with numerous species and complex habitat or management considerations (Plants, Terrestrial snails, Terrestrial arthropods), it used the OptimTFE algorithm to generate candidate footprints across Maui Nui’s 1,400 planning units, which experts and managers then compared against criteria such as habitat quality, accessibility, and climate resilience.",
       "see_also": [
         "Expert-Led Pathway",
         "OptimTFE",
@@ -125,7 +125,7 @@
     },
     {
       "term": "Expert-Led Pathway",
-      "definition": "One of the two process pathways used in spatial conservation planning, alongside the Algorithmic Pathway. Used for taxonomic groups with fewer focal species or where expert knowledge was more informative than algorithmic methods (Forest birds, Seabirds, Waterbirds, Aquatic invertebrates), it had specialists identify priority areas directly through iterative web-map review.",
+      "definition": "One of the two process pathways used in spatial conservation planning, alongside the Algorithmic Pathway. Used for taxonomic groups with fewer focal species or where expert knowledge was more informative than algorithmic methods (Waterbirds, Seabirds, Aquatic invertebrates, Forest birds), it had specialists identify priority areas directly through iterative web-map review.",
       "see_also": [
         "Algorithmic Pathway",
         "Taxonomic Team"
@@ -301,7 +301,7 @@
     },
     {
       "term": "Taxonomic Team",
-      "definition": "DOFAW-led teams of species specialists that formed the backbone of the planning effort, providing qualitative input on species distributions, habitat quality, conservation needs, and management feasibility. Seven Taxonomic Teams were established (forest bird, seabird, waterbird, plant, snail, aquatic invertebrate, and terrestrial arthropod teams); the Hawaiian hoary bat is an eighth taxonomic group without its own dedicated team.",
+      "definition": "DOFAW-led teams of species specialists that formed the backbone of the planning effort, providing qualitative input on species distributions, habitat quality, conservation needs, and management feasibility. Seven Taxonomic Teams were established (plant, snail, waterbird, seabird, terrestrial arthropod, aquatic invertebrate, and forest bird teams); the Hawaiian hoary bat is an eighth taxonomic group without its own dedicated team.",
       "see_also": [
         "At-Risk Species",
         "Expert-Led Pathway",

@@ -456,7 +456,7 @@
       "name": "Future predator exclusion fences",
       "type": "single",
       "components": [],
-      "description": "Goal: minimize impacts to sensitive species from predators. New predator exclusion fences for snails, seabirds and waterbirds, cat-proof fences for waterbirds, and translocations into new fences.",
+      "description": "Goal: minimize impacts to sensitive species from predators. New predator exclusion fences for snails, waterbirds and seabirds, cat-proof fences for waterbirds, and translocations into new fences.",
       "cost_total": 82,
       "cost_annual": 4.1,
       "cost_units": "cost_total: total cost over the 20-year planning period, millions of US dollars (App 2 Table 1, 'Total Cost (M $)'). cost_annual: cost_total divided by 20, millions of US dollars per year; derived for the explorer, not printed in the plan (the plan gives only approximate annual figures, e.g. ~$45M/yr for S25 and ~$40M/yr for S27).",
@@ -1345,7 +1345,7 @@
       "complementarity_savings_annual_musd": 10,
       "by_taxonomic_set": [
         {
-          "set": "Vertebrates (forest birds, seabirds, waterbirds, bat)",
+          "set": "Vertebrates (waterbirds, seabirds, forest birds, bat)",
           "threshold_pct": 50,
           "strategy": "S27",
           "annual_cost_musd": 40,

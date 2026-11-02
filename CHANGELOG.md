@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.0 (2026-11-02)
+
+- Partner feedback from Loyal (2026-11-01): homepage headline now says "native plants and
+  animals"; Polynesian fire wording corrected; the Priority Actions page opens its combined-actions
+  section with highlights from plan Table 27 (each group's top three strategies), then sequencing.
+- Map: in the recovery view, a unit is shown as priority only if it is in the priority footprint
+  of a group currently shown. Before, the combined priority footprint was used, so single-group
+  recovery maps showed too many priority units (e.g. 101 instead of 28 for Forest birds). The
+  imagery basemap now hides the planning-unit grid and the island tint.
+- Groups listed in one order sitewide: Plants, Terrestrial snails, Waterbirds, Seabirds, Terrestrial
+  arthropods, Aquatic invertebrates, Forest birds, Hawaiian hoary bat.
+- Build: table captions no longer print their source comment as visible text.
+
 ## 0.2.0 (2026-10-21)
 
 - Footprint maps on the home, footprints, using-the-plan and group pages replaced with the

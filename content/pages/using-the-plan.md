@@ -26,20 +26,20 @@ The plan gives managers three kinds of guidance. <!-- src: plan p.20, lines 1006
 [Learn how the at-risk species were identified](species.html) · [See the ecosystem priorities](ecosystems.html)
 
 ## Emergency actions to prevent extinction
-Species experts identified emergency actions or programs to prevent imminent extinctions in Forest birds, Plants, Terrestrial snails, Terrestrial arthropods, and Aquatic invertebrates. <!-- src: plan p.20, lines 1022-1024 --> Managing species in the wild (in situ) is usually preferred. But in situ work alone may not prevent extinction when the threat is a hard-to-detect invasive species, disease, extremely low numbers, or events that cannot be controlled, like climate change. <!-- src: plan p.20, lines 1024-1026 -->
+Species experts identified emergency actions or programs to prevent imminent extinctions in Plants, Terrestrial snails, Terrestrial arthropods, Aquatic invertebrates, and Forest birds. <!-- src: plan p.20, lines 1022-1024 --> Managing species in the wild (in situ) is usually preferred. But in situ work alone may not prevent extinction when the threat is a hard-to-detect invasive species, disease, extremely low numbers, or events that cannot be controlled, like climate change. <!-- src: plan p.20, lines 1024-1026 -->
 
 Some emergency actions are land management in specific places. Others are research, or are not yet tied to particular sites. <!-- src: plan p.20, lines 1028-1030 --> Each [taxonomic group page](groups.html) gives more detail. <!-- src: plan p.20, lines 1030-1031 -->
 
 [table: Native Maui Nui species facing imminent extinction and the conservation actions needed immediately (plan Table 2, p.20-21)]
 | Taxonomic group | At-risk species | Facing imminent extinction | Emergency actions to prevent extinction |
 |---|---|---|---|
-| Forest birds | 4 | 2 | Reduce mosquito and avian malaria transmission in priority zones; translocation to another island |
-| Waterbirds | 5 | 0 | None needed |
-| Seabirds | 3 | 0 | None needed |
 | Plants | 197 | 102 | Collect genetic material; propagation; outplanting; surveys; control local threats |
 | Terrestrial snails | 49 | 49 | Establish snail exclosures; captive propagation; *Euglandina* control research |
+| Waterbirds | 5 | 0 | None needed |
+| Seabirds | 3 | 0 | None needed |
 | Terrestrial arthropods | 172 | 9 | Habitat management; fencing |
 | Aquatic invertebrates | 11 | 1 | Protect the only known site; survey; prevent invasive species introductions |
+| Forest birds | 4 | 2 | Reduce mosquito and avian malaria transmission in priority zones; translocation to another island |
 | Hawaiian hoary bat | 1 | 0 | None needed |
 | **Total** | **442** | **163** | |
 <!-- src: plan p.20-21, Table 2 lines 1033-1058. Table 2 prints "Snails" and "snail enclosures"; shown here as "Terrestrial snails" and "snail exclosures" per the plan's group names and messaging (see notes). "None needed" stands for the blank action cells of groups with no species facing imminent extinction. -->

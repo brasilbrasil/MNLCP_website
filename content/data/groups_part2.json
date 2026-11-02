@@ -108,7 +108,7 @@
       "imminent_extinction": 0,
       "recovery_footprint_pus": null,
       "priority_footprint_pus": null,
-      "footprint_note": "No footprint of its own: the bat's recovery footprint is the combination of the recovery footprints for Forest birds, Seabirds, Waterbirds, Plants, Aquatic invertebrates and Terrestrial arthropods. There are no priority footprints for the bat. The plan states no PU count. (plan pp.78-79, lines 3164-3175)",
+      "footprint_note": "No footprint of its own: the bat's recovery footprint is the combination of the recovery footprints for Plants, Waterbirds, Seabirds, Terrestrial arthropods, Aquatic invertebrates and Forest birds. There are no priority footprints for the bat. The plan states no PU count. (plan pp.78-79, lines 3164-3175)",
       "prioritization_pathway": "plan-only",
       "primary_threats": [
         "Collisions with wind turbines",

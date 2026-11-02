@@ -120,7 +120,7 @@ shows a credit, and **Resources → Photo credits** lists every photo and plate 
 ### 1.6 Wording to confirm
 
 - Homepage headline: three options are in a comment at the top of `content/pages/home.md`.
-  The draft uses "A roadmap to prevent extinctions and recover Maui Nui's native species".
+  The draft uses "A roadmap to prevent extinctions and recover Maui Nui's native plants and animals" (changed from "native species" at Loyal's suggestion, 2026-11-01).
 - Hawaiian-language review of diacritics and names. Plant Hawaiian names follow the plan, which
   prints them without kahakō. "kāhuli" is used as the Hawaiian name for Terrestrial snails. The
   deck motto uses ‘ for the ʻokina in "ʻāina"; the site uses ʻ.
@@ -132,6 +132,12 @@ shows a credit, and **Resources → Photo credits** lists every photo and plate 
 - Private land: the demos said watershed-partnership private lands were left out of recovery
   targeting, but the plan says it focuses on lands under conservation agreements. The site follows
   the plan.
+- Polynesian settlement and fire (About the Plan). At Loyal's suggestion (2026-11-01) the site says
+  Polynesians began the human use of fire to modify habitat, not that they brought fire. The plan
+  (p.2, lines 387-391) says the settlement introduced "fire", so the site now departs from the plan text.
+- Action sequencing (Priority Actions, "Sequencing the actions"). Loyal suggested Peter may want to
+  emphasize a shorter or different set of actions. The site still shows the plan's nine-step plant
+  example (p.25-26). Waiting on Peter.
 
 ---
 
@@ -144,7 +150,11 @@ shows a credit, and **Resources → Photo credits** lists every photo and plate 
   footprints; "recover species" and "prevent extinctions"; group names capitalized; "team" for
   people; Adaptive Conservation Planner, never "Footprint Manager"; PRA-safe expert language.
   `tools/check_site.py` flags retired terms in the built pages.
-- **Group colors** are fixed sitewide in the plan's chapter order and checked for color-vision
+- **Group order** on every list, table, chart, map legend and explorer: Plants, Terrestrial
+  snails, Waterbirds, Seabirds, Terrestrial arthropods, Aquatic invertebrates, Forest birds,
+  Hawaiian hoary bat (project lead, 2026-11-02). The PTM species groups follow the same order.
+  Image alt text and plan figures keep the order of the image.
+- **Group colors** are fixed sitewide and checked for color-vision
   separation. Every use is labelled, so color never carries meaning alone.
 - **442 species** is the headline count. 374 appears only where the PTM analysis is described.
 - **Reconciled 299 vs 250** on the Footprints page as "250 with recovery habitat plus exclosure
@@ -181,6 +191,8 @@ For the plan's custodians. Each is logged with line numbers in the section notes
 - Bird tables: kiwikiu and ʻākohekohe numbers differ between table and text; the ʻuaʻu total
   doesn't add up (6,750 printed, 6,250 from island values); seabird S27 persistence is 58% vs 59%.
 - Figure text: "OptimTCE" in Figure 1; "Optimization footprint" legend labels in Figures 23–24.
+- Table 27: Plant Group 4 has two strategies ranked 3 (S3, S13) and none ranked 2; S16 is
+  misspelled "Modifiy". (new)
 - Spellings: *Lymnaeidea*, *Rynchogonus*/*Rhyncogonus*, *blackburnii*/*blackburni*,
   *Hydrobates*/*Oceanodroma*.
 

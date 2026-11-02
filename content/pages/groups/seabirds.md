@@ -118,7 +118,7 @@ New predator-proof fencing is expected to make the greatest contribution to seab
 - **What S9 includes for seabirds:** maintaining existing predator-proof fences; translocating seabird chicks into existing fences; using social attraction to encourage adults to nest inside the fences; and yearly surveys of recruitment. <!-- src: plan App 2 p.A2-32, Table 2 -->
 - **What S16 includes:** legislation and outreach to reduce night lighting; power line diverters with Hawaiian Electric; wind turbine changes in areas set by Habitat Conservation Plans; speed bumps within Haleakalā to reduce car strikes; and staff to review and update Habitat Conservation Plans. <!-- src: plan App 2 p.A2-35, Table 2 -->
 - **What S17 includes:** support for the Hawaii Wildlife Center on Hawaiʻi Island to transport and care for injured Maui Nui birds, and satellite rehabilitation facilities on Maui and Molokaʻi. <!-- src: plan App 2 pp.A2-35 to A2-36, Table 2 -->
-- Predator-proof fences are described as critical to preventing extinctions of Seabirds, Waterbirds and Terrestrial snails. <!-- src: plan App 2 p.A2-16 -->
+- Predator-proof fences are described as critical to preventing extinctions of Terrestrial snails, Waterbirds and Seabirds. <!-- src: plan App 2 p.A2-16 -->
 :::
 
 ## Monitoring and research needs

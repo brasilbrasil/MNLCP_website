@@ -68,7 +68,7 @@ This structure keeps the spatial tools in their place as parts of a broader plan
   - Outputs: recovery footprints; priority footprints; species, habitat, and threat metadata for each planning unit
   - Links: uses OptimTFE for algorithmic groups; delivers footprints to the Adaptive Conservation Planner; informs Implementation; coordinates with Action and Ecosystem prioritization
 - **OptimTFE** (within TFE-SCP)
-  - Role: prioritization tool that generates candidate footprints for Plants, Terrestrial arthropods, and Terrestrial snails
+  - Role: prioritization tool that generates candidate footprints for Plants, Terrestrial snails, and Terrestrial arthropods
   - Question answered: *Which sets of planning units meet every species' targets?*
   - Outputs: large sets of candidate footprints for expert comparison
   - Links: feeds Spatial prioritization
@@ -128,7 +128,7 @@ Which pathway a group followed depended on how many species it has and how much 
 [table: The two TFE-SCP pathways]
 | | Algorithmic pathway | Expert-led pathway |
 |---|---|---|
-| Groups | Plants, Terrestrial arthropods, Terrestrial snails | Forest birds, Seabirds, Waterbirds, Aquatic invertebrates |
+| Groups | Plants, Terrestrial snails, Terrestrial arthropods | Waterbirds, Seabirds, Aquatic invertebrates, Forest birds |
 | When used | Many species, real differences in habitat quality, and practical issues such as access and ongoing management | Fewer focal species, and expert knowledge can set spatial priorities directly |
 | How | OptimTFE generates many candidate footprints that each meet every species' targets; experts and managers compare them across criteria and choose one, then fine-tune it | Specialists draw priority areas directly through repeated rounds of web-map review |
 | Shared tools | Expert Data Platform and Conservation Planner | Expert Data Platform and Conservation Planner |
@@ -196,7 +196,7 @@ Maui Nui's at-risk species face overlapping threats across shared landscapes. Pl
 ### Planning units
 Maui Nui is divided into 1,400 <!-- src: plan p.13, line 763 --> planning units of about 2 km² <!-- src: plan p.13, line 763 --> each, based on watersheds, natural barriers, and elevation bands. <!-- src: plan p.13, lines 762-764 --> Each unit is sized to support a single population of an at-risk species; exact siting within a unit is left to field teams. <!-- src: plan glossary p.122 --> Terrestrial snails are the exception: their network is built from candidate exclosure sites, not standard planning units. <!-- src: plan p.A1-7, lines 5204-5206 -->
 
-### Algorithmic pathway stages (Plants, Terrestrial arthropods, Terrestrial snails)
+### Algorithmic pathway stages (Plants, Terrestrial snails, Terrestrial arthropods)
 1. **Data gathering and vetting.** Occurrence records, population locations, habitat suitability models, and planning-unit data are compiled in the Expert Data Platform; taxon experts validate inputs and flag errors or gaps.
 2. **Candidate footprint generation.** The OptimTFE R package builds a large set of candidate footprints, each meeting species-specific targets.
 3. **Criteria exploration and trade-off analysis.** Experts and managers compare candidates across criteria and pick a draft footprint that balances competing values.
@@ -205,7 +205,7 @@ Maui Nui is divided into 1,400 <!-- src: plan p.13, line 763 --> planning units 
 6. **Finalization.** The reviewed footprint becomes the official, versioned conservation footprint for reporting and implementation, while the Conservation Planner remains a living platform for updates.
 <!-- src: plan p.A1-1-A1-2, lines 4959-4986 -->
 
-### Expert-led pathway (Forest birds, Seabirds, Waterbirds, Aquatic invertebrates)
+### Expert-led pathway (Waterbirds, Seabirds, Aquatic invertebrates, Forest birds)
 Specialists drew priority areas directly through repeated web-map review, using the same Expert Data Platform and Conservation Planner but without OptimTFE candidate footprints. This suits groups with few focal species and strong existing expert knowledge. <!-- src: plan p.A1-2, lines 4988-4992; p.A1-5, lines 5107-5112 -->
 
 ### Data inputs
@@ -243,11 +243,11 @@ Footprints were produced for each of the seven <!-- src: plan p.A1-4, line 5088 
 |---|---|---|---|
 | Plants | Algorithmic | Habitat quality, biodiversity reserves, ungulate management, compact footprint | Recovery footprint of 317 PUs; priority footprint of 181 PUs with up to three recovery populations per species where feasible |
 | Terrestrial snails | Algorithmic (exclosure sites) | Exclosure count, accessibility, fire risk, climate resilience | Network of 32 exclosure sites with three targets per species; priority network of 14 sites giving each of the 49 species one target |
-| Terrestrial arthropods | Algorithmic | Habitat quality, known rare arthropod records, alignment with the plant footprint | Interim-recovery footprint (target of five locations per species) for taxa with enough modern records; Focal Area Survey areas; Basic Species-specific Surveys for species with no usable spatial data |
-| Forest birds | Expert-led | Web-map review | 4 species, 3 listed |
-| Seabirds | Expert-led | Several rounds of map edits using updated occurrence data and predator-proof fence locations | 3 listed species: Hawaiian petrel, Newell's shearwater, band-rumped storm-petrel |
 | Waterbirds | Expert-led | Web-map and spreadsheet review | 5 listed species |
+| Seabirds | Expert-led | Several rounds of map edits using updated occurrence data and predator-proof fence locations | 3 listed species: Hawaiian petrel, Newell's shearwater, band-rumped storm-petrel |
+| Terrestrial arthropods | Algorithmic | Habitat quality, known rare arthropod records, alignment with the plant footprint | Interim-recovery footprint (target of five locations per species) for taxa with enough modern records; Focal Area Survey areas; Basic Species-specific Surveys for species with no usable spatial data |
 | Aquatic invertebrates | Expert-led | Watershed-scale delineation | 11 species, 4 listed |
+| Forest birds | Expert-led | Web-map review | 4 species, 3 listed |
 <!-- src: plan App 1: Plants p.A1-6 lines 5148-5150, 5161-5176; Snails p.A1-6-A1-7 lines 5151-5152, 5196-5217; Arthropods p.A1-6 lines 5153-5155, p.A1-8 lines 5240-5261; expert-led groups p.A1-5 lines 5114-5131. Plant priority footprint: App 1 gives 181 PUs; plan body and glossary give 155 (see notes). -->
 
 Snail work focuses on preventing extinction rather than full recovery. Its primary management unit is a kīpuka kāhuli: a managed predator-free refuge enclosed by a predator-proof fence. <!-- src: plan p.A1-6-A1-7, lines 5187-5195 --> Filtering the plant priority footprint to Plant Extinction Prevention Program (PEPP) species identifies 110 <!-- src: plan p.A1-6, line 5174; see notes --> planning units, an initial estimate of where near-term recovery and extinction prevention overlap. <!-- src: plan p.A1-6, lines 5173-5176 -->

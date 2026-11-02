@@ -71,11 +71,11 @@ None of the 27 strategies gives every taxonomic group a 50 percent or better cha
 - Feasible new actions significantly improve the chance of persistence for every group. <!-- src: plan p.24, lines 1177-1178 -->
 
 ### Some groups are within reach; others need new tools
-- **Seabirds, Waterbirds, and the Hawaiian hoary bat** can reach the 50 percent goal without relying on research or unproven future methods. All other groups depend at least partly on future methods or technologies. <!-- src: plan p.86, lines 3436-3440 -->
+- **Plants** are the least likely group to reach 50 percent. <!-- src: plan p.25, line 1186 --> After adjusting for feasibility, all six plant groups and the freshwater snails fall short of 50 percent even with S25 and S27. <!-- src: plan p.84, lines 3324-3328 --> The other 10 of the 17 species groups reach the target under at least one of the two strategies. <!-- src: plan Table 26 p.85, lines 3338-3434 (count of groups at 50 percent or more under S25 or S27) -->
+- **Terrestrial snails** face a devastating single threat, the introduced predatory rosy wolfsnail. Until it can be controlled across the landscape, snail conservation focuses on ex situ care and on kīpuka kāhuli, predator-free exclosures. <!-- src: plan p.86, lines 3445-3455 -->
+- **Waterbirds, Seabirds, and the Hawaiian hoary bat** can reach the 50 percent goal without relying on research or unproven future methods. All other groups depend at least partly on future methods or technologies. <!-- src: plan p.86, lines 3436-3440 -->
 - Experts were optimistic about the bat, but there is currently no way to show numerically whether bat populations are trending up or down, so benefits to the bat cannot yet be confirmed. <!-- src: plan p.86, lines 3440-3445 -->
 - **Forest birds** have the lowest chance of persistence today, even with current efforts, but they also have the most to gain from conservation action. <!-- src: plan p.25, lines 1183-1185 --> Avian malaria is their most important threat. Tools that target bird disease (S14 and S15) are critical for Forest birds, but not needed for any other group to reach 50 percent. <!-- src: plan p.86-87, lines 3445-3448, 3477-3479 -->
-- **Terrestrial snails** face a devastating single threat, the introduced predatory rosy wolfsnail. Until it can be controlled across the landscape, snail conservation focuses on ex situ care and on kīpuka kāhuli, predator-free exclosures. <!-- src: plan p.86, lines 3445-3455 -->
-- **Plants** are the least likely group to reach 50 percent. <!-- src: plan p.25, line 1186 --> After adjusting for feasibility, all six plant groups and the freshwater snails fall short of 50 percent even with S25 and S27. <!-- src: plan p.84, lines 3324-3328 --> The other 10 of the 17 species groups reach the target under at least one of the two strategies. <!-- src: plan Table 26 p.85, lines 3338-3434 (count of groups at 50 percent or more under S25 or S27) -->
 
 ### New tools are the single most important investment
 Future tools for rare plant and invertebrate conservation (S13) is the single most important individual strategy. Thirteen of the 17 species groups ranked it in their top three. Only the three bird groups and the bat did not. <!-- src: plan p.86, lines 3456-3459 --> S13 ranks this high because it: <!-- src: plan p.86, lines 3459-3475 -->
@@ -85,14 +85,11 @@ Future tools for rare plant and invertebrate conservation (S13) is the single mo
 - develops landscape-scale control for threats that are now hard or impossible to manage, including predatory snails, slugs, black twig borer, coconut rhinoceros beetle, naio thrips, ants, wasps, and invasive aquatic species.
 
 ### Foundational habitat work pays off across groups
-Management actions such as invasive predator control, ungulate control, and habitat management are important parts of the strategies with the greatest benefits across species. <!-- src: plan p.A2-1, lines 5305-5307 --> Landscape-scale actions give some benefit to every group. Preventing the extinction of every group, however, also takes species-specific actions, such as predator exclusion fences for seabirds, waterbirds, and snails. <!-- src: plan p.A2-16, lines 5703-5707 -->
+Management actions such as invasive predator control, ungulate control, and habitat management are important parts of the strategies with the greatest benefits across species. <!-- src: plan p.A2-1, lines 5305-5307 --> Landscape-scale actions give some benefit to every group. Preventing the extinction of every group, however, also takes species-specific actions, such as predator exclusion fences for snails, waterbirds, and seabirds. <!-- src: plan p.A2-16, lines 5703-5707 -->
 
 [table: Expected chance of persistence (percent, over 20 years, adjusted for feasibility) for each species group under no action, current management, S25 and S27. Bold values meet the 50 percent target. <!-- src: plan Table 26 p.85, lines 3338-3434; App 2 Table 1 p.A2-15, lines 5664-5687 -->]
 | Species group | No action | Current actions | S25 | S27 | Best strategy |
 |---|---|---|---|---|---|
-| Forest birds | 8 | 11 | 25 | **59** | **59** (S27) |
-| Seabirds | 17 | 36 | **53** | **59** | **59** (S27) |
-| Waterbirds | 23 | 40 | **54** | **58** | **58** (S27) |
 | Plant Group 1 | 12 | 27 | 48 | 29 | 48 (S25) |
 | Plant Group 2 | 16 | 29 | 45 | 26 | 45 (S25) |
 | Plant Group 3 | 16 | 27 | 44 | 24 | 44 (S25) |
@@ -100,12 +97,15 @@ Management actions such as invasive predator control, ungulate control, and habi
 | Plant Group 5 | 16 | 28 | 46 | 24 | 46 (S25) |
 | Plant Group 6 | 16 | 28 | 43 | 29 | 43 (S25) |
 | Terrestrial snails | 14 | 26 | **56** | 46 | **56** (S25) |
+| Waterbirds | 23 | 40 | **54** | **58** | **58** (S27) |
+| Seabirds | 17 | 36 | **53** | **59** | **59** (S27) |
 | Yellow-faced bees | 19 | 23 | **56** | 46 | **56** (S25) |
 | Picture-winged flies | 15 | 21 | **57** | **51** | **57** (S25) |
 | Blackburn's sphinx moth | 36 | 41 | **62** | **53** | **62** (S25) |
 | Damselflies | 27 | 35 | **54** | 43 | **54** (S25) |
 | Anchialine pool shrimp | 29 | 36 | **52** | **53** | **53** (S26, S27) |
 | Freshwater snails | 20 | 24 | 47 | 41 | 47 (S25) |
+| Forest birds | 8 | 11 | 25 | **59** | **59** (S27) |
 | Hawaiian hoary bat | 37 | 40 | **53** | **58** | **58** (S27) |
 
 [figure: Expected probability of persistence for each taxonomic group under the two best-performing strategies: no action, current actions, additional benefits from feasible actions, and less-feasible benefits | suggested source: plan PDF p.25 Figure 3 (same chart as Executive Summary Figure 2, p.viii) | alt: Stacked bar chart for eight taxonomic groups showing persistence under no action (black), current actions (blue), feasible new actions (green) and less feasible actions (red); Plants stay below 50 percent while Forest birds gain the most]
@@ -119,6 +119,38 @@ Management actions such as invasive predator control, ungulate control, and habi
 [figure: Costs per year of implementing all management strategies, and breakdowns of one-time and recurring costs | suggested source: plan PDF p.A2-13 Figure 6 | alt: Bar chart of annual costs over 20 years with a large first-year spike, and two pie charts: one-time costs of $67 million led by fences, and recurring costs of $53 million per year split between salaries and materials]
 
 ## Combined priority actions across groups
+### Highlights across groups
+Each species group's experts ranked the single-focus strategies that do the most for that group. Looking at every group's top three shows which actions pay off most widely. <!-- src: plan Table 27 p.87, lines 3482-3484 -->
+
+- **New tools for rare plants and invertebrates (S13)** is in the top three for 13 of the 17 species groups: all six plant groups, Terrestrial snails, all three terrestrial arthropod groups, and all three aquatic invertebrate groups. <!-- src: plan p.86, lines 3456-3459; Table 27 p.87 -->
+- **Invasive invertebrate pest control (S8)** is in the top three for 7 groups, and **invasive vertebrate predator control (S7)** for 6, including all three bird groups and the bat. <!-- src: plan Table 27 p.87 (Groups selecting row) -->
+- **Future ungulate fences (S3)** is in the top three for 5 groups, four of them plant groups. **Terrestrial habitat management (S5)** and **landscape-scale rodent suppression (S11)** are each in the top three for 4 groups. <!-- src: plan Table 27 p.87 (Groups selecting row) -->
+- **Future predator exclusion fences (S10)** is the first choice for Terrestrial snails, Waterbirds and Seabirds. <!-- src: plan Table 27 p.87 -->
+- **Bird disease tools (S14 and S15)** are in the top three only for Forest birds, which rank them first and second. **Modifying infrastructure (S16)** is the first choice only for the Hawaiian hoary bat. <!-- src: plan p.87, lines 3477-3479; Table 27 p.87 -->
+- No group ranked existing ungulate fences (S2), ungulate control outside fences (S4), existing predator exclusion fences (S9) or vertebrate rehabilitation (S17) in its top three. <!-- src: plan Table 27 p.87 (Groups selecting row) -->
+
+[table: The top three single-focus strategies for each species group, ranked by benefit to the group. Plant Group 4 has two strategies ranked third and none ranked second, as printed in the plan. <!-- src: plan Table 27 p.87 -->]
+| Species group | 1st | 2nd | 3rd |
+|---|---|---|---|
+| Plant Group 1 | S8 Invertebrate pest control | S11 Rodent suppression | S13 Future tools, plants & inverts |
+| Plant Group 2 | S13 Future tools, plants & inverts | S5 Terrestrial habitat mgmt | S3 Future ungulate fences |
+| Plant Group 3 | S3 Future ungulate fences | S5 Terrestrial habitat mgmt | S13 Future tools, plants & inverts |
+| Plant Group 4 | S8 Invertebrate pest control | — | S3 Future ungulate fences; S13 Future tools, plants & inverts |
+| Plant Group 5 | S5 Terrestrial habitat mgmt | S13 Future tools, plants & inverts | S3 Future ungulate fences |
+| Plant Group 6 | S11 Rodent suppression | S7 Vertebrate predator control | S13 Future tools, plants & inverts |
+| Terrestrial snails | S10 Future predator fences | S13 Future tools, plants & inverts | S8 Invertebrate pest control |
+| Waterbirds | S10 Future predator fences | S7 Vertebrate predator control | S6 Stream / wetland habitat mgmt |
+| Seabirds | S10 Future predator fences | S7 Vertebrate predator control | S11 Rodent suppression |
+| Yellow-faced bees | S13 Future tools, plants & inverts | S8 Invertebrate pest control | S12 Existing tools, plants & inverts |
+| Picture-winged flies | S12 Existing tools, plants & inverts | S13 Future tools, plants & inverts | S8 Invertebrate pest control |
+| Blackburn's sphinx moth | S13 Future tools, plants & inverts | S5 Terrestrial habitat mgmt | S8 Invertebrate pest control |
+| Damselflies | S13 Future tools, plants & inverts | S12 Existing tools, plants & inverts | S7 Vertebrate predator control |
+| Anchialine pool shrimp | S6 Stream / wetland habitat mgmt | S3 Future ungulate fences | S13 Future tools, plants & inverts |
+| Freshwater snails | S8 Invertebrate pest control | S13 Future tools, plants & inverts | S6 Stream / wetland habitat mgmt |
+| Forest birds | S15 Future tools for avian malaria | S14 Avian disease prevention | S7 Vertebrate predator control |
+| Hawaiian hoary bat | S16 Modify infrastructure | S7 Vertebrate predator control | S11 Rodent suppression |
+
+### Sequencing the actions
 Because S25 and S27 together include every single-focus strategy, the MNLCP's action program is the full set of 17 strategies. <!-- src: plan p.23, lines 1128-1129 --> S25 is the more plant- and invertebrate-oriented suite of actions. S27 is more focused on birds and the bat. <!-- src: plan Table 3 caption p.23, lines 1132-1136 -->
 
 The Taxonomic Teams also decided how best to sequence the individual actions within S25 and S27 for each group. <!-- src: plan p.25, lines 1196-1198 --> Order matters for two reasons: some actions give more benefit than others, and some must be finished before others can start. <!-- src: plan p.25, lines 1198-1201 --> Before reintroducing a plant species, for example, managers may need to: <!-- src: plan p.25-26, lines 1201-1215 -->
@@ -136,18 +168,18 @@ The Taxonomic Teams also decided how best to sequence the individual actions wit
 Aquatic systems follow similar steps, such as restoring stream flows, removing invasive predators, installing predator barriers, and captive rearing before a translocation. <!-- src: plan p.26, lines 1216-1218 --> Each taxonomic group page gives that group's recommended sequence. <!-- src: plan p.26, lines 1220-1222 -->
 
 ## Emergency actions to prevent extinction
-Some species cannot wait. Of the 442 at-risk species, 163 face imminent extinction within five years without emergency action. <!-- src: plan Table 2 p.21, lines 1040-1056; p.viii lines 286-287 --> Species experts identified emergency actions or programs for Forest birds, Plants, Terrestrial snails, Terrestrial arthropods, and Aquatic invertebrates. <!-- src: plan p.20, lines 1022-1024 --> In situ management is usually preferred, but it may not be enough when the threat is a cryptic invasive species, disease, extremely low numbers, or events that cannot be controlled, such as climate change. <!-- src: plan p.20, lines 1024-1026 -->
+Some species cannot wait. Of the 442 at-risk species, 163 face imminent extinction within five years without emergency action. <!-- src: plan Table 2 p.21, lines 1040-1056; p.viii lines 286-287 --> Species experts identified emergency actions or programs for Plants, Terrestrial snails, Terrestrial arthropods, Aquatic invertebrates, and Forest birds. <!-- src: plan p.20, lines 1022-1024 --> In situ management is usually preferred, but it may not be enough when the threat is a cryptic invasive species, disease, extremely low numbers, or events that cannot be controlled, such as climate change. <!-- src: plan p.20, lines 1024-1026 -->
 
 [table: Species facing imminent extinction and the emergency actions needed now <!-- src: plan Table 2 p.21, lines 1040-1056 -->]
 | Taxonomic group | At-risk species | Facing imminent extinction | Emergency actions |
 |---|---|---|---|
-| Forest birds | 4 | 2 | Reduce mosquito/avian malaria transmission in priority zones; translocation to another island |
-| Waterbirds | 5 | 0 | — |
-| Seabirds | 3 | 0 | — |
 | Plants | 197 | 102 | Collect genetic material, propagation, outplanting, surveys, control local threats |
 | Terrestrial snails | 49 | 49 | Establish snail exclosures, captive propagation, research on control of the predatory snail *Euglandina* |
+| Waterbirds | 5 | 0 | — |
+| Seabirds | 3 | 0 | — |
 | Terrestrial arthropods | 172 | 9 | Habitat management, fencing |
 | Aquatic invertebrates | 11 | 1 | Protect the only known site, survey, prevent invasive species introductions |
+| Forest birds | 4 | 2 | Reduce mosquito/avian malaria transmission in priority zones; translocation to another island |
 | Hawaiian hoary bat | 1 | 0 | — |
 | **Total** | **442** | **163** | |
 
@@ -162,7 +194,7 @@ Choose a strategy to see its actions, its estimated cost, and the expected chanc
 
 
 :::details Methods digest: Priority Threat Management (Appendix 2)
-**Scope.** The PTM analysis covered 374 species at risk of extinction within 20 years, in 17 species groups: Forest birds, Seabirds, Waterbirds, six plant groups, Terrestrial snails, yellow-faced bees, picture-winged flies, Blackburn's sphinx moth, damselflies, anchialine pool shrimp, freshwater snails, and the Hawaiian hoary bat. <!-- src: plan p.A2-4, lines 5391-5398; Tables 26-27 pp.85-87 --> The plant groups came from a cluster analysis that grouped plants sharing major threats. Plant Group 1 is threatened by invasive invertebrates, invasive vertebrates, feral ungulates, and loss of bird pollinators; Group 2 by invasive invertebrates and feral ungulates; Group 3 by feral ungulates; Group 4 by invasive invertebrates, invasive vertebrates, and feral ungulates; Group 5 by invasive vertebrates and feral ungulates. Group 6 holds long-lived species. <!-- src: plan p.A2-4 lines 5395-5398; App 2 Appendix Table 1 pp.A2-21 to A2-27 --> Experts chose a 20-year period: long enough to detect the benefits of management, yet within management timeframes. <!-- src: plan p.A2-4, lines 5398-5400 -->
+**Scope.** The PTM analysis covered 374 species at risk of extinction within 20 years, in 17 species groups: six plant groups, Terrestrial snails, Waterbirds, Seabirds, yellow-faced bees, picture-winged flies, Blackburn's sphinx moth, damselflies, anchialine pool shrimp, freshwater snails, Forest birds, and the Hawaiian hoary bat. <!-- src: plan p.A2-4, lines 5391-5398; Tables 26-27 pp.85-87 --> The plant groups came from a cluster analysis that grouped plants sharing major threats. Plant Group 1 is threatened by invasive invertebrates, invasive vertebrates, feral ungulates, and loss of bird pollinators; Group 2 by invasive invertebrates and feral ungulates; Group 3 by feral ungulates; Group 4 by invasive invertebrates, invasive vertebrates, and feral ungulates; Group 5 by invasive vertebrates and feral ungulates. Group 6 holds long-lived species. <!-- src: plan p.A2-4 lines 5395-5398; App 2 Appendix Table 1 pp.A2-21 to A2-27 --> Experts chose a 20-year period: long enough to detect the benefits of management, yet within management timeframes. <!-- src: plan p.A2-4, lines 5398-5400 -->
 
 **Strategies.** Actions were grouped into 17 strategies, each of which can be carried out on its own. If a strategy is selected, all of its actions are assumed to be carried out, and no action appears in more than one single strategy. Experts also defined 10 combination strategies expected to have synergistic effects. <!-- src: plan p.A2-4, lines 5402-5410 --> The full list of actions in each strategy is in the strategy explorer and in App 2 Table 2. <!-- src: plan pp.A2-28 to A2-37 -->
 
@@ -176,7 +208,7 @@ Choose a strategy to see its actions, its estimated cost, and the expected chanc
 
 **Cost-effectiveness.** A complementarity analysis found the least-cost sets of strategies that "secure" the most species groups above a threshold, for thresholds of 30 to 60 percent. It was run across all groups and separately for vertebrates, invertebrates, and plants. <!-- src: plan p.A2-7, lines 5501-5515 --> Results:
 
-- **Vertebrates** (Forest birds, Seabirds, Waterbirds, bat): S27 gives the greatest gains per dollar. All four groups can be secured at more than 50 percent for about $40 million per year. <!-- src: plan p.A2-10, lines 5597-5601 -->
+- **Vertebrates** (Waterbirds, Seabirds, Forest birds, bat): S27 gives the greatest gains per dollar. All four groups can be secured at more than 50 percent for about $40 million per year. <!-- src: plan p.A2-10, lines 5597-5601 -->
 - **Invertebrates** (seven groups): S27 also gives the most gains per dollar, for about $40 million per year, but the threshold at which all groups can be secured is 40 percent. <!-- src: plan p.A2-10, lines 5601-5605 -->
 - **Plants** (six groups): S25 is the only strategy that gets any plant group to at least 40 percent, for about $45 million per year. <!-- src: plan p.A2-10, lines 5605-5606 -->
 - **All 17 groups:** considering all groups together gets every group to at least 40 percent for about $55 million per year, about $10 million per year less than planning one taxonomic group at a time. <!-- src: plan p.A2-10 to A2-11, lines 5607-5611 -->

@@ -108,7 +108,7 @@ In the plan's map, the priority area and the initial implementation area are the
 :::
 
 :::details How the forest bird footprint was delineated
-- **Pathway.** Forest birds, Seabirds, Waterbirds and Aquatic invertebrates followed the expert-led pathway. Specialists delineated priority areas directly through repeated collaborative review rather than algorithmic footprint generation. The plan uses this pathway for groups with few focal species and strong existing expert knowledge. <!-- src: plan App 1 p.A1-5 -->
+- **Pathway.** Waterbirds, Seabirds, Aquatic invertebrates and Forest birds followed the expert-led pathway. Specialists delineated priority areas directly through repeated collaborative review rather than algorithmic footprint generation. The plan uses this pathway for groups with few focal species and strong existing expert knowledge. <!-- src: plan App 1 p.A1-5 -->
 - **Review format.** DOFAW coordinated the taxon expert team. Forest bird prioritization covered four species, three of them threatened or endangered, through web-map review sessions. <!-- src: plan App 1 p.A1-5 -->
 - **Planning process.** The plan's planning steps for this group were: review of published recovery plans, and expert determination of species at risk, species facing imminent extinction, management needs and emergency action locations, recovery goals, the recovery footprint, the priority footprint and the order of conservation strategies. <!-- src: plan p.31 -->
 - **Why West Maui and Molokaʻi are included.** Recovery requires three populations, so the footprint includes habitat on West Maui and Molokaʻi where no at-risk forest birds now live (Table 6). <!-- src: plan pp.33-35 -->
@@ -145,7 +145,7 @@ If all S27 actions are implemented, forest birds are expected to have a 59 perce
 | All actions implemented and effective (maximum feasibility) | 71.6 |
 
 - Combination strategies that add predator control, ungulate control and habitat management (S22 to S26) help forest birds but do not raise persistence above S15 alone. <!-- src: plan App 2 p.A2-10 -->
-- Across the vertebrate groups (Forest birds, Seabirds, Waterbirds and the Hawaiian hoary bat), S27 gives the greatest gain per dollar. All four can reach better than 50 percent persistence for about $40 million per year. <!-- src: plan App 2 p.A2-10 -->
+- Across the vertebrate groups (Waterbirds, Seabirds, Forest birds and the Hawaiian hoary bat), S27 gives the greatest gain per dollar. All four can reach better than 50 percent persistence for about $40 million per year. <!-- src: plan App 2 p.A2-10 -->
 - S14 and S15 are critical for forest birds but are not needed for any other group to reach 50 percent. <!-- src: plan p.87, Ch 6j -->
 - **What S14 includes:** maintaining existing captive forest bird breeding facilities; translocating 50 pairs <!-- src: plan App 2 p.A2-34 --> of ʻākohekohe and ʻalauahio to forest bird habitat free of avian disease on other Hawaiian Islands; continuing releases of *Wolbachia* IIT mosquitoes (or SIT in the future) where identified by the East Maui environmental assessment; expanding breeding facilities on State land within 10 years; aerial broadcast of BTI in streams near forest bird habitat; and a response network for avian botulism in wetlands. <!-- src: plan App 2 p.A2-34, Table 2 -->
 - **What S15 includes:** a one-time preventive vaccine or probiotic for forest birds across their current range, and work with partners outside Hawaiʻi to develop genetically modified mosquitoes for release in critical forest bird habitat on Maui, or island-wide population replacement if regional suppression does not work. <!-- src: plan App 2 p.A2-35, Table 2 -->
@@ -154,7 +154,7 @@ If all S27 actions are implemented, forest birds are expected to have a 59 perce
 ## Monitoring and research needs
 - **Intensive monitoring.** The strategy pairs mosquito suppression with intensive monitoring to judge whether it works and to guide adaptive management. <!-- src: plan p.31 summary -->
 - **Monitoring priority.** Among forest birds, the plan considers kiwikiu and ʻākohekohe the most vulnerable, which calls for more monitoring effort. <!-- src: plan Ch 8, p.107 -->
-- **New tools.** Forest birds depend on future methods and technologies to reach 50 percent persistence, unlike Seabirds, Waterbirds and the Hawaiian hoary bat. <!-- src: plan p.86, Ch 6j --> The top-ranked strategy, S15, is itself the development of new tools against avian malaria. <!-- src: plan p.36, Table 8 -->
+- **New tools.** Forest birds depend on future methods and technologies to reach 50 percent persistence, unlike Waterbirds, Seabirds and the Hawaiian hoary bat. <!-- src: plan p.86, Ch 6j --> The top-ranked strategy, S15, is itself the development of new tools against avian malaria. <!-- src: plan p.36, Table 8 -->
 - **Community engagement.** The strategy includes community engagement to build long-term support. <!-- src: plan p.31 -->
 
 The Maui Nui strategy is coordinated with Hawaiʻi's statewide forest bird recovery strategy, which centers on integrated, landscape-scale threat management paired with targeted species interventions. <!-- src: plan p.31 -->

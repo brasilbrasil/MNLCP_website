@@ -11,7 +11,10 @@
     "Aquatic invertebrates": "aquatic-invertebrates", "Forest birds": "forest-birds", "Seabirds": "seabirds",
     "Waterbirds": "waterbirds", "Hawaiian hoary bat": "hawaiian-hoary-bat"
   };
-  var groups = D.species_groups;
+  var GROUP_ORDER = ["Plants", "Terrestrial snails", "Waterbirds", "Seabirds", "Terrestrial arthropods", "Aquatic invertebrates", "Forest birds", "Hawaiian hoary bat"];
+  var groups = D.species_groups.map(function (g, i) { return { g: g, i: i }; }).sort(function (a, b) {
+    return (GROUP_ORDER.indexOf(a.g.taxon_group) - GROUP_ORDER.indexOf(b.g.taxon_group)) || (a.i - b.i);
+  }).map(function (x) { return x.g; });
   var byId = {};
   D.strategies.forEach(function (s) { byId[s.id] = s; });
   var state = { a: "S25", b: "", show: "S25" };
